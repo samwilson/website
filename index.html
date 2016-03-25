@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
       <style type="text/css"> 
-      .photos {  }
-      .flickr_badge_image { border:1px solid #666666 !important; padding:7px; margin:0.3em; display:block; float:left;
-        width:254px; height:254px; background-color:; text-align:center }
-      .flickr_badge_image img { border:1px solid black }
+      /* .flickr_badge_image { border:1px solid #666666 !important; padding:7px; margin:0.3em; display:block; float:left;
+        width:254px; height:300px; background-color:; text-align:center }
+      .flickr_badge_image img { border:1px solid black }*/
       .h2, h2 { background-color:#060; color:white; padding:0.3em }
       .LT_header { font-weight:bolder }
       .LT_powered { font-size:smaller; text-align:right }
@@ -19,6 +18,8 @@
       </style>
   </head>
   <body>
+    <!--<p><a rel="me" href="http://orcid.org/0000-0003-4308-3443" title="ID: 0000-0003-4308-3443">ORCID 0000-0003-4308-3443</a></p>-->
+
     <div class="container">
     <h1>Sam Wilson <small>(this is my website)</small></h1>
     <div class="row">
@@ -29,25 +30,40 @@
           <a style="float:right; margin-left:0.8em" href="https://en.gravatar.com/samwilson">
               <img src="https://secure.gravatar.com/avatar/51b9455e1dba4db831de473436c989f9" height=80 width=80 />
           </a>
-          Hello world. I do things. This is sort of my website, where I explain a bit of what I do; mostly it's just links to elsewhere.</p>
+          Hello world. I do things. This is my website, where I explain a bit of what I do; mostly it's just links to elsewhere.
+        </p>
+        <p>
+            I'm a computer programmer by trade, and a Wikimedian and OpenStreetMapper in my spare time.
+            Sometimes I find time to build bits of wooden furniture by hand.
+        </p>
+        <p>You can email me at <a href="mailto:sam@samwilson.id.au">sam@samwilson.id.au</a>.</p>
 
-        <p><a class="twitter-timeline"  href="https://twitter.com/samwilson" data-widget-id="347556971400028160">Tweets by @samwilson</a></p>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <h2>Twitter</h2>
+        <div><a class="twitter-timeline"  href="https://twitter.com/samwilson" data-widget-id="347556971400028160">@samwilson</a></div>
+        <script>!function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){
+            js=d.createElement(s);js.id=id;
+            js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);
+        }}(document,"script","twitter-wjs");
+        </script>
 
         <h2>Code</h2>
         <p>
-          Most of my public code is on
-          <a rel="me" href="https://github.com/samwilson" title="Username: samwilson">GitHub</a>
-        </p>
-        <p>
-          I try to add what I can to Stackoverflow and the rest:
-          <a href="http://stackexchange.com/users/35218" title="My profile on Stack Exchange">
+          <a href="http://stackexchange.com/users/35218" title="My profile on Stack Exchange" style="float:right; margin-left:1em">
             <img src="http://stackexchange.com/users/flair/35218.png?theme=clean" width="208" height="58" alt="Stack Exchange profile image">
           </a>
+          All of my public code is on <a rel="me" href="https://github.com/samwilson" title="Username: samwilson">GitHub</a>.
+          I try to add what I can to Stackoverflow, Wikibooks, and other collaborative learning/teaching websites.
+          Apart from that, I dip my toes into a bunch of different open source projects.
         </p>
-        <p>And apart from that, I dip my toes into a bunch of different opensource projects.</p>
 
-        <p><a rel="me" href="http://orcid.org/0000-0003-4308-3443" title="ID: 0000-0003-4308-3443">ORCID 0000-0003-4308-3443</a></p>
+        <h2>Genealogy</h2>
+        <p>My family history research is slowly being collated in these places:</p>
+        <ol>
+            <li><a href="http://samwilson.id.au/cfb">C. F. Barker Archives</a></li>
+            <li><a href="http://samwilson.id.au/hmw">H. M. W. Archives</a></li>
+        </ol>
 
       </div><!-- End first column. -->
 
@@ -56,11 +72,12 @@
         <h2>Mapping</h2>
         <p>
           I've been <a href="http://hdyc.neis-one.org/?Sam%20Wilson">contributing</a>
-          to <a href="http://osm.org">OSM</a> since 29 April 2008; my username is 
+          to the <a href="http://wiki.openstreetmap.org">OpenStreetMap</a> since 29 April 2008; my username is 
           <a rel="me" href="http://www.openstreetmap.org/user/Sam%20Wilson" title="Username: Sam Wilson">Sam Wilson</a>.
+          I'm currently living somewhere here:
         </p>
         <iframe style="width:100%; height:20em" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="http://www.openstreetmap.org/export/embed.html?bbox=115.72888612747192%2C-32.061518848030076%2C115.75785398483276%2C-32.04887945658629&amp;layer=mapnik"></iframe>
+                src="http://www.openstreetmap.org/export/embed.html?bbox=115.72888612747192%2C-32.061518848030076%2C115.75785398483276%2C-32.04887945658629"></iframe>
 
         <h2>Reading</h2>
         <div class="row">
@@ -92,9 +109,18 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w539dc7c847a59ddb5730d8b0167701ea"></script>
-  <script type="text/javascript" src="https://www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w7378cccc4ea16f142dbb440ab367d548"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w539dc7c847a59ddb5730d8b0167701ea"></script>
+    <script type="text/javascript" src="https://www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w7378cccc4ea16f142dbb440ab367d548"></script>
+    <script type="text/javascript">
+    $(".flickr_badge_image").each(function() {
+        $(this).addClass("col-md-3 text-center");
+    });
+    $(".flickr_badge_image img").each(function() {
+        $(this).addClass("img-thumbnail");
+        $(this).after("<p class='caption'>"+$(this).attr("title")+"</p>");
+    });
+    </script>
   </body>
 </html>
