@@ -1,5 +1,6 @@
 #!/bin/bash
 
+git checkout master
 build.sh
 git config user.name "Travis CI"
 git config user.email "sam@samwilson.id.au"
