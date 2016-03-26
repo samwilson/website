@@ -143,8 +143,6 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
-\usepackage{lastpage}
-
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
 \fancyhf[HEOL]{\footnotesize Sam Wilson}
@@ -203,4 +201,5 @@ $include-after$
 
 $endfor$
 
+\ref{LastPage}
 \end{document}
