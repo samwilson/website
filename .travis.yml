@@ -6,12 +6,7 @@ env:
   - secure: KT4UaenNB+PI5fyJgdRufF0p4V6NUTVQfLoh2yqNTKZXhZSz4TVzxjPTXP/OyFlS7ecqXWxQNSM7FToJIA4NsBC+sERCXVV226l1oCcO04h4juetofU5/vQ8UchZG0/9FpA2u27/UjdJ1ASJzIuJ2RjHOULikMdywkiQrPKX0pw=
 
 before_install:
-  - sudo apt-get install -y pandoc texlive
+  - sudo apt-get install -y pandoc texlive texlive-extra-utils
 
 script:
-  - build.sh
-  - git config user.name "Travis CI"
-  - git config user.email "sam@samwilson.id.au"
-  - git add -A
-  - git commit -m"Files built by Travis."
-  - git push "https://${GH_TOKEN}@github.com/samwilson/samwilson.github.io.git" master:master
+  - travis-deploy.sh
