@@ -6,7 +6,7 @@ INDIR=$(cd $(dirname $0); pwd)
 ## Build all single-page files (HTML and PDF).
 for F in $(find $INDIR -name '*.md' -type f); do
 
-	#if [ $F = "README.md" ]; then continue; fi
+	if [ $F = "README.md" ]; then continue; fi
 	#BASENAME=$( basename -s".md" "$F" );
 
 	## Build RSS item (to be later combined into a single file).
