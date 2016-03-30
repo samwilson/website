@@ -4,6 +4,8 @@ env:
     - secure: UNAw/M7tjTdB5hT/1DzKIuF7qdqa1lk0PVV8sWlrX3o7YY0LhZ8nI1rl9tmNGzgvkVUSkWlfi5P2XoU2eAesz53vx3Mw3qckP5s3HJrLQSDhMNE+zIMxDqs8r9qq/nS83Nz2t5osLMlCGKOX+24fdTvsFeBb7FCYsBWRhVmr5i3O9H7uVk1htJX/nGcxQs5au1QDkYiQaFApQkBKiz6WgaNN4MsqwcqpELJoZFFdy+1Pa55AaC7dff3ct4p1UoWohzIJCmLBW/4HX1GNnJU/MNwM/Zu5DZrYv+zuwafBaQTtc4KNwlgmk8ykMBXWZUsPUbR7b4kjBh9uPejV8Gxs9Z81W5720KayUQ63imN+hhYWK0FC4HSmDPB2/FjbHhBAyqe2YDtdmp9MympvBABCMUX2pHjOaZtKU+HOA+/GdGKckpUwBXaCmFVkAPWF3amROk1fzLlRHk7grZ2rgWTUEXXqk2Uvo2ws1PHCJ3pjUrc7+j5M7MUpdOyik5lNVRKSF30hPTu6F5ePcbpu5vruMnerQen8xYXdv3WVSJe1uBoWtummR0SmTUkYk3szllk4hcswyaXb+C8fAGh3d93WldiSMAhC/9b0LXFfEcETytE+edeQRnoAOiaRw3iD2e2TOvoJ7Ssmg7aGu6MNgbpVnkffQCxCJ8XL6VYXHnAGEeQ=
 before_install:
   - sudo apt-get update
-  - sudo apt-get install -y pandoc pandoc-citeproc texlive-latex-recommended
+  - sudo apt-get install -y texlive-latex-recommended
 script:
+  - pwd
+  - ls -al
   - travis-deploy.sh
