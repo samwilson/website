@@ -146,7 +146,7 @@ $endfor$
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
 \fancyhf[HEOL]{\footnotesize Sam Wilson}
-\fancyhf[HEOR]{\footnotesize \url{http://www.samwilson.id.au/$filename$.html}}
+\fancyhf[HEOR]{\footnotesize \url{www.samwilson.id.au/$filename$.html}}
 \fancyhf[FEOC]{\footnotesize \thepage/\pageref{LastPage}}
 
 \begin{document}
@@ -154,6 +154,13 @@ $endfor$
 $if(title)$
 \maketitle
 $endif$
+
+%\begin{center}
+%	\vspace*{1cm}%
+%	{\huge $title$}
+%	$date$
+%\end{center}
+
 $if(abstract)$
 \begin{abstract}
 $abstract$

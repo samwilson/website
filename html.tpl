@@ -67,7 +67,7 @@
             &middot; <a href="http://www.samwilson.id.au/">www.samwilson.id.au</a>
         </p>
         <p>
-            This page is also available as <a href="$relpath$$filename$.pdf">PDF</a> and <a href="$relpath$$filename$.md">plain text</a>
+            <a href="$relpath$$filename$.pdf">Printable version</a>
         </p>
     </footer>
 </body>
