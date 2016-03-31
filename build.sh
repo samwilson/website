@@ -2,14 +2,19 @@
 
 ## Set up the source and destination directories.
 INDIR=$(cd $(dirname $0); pwd)
+cd "$INDIR"
+OUTDIR="public"
+if [ -e "$OUTDIR" ]; then rm -r "$OUTDIR"; fi
+mkdir "$OUTDIR"
 
 ## Build all single-page files (HTML and PDF).
 for F in $(find $INDIR -name '*.md' -type f); do
 
-	if [ $F = "README.md" ]; then continue; fi
-	#BASENAME=$( basename -s".md" "$F" );
+	## Ignore the readme file.
+	if [ $(basename $F) = "README.md" ]; then continue; fi
 
 	## Build RSS item (to be later combined into a single file).
+	# @TODO
 
 	## Extract just the 'local' part of the path.
 	BASE_LEN=${#INDIR}+1
@@ -18,6 +23,9 @@ for F in $(find $INDIR -name '*.md' -type f); do
 	SLASHS=${FILE//[^\/]/}
 	SLASHCOUNT=${#SLASHS}
 	RELPATH=$(for X in $(seq $SLASHCOUNT); do echo -n "../"; done)
+
+	## Create required directories.
+	mkdir -p "$OUTDIR/"$(dirname "$FILE")
 
 	## Generate HTML version.
 	pandoc --standalone \
@@ -28,18 +36,24 @@ for F in $(find $INDIR -name '*.md' -type f); do
 		--variable="relpath:$RELPATH" \
 		-f markdown \
 		-t html5 \
-		-o "$FILE.html" \
-		"$INDIR/$FILE.md"
+		-o "$OUTDIR/$FILE.html" \
+		"$FILE.md"
 
-    ## Generate PDF version.
+	## Generate PDF version.
 	pandoc --standalone \
 		--template=latex.tpl \
 		--variable="filename:$FILE" \
 		-f markdown \
-		-o "$FILE.pdf" \
-		"$INDIR/$FILE.md"
+		-o "$OUTDIR/$FILE.pdf" \
+		"$FILE.md"
 
 done
+
+cp $INDIR/index.html $OUTDIR/.
+cp $INDIR/style.css $OUTDIR/.
+cp $INDIR/404.html $OUTDIR/.
+
+echo "www.samwilson.id.au" > $OUTDIR/CNAME
 
 ## Build LaTeX
 #echo "Building whole-site PDF"

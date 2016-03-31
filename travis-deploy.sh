@@ -5,13 +5,14 @@ wget https://github.com/jgm/pandoc/releases/download/1.17.0.2/pandoc-1.17.0.2-1-
 sudo dpkg -i pandoc-1.17.0.2-1-amd64.deb
 rm pandoc-1.17.0.2-1-amd64.deb
 
-## Switch to the master branch, build, and commit the updated HTML and PDF files.
-git checkout master
+## Build the site, then commit the built files to the master branch.
 build.sh
+cd public
+git init
 git config user.name "Travis CI"
 git config user.email "sam@samwilson.id.au"
-git add -A \*.html \*.pdf
+git add -A \*.html \*.pdf \*.css CNAME
 git commit -m"Files built by Travis."
 
 ## Push the changes back to Github.
-git push "https://${GH_TOKEN}@github.com/samwilson/samwilson.github.io.git" master:master
+git push -f "https://${GH_TOKEN}@github.com/samwilson/samwilson.github.io.git" master:master

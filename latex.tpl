@@ -201,5 +201,5 @@ $include-after$
 
 $endfor$
 
-\ref{LastPage}
+\label{LastPage}
 \end{document}
