@@ -7,10 +7,8 @@ sudo dpkg -i $PANDOC_DEB
 rm $PANDOC_DEB
 
 ## Build the site, then commit the built files to the master branch.
-cd $TRAVIS_BUILD_DIR
-pwd
-build.sh
-cd public
+$TRAVIS_BUILD_DIR/build.sh
+cd $TRAVIS_BUILD_DIR/public
 git init
 git config user.name "Travis CI"
 git config user.email "sam@samwilson.id.au"
