@@ -1,11 +1,13 @@
 #!/bin/bash
 
 ## Install latest Pandoc.
-wget https://github.com/jgm/pandoc/releases/download/1.17.0.2/pandoc-1.17.0.2-1-amd64.deb
-sudo dpkg -i pandoc-1.17.0.2-1-amd64.deb
-rm pandoc-1.17.0.2-1-amd64.deb
+PANDOC_DEB=pandoc-1.17.2-1-amd64.deb
+wget https://github.com/jgm/pandoc/releases/download/1.17.2/$PANDOC_DEB
+sudo dpkg -i $PANDOC_DEB
+rm $PANDOC_DEB
 
 ## Build the site, then commit the built files to the master branch.
+cd $TRAVIS_BUILD_DIR
 build.sh
 cd public
 git init
