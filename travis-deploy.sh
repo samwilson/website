@@ -8,6 +8,7 @@ rm $PANDOC_DEB
 
 ## Build the site, then commit the built files to the master branch.
 cd $TRAVIS_BUILD_DIR
+pwd
 build.sh
 cd public
 git init
