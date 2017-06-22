@@ -1,5 +1,5 @@
 Markdownsite
-===========
+============
 
 Markdownsite is a simple Github- and Travis-based system
 for creating websites based on Markdown files.
