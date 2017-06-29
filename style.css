@@ -8,6 +8,7 @@ div#TOC { border:2px solid #ccc; border-width:2px 0 }
 h1, h2, h3 { line-height: 1.2 }
 a { text-decoration:none; color:#060 }
 a:hover { text-decoration:underline }
+p, li { line-height:1.2em }
 footer { text-align:center; font-size:small; border-top:1px solid #ccc; margin-top:3em }
 a.footnoteRef { font-size:smaller }
 figure { display:block; margin:auto; text-align:center }
