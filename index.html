@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
   <style type="text/css">
-    .h2, h2 { background-color: #060; color: white; padding: 0.3em }
-    .LT_header { font-weight: bolder }
-    .LT_powered { font-size: smaller; text-align: right }
-    .LT_title { font-style: italic }
+    .h2, h2 { background-color:#060; color:white; padding:0.3em }
+    .LT_header { font-weight:bolder }
+    .LT_powered { font-size:smaller; text-align:right }
+    .LT_title { font-style:italic }
+    .flickr_badge_image a span { display:block }
   </style>
 </head>
 <body>
@@ -51,7 +52,7 @@
         <a class="twitter-timeline" href="https://twitter.com/samwilson" data-widget-id="347556971400028160">@samwilson</a>
       </div>
       <p class="visible-xs-block">
-        I'm also on Twitter as <a href="https://twitter.com/samwilson">@samwilson</a>
+        I'm also on Twitter as <a href="https://twitter.com/samwilson">@samwilson</a>.
       </p>
       <script>!function (d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -74,7 +75,7 @@
           according to <a href="genealogy.html">my system of genealogical record-keeping</a>.
         </p>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-xs-6">
             <div class="panel panel-default">
               <div class="panel-heading"><h3 class="panel-title">C.F. Barker Archives</h3></div>
               <div class="panel-body text-center">
@@ -91,7 +92,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-xs-6">
             <div class="panel panel-default">
               <div class="panel-heading"><h3 class="panel-title">H.M. Wilson Archives</h3></div>
               <div class="panel-body text-center">
@@ -103,6 +104,7 @@
                   <li><a href="https://samwilson.github.io/hmw">Homepage</a></li>
                   <li><a href="https://www.flickr.com/groups/hmw/">Flickr group</a></li>
                   <li><a href="https://github.com/samwilson/hmw">Source code</a></li>
+                  <li>&nbsp;<!-- Placeholder for Figshare or whatnot. --></li>
                 </ul>
               </div>
             </div>
@@ -121,9 +123,9 @@
         <a rel="me" href="https://www.openstreetmap.org/user/Sam%20Wilson" title="Username: Sam Wilson">Sam Wilson</a>.
         I occasionally add an entry to my <a href="https://www.openstreetmap.org/user/Sam%20Wilson/diary">mapping
         diary</a>.
-        I'm currently living somewhere here:
+        <span class="hidden-xs">I'm currently living somewhere here:</span>
       </p>
-      <iframe style="width:100%; height:20em" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+      <iframe style="width:100%; height:20em" class="hidden-xs"
               src="https://www.openstreetmap.org/export/embed.html?bbox=115.72888612747192%2C-32.061518848030076%2C115.75785398483276%2C-32.04887945658629"></iframe>
 
       <h2>Reading</h2>
@@ -175,7 +177,7 @@
 
   </div>
   <div class="row">
-    <div class="col-md-12 photos">
+    <div class="col-md-12 photos" id="photos">
       <h2>Photos</h2>
       <p>
         <a href="https://www.flickr.com/photos/freosam/" title="Go to my Flickr page">
@@ -201,11 +203,12 @@
         src="https://www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w7378cccc4ea16f142dbb440ab367d548"></script>
 <script type="text/javascript">
     $(".flickr_badge_image").each(function () {
-        $(this).addClass("col-md-3 text-center");
+        $(this).addClass("col-md-2 col-sm-4 col-xs-6 text-center");
     });
-    $(".flickr_badge_image img").each(function () {
+    $(".flickr_badge_image a").each(function () {
         $(this).addClass("img-thumbnail");
-        $(this).after("<p class='caption'>" + $(this).attr("title") + "</p>");
+        $(this).find("img").addClass("img-responsive");
+        $(this).append("<span class='caption'>" + $(this).find("img").attr("title") + "</span>");
     });
 </script>
 </body>
