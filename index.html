@@ -7,12 +7,13 @@
   <title>Sam Wilson</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="style.css">
   <style type="text/css">
     .h2, h2 { background-color:#060; color:white; padding:0.3em }
     .LT_header { font-weight:bolder }
     .LT_powered { font-size:smaller; text-align:right }
     .LT_title { font-style:italic }
-    .flickr_badge_image a span { display:block }
+    #flickr-random .img-thumbnail { margin:0.3em }
   </style>
 </head>
 <body>
@@ -190,10 +191,9 @@
         <a href="https://github.com/samwilson/flickr-latex">flickr-latex</a>.
         I backup (and bulk-upload) my photos with
         <a href="https://github.com/TheFox/flickr-cli">TheFox/flickr-cli</a>.
-        Here are ten random photos from my photostream:
+        Here are thirty random photos from my photostream:
       </p>
-      <script type="application/javascript"
-              src="https://www.flickr.com/badge_code_v2.gne?display=random&size=m&layout=x&source=user&user=41426824@N06"></script>
+      <div id="flickr-random" style="height:500px"></div>
     </div>
   </div>
 </div>
@@ -204,14 +204,37 @@
 <script type="text/javascript"
         src="https://www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w7378cccc4ea16f142dbb440ab367d548"></script>
 <script type="text/javascript">
-    $(".flickr_badge_image").each(function () {
-        $(this).addClass("col-md-2 col-sm-4 col-xs-6 text-center");
-    });
-    $(".flickr_badge_image a").each(function () {
-        $(this).addClass("img-thumbnail");
-        $(this).find("img").addClass("img-responsive");
-        $(this).append("<span class='caption'>" + $(this).find("img").attr("title") + "</span>");
-    });
+$(function(){
+    var totalPhotos = 4000;
+    var perPage = 30;
+    var page = Math.floor(Math.random() * (totalPhotos / perPage ));
+    var samFlickrId = '41426824%40N06';
+    var url = 'https://api.flickr.com/services/rest/'
+        + '?method=flickr.people.getPublicPhotos'
+        + '&api_key=4fdff808887e76325292ef8f1945099b'
+        + '&user_id=' + samFlickrId
+        + '&per_page=' + perPage
+        + '&page=' + page
+        + '&format=json'
+        + '&nojsoncallback=1';
+    $.getJSON(url,
+        function(data){
+            $(data.photos.photo).each(function(num,photo){
+                console.log(photo);
+                var imgUrl = "https://farm"+photo.farm+".staticflickr.com/"+photo.server+"/"+photo.id+"_"+photo.secret+"_m.jpg";
+                $("#flickr-random").append(
+                    "<div class='col-md-3 col-sm-4 col-xs-6'>" +
+                    "  <a class='text-center img-thumbnail' href='https://www.flickr.com/photos/"+samFlickrId+"/"+photo.id+"'>" +
+                    "    <img src='" + imgUrl + "' class='img-responsive' alt='"+photo.title+"' />" +
+                    "    <span class='caption'>"+photo.title+"</span>" +
+                    "  </a>" +
+                    "</div>"
+                );
+            });
+        }
+    );
+
+});
 </script>
 </body>
 </html>

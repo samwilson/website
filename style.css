@@ -1,5 +1,7 @@
+/*
 body { line-height:1.6; font-size:large; font-family:sans-serif }
-p, li { line-height:1.1em }
+p, li { line-height:1em }
+*/
 header { text-align:center }
 div#TOC,
 section,
