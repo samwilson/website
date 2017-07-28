@@ -29,7 +29,7 @@
     $endfor$
 
     $if(title)$
-    <header>
+    <header class="page-header">
         <h1>$title$</h1>
         $if(subtitle)$
         <p class="subtitle">$subtitle$</p>
