@@ -197,12 +197,12 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript"
-        src="https://www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w539dc7c847a59ddb5730d8b0167701ea"></script>
+        src="//www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w539dc7c847a59ddb5730d8b0167701ea"></script>
 <script type="text/javascript"
-        src="https://www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w7378cccc4ea16f142dbb440ab367d548"></script>
+        src="//www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w7378cccc4ea16f142dbb440ab367d548"></script>
 <script type="text/javascript">
 $(function(){
     var totalPhotos = 4000;
@@ -211,7 +211,7 @@ $(function(){
     var samFlickrId = '41426824%40N06';
     var url = 'https://api.flickr.com/services/rest/'
         + '?method=flickr.people.getPublicPhotos'
-        + '&api_key=4fdff808887e76325292ef8f1945099b'
+        + '&api_key=b4f62fa7b05e9973939e1594b63fe0ba'
         + '&user_id=' + samFlickrId
         + '&per_page=' + perPage
         + '&page=' + page
@@ -220,7 +220,6 @@ $(function(){
     $.getJSON(url,
         function(data){
             $(data.photos.photo).each(function(num,photo){
-                console.log(photo);
                 var imgUrl = "https://farm"+photo.farm+".staticflickr.com/"+photo.server+"/"+photo.id+"_"+photo.secret+"_m.jpg";
                 $("#flickr-random").append(
                     "<div class='col-md-3 col-sm-4 col-xs-6'>" +
