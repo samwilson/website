@@ -1,6 +1,0 @@
-language: bash
-sudo: required
-install:
-  - git clone https://github.com/samwilson/markdownsite.git
-script:
-  - markdownsite/travis-deploy.sh
