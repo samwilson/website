@@ -3,8 +3,6 @@
 ## Set up the source and destination directories.
 THISDIR=$(cd $(dirname $0); pwd)
 cd "$THISDIR"
-OUTDIR=$THISDIR"/../master"
-if [ ! -e "$OUTDIR" ]; then mkdir "$OUTDIR"; fi
 
 ## Set paths to the template files.
 HTMLTPL=$THISDIR"/html.tpl"
@@ -26,7 +24,7 @@ for F in $ALL_MD_FILES; do
 	RELPATH=$(for X in $(seq $SLASHCOUNT); do echo -n "../"; done)
 
 	## Create required directories.
-	mkdir -p "$OUTDIR/"$(dirname "$FILE")
+	mkdir -p "$THISDIR/"$(dirname "$FILE")
 
 	## Generate HTML version.
 	pandoc --standalone \
@@ -37,7 +35,7 @@ for F in $ALL_MD_FILES; do
 		--variable="relpath:$RELPATH" \
 		-f markdown \
 		-t html5 \
-		-o "$OUTDIR/$FILE.html" \
+		-o "$THISDIR/$FILE.html" \
 		"$FILE.md"
 
 	## Generate PDF version.
@@ -45,20 +43,7 @@ for F in $ALL_MD_FILES; do
 		--template=$PDFTPL \
 		--variable="filename:$FILE" \
 		-f markdown \
-		-o "$OUTDIR/$FILE.pdf" \
+		-o "$THISDIR/$FILE.pdf" \
 		"$FILE.md"
 
-done
-
-## Copy images for HTML (they're already included in the PDFs).
-for F in $(find $THISDIR -iname '*.jpg' -type f); do
-	echo "Copying $F"
-	cp "$F" "$OUTDIR/."
-done
-
-## Copy stylesheet, images, and static HTML pages.
-for F in "style.css" "404.html" "index.html"; do
-	if [ -f "$THISDIR/$F" ]; then
-		cp $THISDIR"/"$F $OUTDIR/.
-	fi
 done
