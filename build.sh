@@ -2,29 +2,33 @@
 
 ## Set up the source and destination directories.
 THISDIR=$(cd $(dirname $0); pwd)
-cd "$THISDIR"
+#cd "$THISDIR"
+
+## Find working directory/filename.
+WORKPATH="$THISDIR"
+if [[ -d "$1" || ( -f "$1" && "$1" == *.md ) ]]; then
+    WORKPATH="$1"
+else
+    echo "Please provide a directory or markdown filename as the first parameter"
+    exit 1
+fi
 
 ## Set paths to the template files.
 HTMLTPL=$THISDIR"/html.tpl"
 PDFTPL=$THISDIR"/pdf.tpl"
 
-## Build all single-page files (HTML and PDF).
-ALL_MD_FILES=$(find $THISDIR -iname '*.md' -type f)
+## Build HTML and PDF of all requested files.
+ALL_MD_FILES=$(find "$WORKPATH" -iname '*.md' -type f)
 for F in $ALL_MD_FILES; do
 
-	## Ignore the readme file.
-	if [ $(basename $F) = "README.md" ]; then continue; fi
-
 	## Extract just the 'local' part of the path.
-	BASE_LEN=${#THISDIR}+1
-	FILE=${F:$BASE_LEN:-3}
+	FULLPATH=$(realpath $F)
+	BASE_LEN=$(( ${#THISDIR} + 2 ))
+	FILE=$(echo $FULLPATH | cut -c $BASE_LEN- | rev | cut -c 4- | rev)
 	echo "Processing $FILE";
 	SLASHS=${FILE//[^\/]/}
 	SLASHCOUNT=${#SLASHS}
 	RELPATH=$(for X in $(seq $SLASHCOUNT); do echo -n "../"; done)
-
-	## Create required directories.
-	mkdir -p "$THISDIR/"$(dirname "$FILE")
 
 	## Generate HTML version.
 	pandoc --standalone \
@@ -36,7 +40,7 @@ for F in $ALL_MD_FILES; do
 		-f markdown \
 		-t html5 \
 		-o "$THISDIR/$FILE.html" \
-		"$FILE.md"
+		"$THISDIR/$FILE.md"
 
 	## Generate PDF version.
 	pandoc --standalone \
@@ -44,6 +48,6 @@ for F in $ALL_MD_FILES; do
 		--variable="filename:$FILE" \
 		-f markdown \
 		-o "$THISDIR/$FILE.pdf" \
-		"$FILE.md"
+		"$THISDIR/$FILE.md"
 
 done

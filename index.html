@@ -13,7 +13,16 @@
     .LT_header { font-weight:bolder }
     .LT_powered { font-size:smaller; text-align:right }
     .LT_title { font-style:italic }
-    #flickr-random .img-thumbnail { margin:0.3em }
+    #flickr-random .photo {
+      display:inline-block; box-shadow:0 1px 2px rgba(0,0,0,.075); margin:0.5em; border-radius:2px;
+      height:310px; width:310px; border:1px solid #ccc; text-align:center; vertical-align:top; overflow:hidden;
+    }
+    #flickr-random .photo:hover { box-shadow: 0 1px 2px rgba(102,0,0,0.76); text-decoration:none; }
+    #flickr-random .photo .photo-wrapper { display:block; width:100%; height:260px; padding-top:10px; }
+    #flickr-random .photo .photo-wrapper img {  }
+    #flickr-random .photo .caption {
+      height:50px; border-top:1px solid #ccc; padding:4px; background-color:#efefef; display:block; color:black;
+    }
   </style>
 </head>
 <body>
@@ -151,7 +160,7 @@
           <p>
             All of my public code is on
             <a rel="me" href="https://github.com/samwilson" title="Username: samwilson">GitHub</a>
-            (as well as <a rel="me" href="https://github.com/samwilson/samwilson.github.io">this website itself</a>).
+            (as well as <a rel="me" href="https://github.com/samwilson/website">this website itself</a>).
             I try to add what I can to Stackoverflow, Wikibooks, and other collaborative learning/teaching websites.
             Apart from that, I dip my toes into a bunch of different open source projects.
           </p>
@@ -163,13 +172,19 @@
           </p>
           <h2>Data</h2>
           <p>
-            I use <a href="https://spideroak.com">SpiderOak</a> as an online continuously-synced backup service for my non-public data.
-            <img src="https://spideroak.com/media/cms/cms/new-spideroak-header-logo.png" class="img-responsive"
-                 alt="SpiderOak logo with the word 'SpiderOak'." />
+            I use
+            <a href="https://spideroak.com"><img src="https://spideroak.com/media/cms/cms/new-spideroak-header-logo.png"
+            alt="SpiderOak logo with the word 'SpiderOak'." style="width:12ex" /></a>
+            as an online continuously-synced backup service for my non-public data.
           </p>
           <p>
             Other data goes to Wikimedia sites, Flickr, or Figshare.
             All is stored in open formats, and what can be is made public (under CC-BY-SA or similar).
+          </p>
+          <p>
+            I also use <a href="https://www.trello.com">Trello</a> for some ephemeral notes and things,
+            because it works well on mobile
+            (and I <a href="https://github.com/mattab/trello-backup">generate a JSON backup</a>).
           </p>
 
           <h2>Work</h2>
@@ -182,6 +197,7 @@
           <p>
             I'm currently working on <a href="https://phabricator.wikimedia.org/maniphest/query/pvJRFzgCLXSF/">these things on Phabricator</a>
             and <a href="https://github.com/search?q=assignee:samwilson+is:open">these things on Github</a>.
+          </p>
         </div>
         <div class="col-md-6 hidden-xs">
           <div id="w7378cccc4ea16f142dbb440ab367d548"></div>
@@ -217,34 +233,38 @@
         src="//www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w7378cccc4ea16f142dbb440ab367d548"></script>
 <script type="text/javascript">
 $(function(){
-    var totalPhotos = 4000;
-    var perPage = 30;
-    var page = Math.floor(Math.random() * (totalPhotos / perPage ));
-    var samFlickrId = '41426824%40N06';
-    var url = 'https://api.flickr.com/services/rest/'
-        + '?method=flickr.people.getPublicPhotos'
-        + '&api_key=b4f62fa7b05e9973939e1594b63fe0ba'
-        + '&user_id=' + samFlickrId
-        + '&per_page=' + perPage
-        + '&page=' + page
-        + '&format=json'
-        + '&nojsoncallback=1';
-    $.getJSON(url,
-        function(data){
-            $(data.photos.photo).each(function(num,photo){
-                var imgUrl = "https://farm"+photo.farm+".staticflickr.com/"+photo.server+"/"+photo.id+"_"+photo.secret+"_m.jpg";
-                $("#flickr-random").append(
-                    "<div class='col-md-3 col-sm-4 col-xs-6'>" +
-                    "  <a class='text-center img-thumbnail' href='https://www.flickr.com/photos/"+samFlickrId+"/"+photo.id+"'>" +
-                    "    <img src='" + imgUrl + "' class='img-responsive' alt='"+photo.title+"' />" +
-                    "    <span class='caption'>"+photo.title+"</span>" +
-                    "  </a>" +
-                    "</div>"
-                );
-            });
-        }
-    );
-
+    for (i=1; i<=30; i++) {
+        getPhotoHtml( i );
+    }
+    function getPhotoHtml( pageNum ) {
+        var totalPhotos = 4000;
+        var perPage = 1;
+        var page = Math.floor(Math.random() * (totalPhotos / perPage));
+        var samFlickrId = '41426824%40N06';
+        var url = 'https://api.flickr.com/services/rest/'
+            + '?method=flickr.people.getPublicPhotos'
+            + '&api_key=b4f62fa7b05e9973939e1594b63fe0ba'
+            + '&user_id=' + samFlickrId
+            + '&per_page=' + perPage
+            + '&page=' + page
+            + '&format=json'
+            + '&nojsoncallback=1';
+        $.getJSON(url,
+            function (data) {
+                $(data.photos.photo).each(function (num, photo) {
+                    var imgUrl = "https://farm" + photo.farm + ".staticflickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_m.jpg";
+                    $("#flickr-random").append(
+                        "<a class='photo' href='https://www.flickr.com/photos/" + samFlickrId + "/" + photo.id + "'>" +
+                        "  <span class='photo-wrapper'>" +
+                        "    <img src='" + imgUrl + "' alt='" + photo.title + "' />" +
+                        "  </span>" +
+                        "  <span class='caption'>" + photo.title + "</span>" +
+                        "</a> "
+                    );
+                });
+            }
+        );
+    }
 });
 </script>
 </body>
