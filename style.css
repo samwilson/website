@@ -6,6 +6,7 @@ header { text-align:center }
 div#TOC,
 section,
 article { margin:3em auto; max-width:50em; padding:1em 0; text-align:justify }
+section.level1 h1 { font-size:2em; text-align:center }
 section#abstract { max-width:40em; font-style:italic; line-height:1.1; text-align:justify }
 div#TOC { border:2px solid #eee; border-width:2px 0 }
 footer { text-align:center; font-size:small; border-top:1px solid #eee }

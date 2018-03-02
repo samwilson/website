@@ -15,7 +15,7 @@
     <meta name="date" content="$date-meta$" />
     $endif$
 
-    <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+    <title>$title$</title>
     <link rel="stylesheet" href="$relpath$style.css" />
 
     $for(header-includes)$

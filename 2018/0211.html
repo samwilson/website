@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    
+    
+    <title></title>
+    <link rel="stylesheet" href="../style.css" />
+
+    </head>
+<body>
+
+    
+    
+    
+
+    
+    <article id="body">
+    <section id="bookbinding-and-wikisource" class="level2">
+    <h2>Bookbinding and Wikisource</h2>
+    <p><strong>Sunday, February 11th, 2018. 12:10PM.</strong></p>
+    <p>I have been experimenting with turning Wikisource works into LaTeX-formatted bindable PDFs. My initial idea was to produce quatro or octavo layout sheets (i.e. 8 or 16 book pages to a sheet of paper that's printed on both sides and has the pages layed out in such a way as when the sheet is folded the pages are in the correct order) but now I'm thinking of just using a print-on-demand service (hopefully Pediapress, because they seem pretty brilliant).</p>
+    <p>Basically, my <a href="https://github.com/samwilson/books-for-binding">tool</a> downloads all of a work's pages and subpages (in the main namespace only; it doesn't care about the method of construction of the work) and saves the HTML for these, in order, to a <code>html/</code> directory. Then (here's the crux of the thing) it uses Pandoc to create a set of matching TeX files in an adjacent <code>latex/</code> directory.</p>
+    <p>So far, so obvious. But the trouble with this approach of wanting to create a separate source format for a work is that there are changes that one wants to make to the work (either formatting or structural) that can't be made upstream on Wikisource — but we <em>also</em> want to be able to bring down updates at any time from Wikisource. That is to say, this is creating a fork of the work in a different format, but it's a fork that needs to be able to be kept up to date.</p>
+    <p>My current solution to this is to save the HTML and LaTeX files in a Git repository (one per work, <a href="https://github.com/samwilson/The_Nether_World">e.g.</a>) and have two branches: one containing the raw un-edited HTML and LaTeX, on which the download operation can be re-run at any time; and the other being based off this, being a place to make any edits required, and which can have the first merged into it whenever that's updated. This will sometimes result in merge conflicts, but for the most part (because the upstream changes are generally small typo fixes and the like) will happen without error.</p>
+    <p>Now I just want to automate all this a little bit more, so a new project can be created (with GitHub repo and all) with a single (albeit slow!) command.</p>
+    <p>The output ends up something like <a href="https://commons.wikimedia.org/wiki/File:The_Nether_World_by_George_Gissing.pdf">The Nether World by George Gissing.pdf</a>.</p>
+    </section>
+    </article>
+
+    
+    <footer>
+        <p>
+            Sam Wilson
+            &middot; Fremantle, Western Australia
+            &middot; <a href="http://www.samwilson.id.au/">www.samwilson.id.au</a>
+        </p>
+        <p>
+            <a href="../2018/0211.pdf">Printable version</a>
+        </p>
+    </footer>
+</body>
+</html>

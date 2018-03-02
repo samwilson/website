@@ -2,7 +2,6 @@
 
 ## Set up the source and destination directories.
 THISDIR=$(cd $(dirname $0); pwd)
-#cd "$THISDIR"
 
 ## Find working directory/filename.
 WORKPATH="$THISDIR"
@@ -17,8 +16,38 @@ fi
 HTMLTPL=$THISDIR"/html.tpl"
 PDFTPL=$THISDIR"/pdf.tpl"
 
+# Build HTML and PDF of a whole directory.
+if [[ -d "$1" ]]; then
+
+    ## Extract just the 'local' part of the path.
+    FULLPATH=$(realpath "$1")
+    BASE_LEN=$(( ${#THISDIR} + 2 ))
+    DIR=$(echo $FULLPATH | cut -c $BASE_LEN-)
+    echo "Processing $DIR";
+
+    pandoc --standalone \
+        --css=style.css \
+        --variable="filename:$DIR" \
+        --variable="relpath:./" \
+        --variable="title:$DIR" \
+        --section-divs \
+        --template=$HTMLTPL \
+        -f markdown \
+        -t html5 \
+        -o "$THISDIR/$DIR.html" \
+        $THISDIR/$DIR/*.md
+    pandoc --standalone \
+        --variable="filename:$DIR" \
+        --variable="relpath:./" \
+        --variable="title:$DIR" \
+        --template=$PDFTPL \
+        -f markdown \
+        -o "$THISDIR/$DIR.pdf" \
+        $THISDIR/$DIR/*.md
+fi
+
 ## Build HTML and PDF of all requested files.
-ALL_MD_FILES=$(find "$WORKPATH" -iname '*.md' -type f)
+ALL_MD_FILES=$(find "$WORKPATH" -iname '*.md' -type f | sort)
 for F in $ALL_MD_FILES; do
 
 	## Extract just the 'local' part of the path.
