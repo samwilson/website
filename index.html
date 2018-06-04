@@ -27,8 +27,8 @@
 </head>
 <body>
 
-<div class="container">
-  <h1>Sam Wilson <small>(this is my website)</small></h1>
+<div class="container" itemscope itemtype="http://schema.org/Person">
+  <h1><span itemprop="name">Sam Wilson</span> <small><a href="https://samwilson.id.au" itemprop="url" class="text-muted">samwilson.id.au</a></small></h1>
   <div class="row">
 
     <div class="col-md-6">
@@ -40,20 +40,40 @@
         Hello world. I do things. This is my website, where I explain a bit of what I do; mostly it's just links to
         elsewhere.
       </p>
-      <p>
+      <p itemprop="description">
         I'm a computer programmer by trade, working for the Wikimedia Foundation.
         Sometimes I find time to build bits of wooden furniture by hand.
         I also like mapping.
       </p>
+      <p>
+        I've been keeping some sort of personal website since 1997, and some of it is still here.
+        The archives are concatenated in the following pages:
+        <a href="2003.html">2003</a>,
+        <a href="2004.html">2004</a>,
+        <a href="2005.html">2005</a>,
+        <a href="2006.html">2006</a>,
+        <a href="2007.html">2007</a>,
+        <a href="2008.html">2008</a>,
+        <a href="2009.html">2009</a>,
+        <a href="2010.html">2010</a>,
+        <a href="2011.html">2011</a>,
+        <a href="2012.html">2012</a>,
+        <a href="2013.html">2013</a>,
+        <a href="2014.html">2014</a>,
+        <a href="2015.html">2015</a>,
+        <a href="2016.html">2016</a>,
+        <a href="2017.html">2017</a>, and
+        <a href="2018.html">2018</a>.
+      </p>
 
       <h2>Contact</h2>
       <p>
-        You can email me at <a href="mailto:sam@samwilson.id.au">sam@samwilson.id.au</a>,
+        You can email me at <a href="mailto:sam@samwilson.id.au" itemprop="email">sam@samwilson.id.au</a>,
         or find me (most days) on IRC in <a href="http://webchat.freenode.net/?channels=%23wikisource">#wikisource</a>
         on Freenode.
       </p>
       <p>
-        I use Fastmail for email, and think it's pretty cool.
+        I use Fastmail for email, and think they're pretty good.
         If you want 10% off, here's a <a href="https://www.fastmail.com/?STKI=16087153">referral link</a>.
         They're a good, open, honest (and even Australian) company.
       </p>
@@ -64,7 +84,7 @@
         </a>
       </div>
       <p class="visible-xs-block">
-        I'm also on Twitter as <a href="https://twitter.com/samwilson">@samwilson</a>.
+        I'm also on Twitter as <a href="https://twitter.com/samwilson" itemprop="sameAs">@samwilson</a>.
       </p>
       <script>!function (d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -77,7 +97,7 @@
       }(document, "script", "twitter-wjs");
       </script>
       <p class="text-right">
-        <small><a rel="me" href="http://orcid.org/0000-0003-4308-3443">ORCID 0000-0003-4308-3443</a></small>
+        <small><a rel="me" itemprop="sameAs" href="https://orcid.org/0000-0003-4308-3443">ORCID 0000-0003-4308-3443</a></small>
       </p>
 
       <div id="genealogy">
@@ -159,13 +179,13 @@
           <h2>Code</h2>
           <p>
             All of my public code is on
-            <a rel="me" href="https://github.com/samwilson" title="Username: samwilson">GitHub</a>
+            <a rel="me" itemprop="sameAs" href="https://github.com/samwilson" title="Username: samwilson">GitHub</a>
             (as well as <a rel="me" href="https://github.com/samwilson/website">this website itself</a>).
             I try to add what I can to Stackoverflow, Wikibooks, and other collaborative learning/teaching websites.
             Apart from that, I dip my toes into a bunch of different open source projects.
           </p>
           <p class="text-center">
-            <a href="https://stackexchange.com/users/35218/sam-wilson" title="My profile on Stack Exchange">
+            <a href="https://stackexchange.com/users/35218/sam-wilson" itemprop="sameAs" title="My profile on Stack Exchange">
               <img src="https://stackexchange.com/users/flair/35218.png" width="208" height="58"
                    alt="Stack Exchange profile image">
             </a>
@@ -211,7 +231,7 @@
     <div class="col-md-12 photos" id="photos">
       <h2>Photos</h2>
       <p>
-        <a href="https://www.flickr.com/photos/freosam/" title="Go to my Flickr page">
+        <a href="https://www.flickr.com/photos/freosam/" title="Go to my Flickr page" itemprop="sameAs">
           <img src="https://s.yimg.com/pw/images/goodies/white-im-on-flickr.png" width="102" height="26"
                alt="Flickr badge"/>
         </a>
@@ -225,12 +245,12 @@
     </div>
   </div>
 </div>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript"
-        src="//www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w539dc7c847a59ddb5730d8b0167701ea"></script>
+        src="https://www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w539dc7c847a59ddb5730d8b0167701ea"></script>
 <script type="text/javascript"
-        src="//www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w7378cccc4ea16f142dbb440ab367d548"></script>
+        src="https://www.librarything.com/widget_get.php?userid=samwilson.id.au&theID=w7378cccc4ea16f142dbb440ab367d548"></script>
 <script type="text/javascript">
 $(function(){
     for (i=1; i<=30; i++) {

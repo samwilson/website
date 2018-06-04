@@ -32,7 +32,7 @@ if [[ -d "$1" ]]; then
         --variable="title:$DIR" \
         --section-divs \
         --template=$HTMLTPL \
-        -f markdown \
+        -f markdown-implicit_figures \
         -t html5 \
         -o "$THISDIR/$DIR.html" \
         $THISDIR/$DIR/*.md
@@ -50,33 +50,33 @@ fi
 ALL_MD_FILES=$(find "$WORKPATH" -iname '*.md' -type f | sort)
 for F in $ALL_MD_FILES; do
 
-	## Extract just the 'local' part of the path.
-	FULLPATH=$(realpath $F)
-	BASE_LEN=$(( ${#THISDIR} + 2 ))
-	FILE=$(echo $FULLPATH | cut -c $BASE_LEN- | rev | cut -c 4- | rev)
-	echo "Processing $FILE";
-	SLASHS=${FILE//[^\/]/}
-	SLASHCOUNT=${#SLASHS}
-	RELPATH=$(for X in $(seq $SLASHCOUNT); do echo -n "../"; done)
+    ## Extract just the 'local' part of the path.
+    FULLPATH=$(realpath $F)
+    BASE_LEN=$(( ${#THISDIR} + 2 ))
+    FILE=$(echo $FULLPATH | cut -c $BASE_LEN- | rev | cut -c 4- | rev)
+    echo "Processing $FILE";
+    SLASHS=${FILE//[^\/]/}
+    SLASHCOUNT=${#SLASHS}
+    RELPATH=$(for X in $(seq $SLASHCOUNT); do echo -n "../"; done)
 
-	## Generate HTML version.
-	pandoc --standalone \
-		--css=/style.css \
-		--section-divs \
-		--template=$HTMLTPL \
-		--variable="filename:$FILE" \
-		--variable="relpath:$RELPATH" \
-		-f markdown \
-		-t html5 \
-		-o "$THISDIR/$FILE.html" \
-		"$THISDIR/$FILE.md"
+    ## Generate HTML version.
+    pandoc --standalone \
+        --css=/style.css \
+        --section-divs \
+        --template=$HTMLTPL \
+        --variable="filename:$FILE" \
+        --variable="relpath:$RELPATH" \
+        -f markdown \
+        -t html5 \
+        -o "$THISDIR/$FILE.html" \
+        "$THISDIR/$FILE.md"
 
-	## Generate PDF version.
-	pandoc --standalone \
-		--template=$PDFTPL \
-		--variable="filename:$FILE" \
-		-f markdown \
-		-o "$THISDIR/$FILE.pdf" \
-		"$THISDIR/$FILE.md"
+    ## Generate PDF version.
+    pandoc --standalone \
+        --template=$PDFTPL \
+        --variable="filename:$FILE" \
+        -f markdown \
+        -o "$THISDIR/$FILE.pdf" \
+        "$THISDIR/$FILE.md"
 
 done
