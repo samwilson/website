@@ -9,7 +9,7 @@ My website
 Title
 =====
 
-*Year Month-name Day Hour:Minute.*
+*Year Month-name Day, Hour:MinuteXM.*
 
 ## Images
 

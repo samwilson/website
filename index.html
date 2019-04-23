@@ -7,8 +7,9 @@
   <title>Sam Wilson</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="style.css">
+<!--  <link rel="stylesheet" href="style.css">-->
   <style type="text/css">
+    .text-center .img-responsive { margin:auto; display:block }
     .h2, h2 { background-color:#060; color:white; padding:0.3em }
     .LT_header { font-weight:bolder }
     .LT_powered { font-size:smaller; text-align:right }
@@ -45,7 +46,7 @@
         Sometimes I find time to build bits of wooden furniture by hand.
         I also like mapping.
       </p>
-      <p>
+      <!--<p>
         I've been keeping some sort of personal website since 1997, and some of it is still here.
         The archives are concatenated in the following pages:
         <a href="2003.html">2003</a>,
@@ -62,15 +63,16 @@
         <a href="2014.html">2014</a>,
         <a href="2015.html">2015</a>,
         <a href="2016.html">2016</a>,
-        <a href="2017.html">2017</a>, and
-        <a href="2018.html">2018</a>.
-      </p>
+        <a href="2017.html">2017</a>,
+        <a href="2018.html">2018</a>, and
+        <a href="2019.html">2019</a>.
+      </p>-->
 
       <h2>Contact</h2>
       <p>
         You can email me at <a href="mailto:sam@samwilson.id.au" itemprop="email">sam@samwilson.id.au</a>,
         or find me (most days) on IRC in <a href="http://webchat.freenode.net/?channels=%23wikisource">#wikisource</a>
-        on Freenode.
+        (and other channels) on Freenode.
       </p>
       <p>
         I use Fastmail for email, and think they're pretty good.
@@ -87,7 +89,9 @@
         I'm also on Twitter as <a href="https://twitter.com/samwilson" itemprop="sameAs">@samwilson</a>.
       </p>
       <script>!function (d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+          var js,
+              fjs = d.getElementsByTagName(s)[0],
+              p = /^http:/.test(d.location) ? 'http' : 'https';
           if (!d.getElementById(id)) {
               js = d.createElement(s);
               js.id = id;
@@ -118,8 +122,8 @@
                 <ul class="list-unstyled">
                   <li><a href="https://samwilson.github.io/cfb">Homepage</a></li>
                   <li><a href="https://www.flickr.com/groups/cfbarker/">Flickr group</a></li>
-                  <li><a href="https://doi.org/10.6084/m9.figshare.c.3712669.v1">Figshare collection</a></li>
                   <li><a href="https://github.com/samwilson/cfb">Source code</a></li>
+                  <!--<li><a href="https://doi.org/10.6084/m9.figshare.c.3712669.v1">Figshare collection</a></li>-->
                 </ul>
               </div>
             </div>
@@ -134,7 +138,7 @@
                 </a>
                 <ul class="list-unstyled">
                   <li><a href="https://samwilson.github.io/hmw">Homepage</a></li>
-                  <li><a href="https://www.flickr.com/groups/hmw/">Flickr group</a></li>
+                  <li><a href="https://www.flickr.com/groups/hmwarchives/">Flickr group</a></li>
                   <li><a href="https://github.com/samwilson/hmw">Source code</a></li>
                   <li>&nbsp;<!-- Placeholder for Figshare or whatnot. --></li>
                 </ul>
@@ -237,7 +241,7 @@
         </a>
         and I create annual hard-bound photo albums using
         <a href="https://github.com/samwilson/flickr-latex">flickr-latex</a>.
-        I <a href="backup">backup</a> (and bulk-upload) my photos with
+        I <a href="backup.html">backup</a> (and bulk-upload) my photos with
         <a href="https://github.com/TheFox/flickr-cli">TheFox/flickr-cli</a>.
         Here are thirty random photos from my photostream:
       </p>
@@ -272,9 +276,10 @@ $(function(){
         $.getJSON(url,
             function (data) {
                 $(data.photos.photo).each(function (num, photo) {
-                    var imgUrl = "https://farm" + photo.farm + ".staticflickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_m.jpg";
+                    var imgUrl = "https://farm" + photo.farm + ".staticflickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_m.jpg",
+                        flickrUrl = "https://www.flickr.com/photos/freosam/" + photo.id;
                     $("#flickr-random").append(
-                        "<a class='photo' href='https://www.flickr.com/photos/" + samFlickrId + "/" + photo.id + "'>" +
+                        "<a class='photo' href='"+flickrUrl+"'>" +
                         "  <span class='photo-wrapper'>" +
                         "    <img src='" + imgUrl + "' alt='" + photo.title + "' />" +
                         "  </span>" +

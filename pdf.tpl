@@ -39,10 +39,6 @@ $endif$
 $if(mathfont)$
     \setmathfont(Digits,Latin,Greek)[$for(mathfontoptions)$$mathfontoptions$$sep$,$endfor$]{$mathfont$}
 $endif$
-$if(CJKmainfont)$
-    \usepackage{xeCJK}
-    \setCJKmainfont[$for(CJKoptions)$$CJKoptions$$sep$,$endfor$]{$CJKmainfont$}
-$endif$
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -103,6 +99,13 @@ $for(bibliography)$
 \addbibresource{$bibliography$}
 $endfor$
 $endif$
+
+% Prevent floating of images and remove figure name and numbering.
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}
+\usepackage{float}
+\floatplacement{figure}{H}
+
 $if(listings)$
 \usepackage{listings}
 $endif$

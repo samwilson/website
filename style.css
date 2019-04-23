@@ -1,16 +1,19 @@
-/*
-body { line-height:1.6; font-size:large; font-family:sans-serif }
-p, li { line-height:1em }
-*/
+body { margin:5rem auto; padding:1rem; max-width:66rem; line-height:1.6; font-size:13pt; color:#222 }
+h1, h2, h3 { line-height:1.2 }
 header { text-align:center }
 div#TOC,
 section,
-article { margin:3em auto; max-width:50em; padding:1em 0; text-align:justify }
+article { margin:3em auto; max-width:50em; padding:1em 0 }
 section.level1 h1 { font-size:2em; text-align:center }
 section#abstract { max-width:40em; font-style:italic; line-height:1.1; text-align:justify }
-div#TOC { border:2px solid #eee; border-width:2px 0 }
+div#TOC { border-width:2px 0; border-style:solid; border-color:#eee }
 footer { text-align:center; font-size:small; border-top:1px solid #eee }
+a { text-decoration:none }
+a:hover { text-decoration:underline }
 a.footnoteRef { font-size:smaller }
+a.footnoteRef:hover { text-decoration:none; background-color:yellow }
 figure { display:block; margin:auto; text-align:center }
 figcaption { font-size:smaller; display:block }
-.text-center .img-responsive { margin:auto; display:block }
+img { max-width:100% }
+
+

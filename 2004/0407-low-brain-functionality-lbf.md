@@ -1,0 +1,6 @@
+Low Brain Functionality (LBF)
+=============================
+
+*2004 April 7, 10:46AM.*
+
+This really is dreadful! I am going around and around in circles with this image stuff! There is a promise that the next release of [WordPress](http://wordpress.org/) will include better photo functionality, so I think my best bet is to wait until then, and go now to find a nook in the library in which to read. Sitting on this computer is totally not inspiring me, and I am doing nothing useful. Agh!! Oh my poor brain, I promise you that I will go to bed at 8 o&#8217;clock tonight! :)
