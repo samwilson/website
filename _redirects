@@ -1,0 +1,7 @@
+#
+# Netlify redirects
+#
+# Redirects from what the browser requests to what is served.
+
+/home   /
+/blog   /
