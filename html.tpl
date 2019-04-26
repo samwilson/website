@@ -15,7 +15,7 @@
     <meta name="date" content="$date-meta$" />
     $endif$
 
-    <title>$title$</title>
+    <title>$filename$</title>
     <link rel="stylesheet" href="$relpath$style.css" />
 
     $for(header-includes)$
@@ -64,10 +64,11 @@
         <p>
             Sam Wilson
             &middot; Fremantle, Western Australia
-            &middot; <a href="http://www.samwilson.id.au/">www.samwilson.id.au</a>
+            &middot; <a href="https://samwilson.id.au/">samwilson.id.au</a>
         </p>
         <p>
             <a href="$relpath$$filename$.pdf">Printable version</a>
+            &middot; <a href="https://github.com/samwilson/website/blob/master/$filename$.md">Edit this page</a>
         </p>
     </footer>
 </body>

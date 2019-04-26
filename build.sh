@@ -29,7 +29,7 @@ if [[ -d "$1" ]]; then
         --css=style.css \
         --variable="filename:$DIR" \
         --variable="relpath:./" \
-        --variable="title:$DIR" \
+        --metadata="title:$DIR" \
         --section-divs \
         --template=$HTMLTPL \
         -f markdown-implicit_figures \
@@ -39,7 +39,7 @@ if [[ -d "$1" ]]; then
     pandoc --standalone \
         --variable="filename:$DIR" \
         --variable="relpath:./" \
-        --variable="title:$DIR" \
+        --metadata="title:$DIR" \
         --template=$PDFTPL \
         -f markdown \
         -o "$THISDIR/$DIR.pdf" \
