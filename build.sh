@@ -5,8 +5,9 @@ THISDIR=$(cd $(dirname $0); pwd)
 
 ## Find working directory/filename.
 WORKPATH="$THISDIR"
-if [[ -d "$1" || ( -f "$1" && "$1" == *.md ) ]]; then
-    WORKPATH="$1"
+MDDIR=$(realpath "$1")
+if [[ -d "$MDDIR" || ( -f "$MDDIR" && "$MDDIR" == *.md ) ]]; then
+    WORKPATH="$MDDIR"
 else
     echo "Please provide a directory or markdown filename as the first parameter"
     exit 1
@@ -17,12 +18,11 @@ HTMLTPL=$THISDIR"/html.tpl"
 PDFTPL=$THISDIR"/pdf.tpl"
 
 # Build HTML and PDF of a whole directory.
-if [[ -d "$1" ]]; then
+if [[ -d "$MDDIR" && "$MDDIR" != "$THISDIR" ]]; then
 
     ## Extract just the 'local' part of the path.
-    FULLPATH=$(realpath "$1")
     BASE_LEN=$(( ${#THISDIR} + 2 ))
-    DIR=$(echo $FULLPATH | cut -c $BASE_LEN-)
+    DIR=$(echo $MDDIR | cut -c $BASE_LEN-)
     echo "Processing $DIR";
 
     pandoc --standalone \
