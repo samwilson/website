@@ -3,7 +3,7 @@ Girrawheen library
 
 *2019 April 26.*
 
-I went to visit my brother at work at Girrawheen librar,
+I went to visit my brother at work at Girrawheen library,
 in the northern suburbs of Perth.
 It feels like quite a way from Fremantle,
 but it was easy enough to get there on public transport.
