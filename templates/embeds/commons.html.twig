@@ -1,0 +1,20 @@
+{% set commons = commons(embed.matches.1) %}
+
+<figure itemscope itemtype="http://schema.org/ImageObject">
+    <a href="{{ commons.imageinfo.0.descriptionurl }}">
+        <img src="{{ commons.imageinfo.0.thumburl }}"
+             width="{{ commons.imageinfo.0.thumbwidth }}"
+             height="{{ commons.imageinfo.0.thumbheight }}"
+             itemprop="contentUrl"
+             {% if commons.labels is defined %}
+                alt="{{ commons.labels.en.value|escape('html_attr') }}"
+             {% endif %}
+        />
+    </a>
+    <figcaption itemprop="caption">
+        {% if commons.labels is defined %}
+            {{ commons.labels.en.value }}
+        {% endif %}
+        (via <a href="{{ embed.url }}">Wikimedia Commons</a>)
+    </figcaption>
+</figure>

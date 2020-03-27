@@ -5,4 +5,7 @@
 *.html
 !index.html
 !404.html
+node_modules/
+/cache/
+/output/
 

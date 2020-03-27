@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>{{ site.config.title }}</title>
+        <description>{{ site.config.description }}</description>
+        <link>{{ site.config.url }}</link>
+        <language>en-au</language>
+
+        {% for p in database.query('SELECT * FROM pages WHERE date IS NOT NULL ORDER BY date DESC LIMIT 10').fetchAll() %}
+
+            <item>
+                <title>{{ p.title }}</title>
+                <link>{{ site.config.url }}{{ p.id }}.html</link>
+                <guid isPermaLink="true">{{ site.config.url }}{{ p.id }}.html</guid>
+                <pubDate>{{ date('r', strtotime(p.date)) }}</pubDate>
+                <description>
+                    {{ p.body }}
+                </description>
+            </item>
+
+        {% endfor %}
+
+    </channel>
+</rss>

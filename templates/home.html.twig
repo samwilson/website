@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sam Wilson</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="alternate" href="{{ page.link(page.id) }}.rss" type="application/rss+xml" title="RSS feed" />
+    <style type="text/css">
+        .text-center .img-responsive { margin:auto; display:block }
+        .h2, h2 { background-color:#060; color:white; padding:0.3em }
+        #flickr-random .photo {
+            display:inline-block; box-shadow:0 1px 2px rgba(0,0,0,.075); margin:0.5em; border-radius:2px;
+            height:310px; width:310px; border:1px solid #ccc; text-align:center; vertical-align:top; overflow:hidden;
+        }
+        #flickr-random .photo:hover { box-shadow: 0 1px 2px rgba(102,0,0,0.76); text-decoration:none; }
+        #flickr-random .photo .photo-wrapper { display:block; width:100%; height:260px; padding-top:10px; }
+        #flickr-random .photo .photo-wrapper img {  }
+        #flickr-random .photo .caption {
+            height:50px; border-top:1px solid #ccc; padding:4px; background-color:#efefef; display:block; color:black;
+        }
+        #search-form { text-align:center }
+    </style>
+</head>
+<body>
+
+<div class="container" itemscope itemtype="http://schema.org/Person">
+    <h1><span itemprop="name">Sam Wilson</span> <small><a href="https://samwilson.id.au" itemprop="url" class="text-muted">samwilson.id.au</a></small></h1>
+    <div class="row">
+
+        <!-- First column -->
+        <div class="col-md-6">
+            <h2>About me</h2>
+            <p>
+                <a style="float:right; margin-left:0.8em" href="https://en.gravatar.com/samwilson">
+                    <img src="https://secure.gravatar.com/avatar/51b9455e1dba4db831de473436c989f9" height="80" width="80" alt="Photo of my head" />
+                </a>
+                Hello, world! This is my website, where I explain a bit of what I do and think.
+            </p>
+            <p itemprop="description">
+                I'm a computer programmer by trade, working for the Wikimedia Foundation.
+                Sometimes I find time to build bits of wooden furniture by hand.
+                I also like mapping.
+            </p>
+            <form action="https://duckduckgo.com/" method="get" id="search-form">
+                <p>
+                    <input type="hidden" name="sites" value="samwilson.id.au" /><!-- This site only -->
+                    <input type="hidden" name="kn" value="-1" /><!-- No new window -->
+                    <input type="hidden" name="kp" value="-2" /><!-- No safe search -->
+                    <input type="hidden" name="k9" value="#006600" /><!-- Green links -->
+                    <label for="search">Search this site:</label>
+                    <input type="search" id="search" name="q" placeholder="(with Duckduckgo)" />
+                    <input type="submit" value="Go" />
+                </p>
+            </form>
+            <p>
+                I've been keeping some sort of personal website since 1997, and some of it is still here.
+                The most recent posts are as follows:
+            </p>
+            <ol>
+                {% for p in database.query('select * from pages order by date desc limit 10') %}
+                    <li>
+                        {{ date('Y-m-d', strtotime(p.date)) }}:
+                        <a href="{{ page.link(p.id) }}.html">
+                            {% if p.title %}{{ p.title }}{% else %}<em>Untitled</em>{% endif %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ol>
+            <p>
+                <strong>Tags:</strong><br />
+                &middot;
+                {% for p in database.query('SELECT * FROM pages WHERE id IN (SELECT "/tags/"||j.value FROM pages p, json_each(p.tags) j)') %}
+                    <a href="{{ page.link(p.id) }}.html">{{ p.title }}</a> &middot;
+                {% endfor %}
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                You can email me at <a href="mailto:sam@samwilson.id.au" itemprop="email">sam@samwilson.id.au</a>,
+                or find me (most days) on IRC in <a href="http://webchat.freenode.net/?channels=%23wikisource">#wikisource</a>
+                (and other channels) on Freenode.
+            </p>
+            <p>
+                I use Fastmail for email, and think they're pretty good.
+                If you want 10% off, here's a <a href="https://www.fastmail.com/?STKI=16087153">referral link</a>.
+                They're a good, open, honest (and even Australian) company.
+            </p>
+
+            <div class="hidden-xs">
+                <a class="twitter-timeline" href="https://twitter.com/samwilson" data-widget-id="347556971400028160" style="height:495px; display:block">
+                    @samwilson
+                </a>
+            </div>
+            <p class="visible-xs-block">
+                I'm also on Twitter as <a href="https://twitter.com/samwilson" itemprop="sameAs" rel="me">@samwilson</a>.
+            </p>
+            <script>!function (d, s, id) {
+                    var js,
+                        fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");
+            </script>
+            <p class="text-right">
+                <small><a rel="me" itemprop="sameAs" href="https://orcid.org/0000-0003-4308-3443">ORCID 0000-0003-4308-3443</a></small>
+            </p>
+
+            <div id="genealogy">
+                <h2>Genealogy</h2>
+                <p>
+                    My family history research is slowly being collated in the following two places,
+                    according to <a href="genealogy.html">my system of genealogical record-keeping</a>.
+                </p>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><h3 class="panel-title">C.F. Barker Archives</h3></div>
+                            <div class="panel-body text-center">
+                                <a href="https://www.samwilson.id.au/cfb">
+                                    <img src="https://farm5.staticflickr.com/4379/36992597285_fccd3f99bd_m.jpg" width="152" height="240"
+                                         alt="Charles and Elizabeth Barker" class="img-responsive" />
+                                </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://samwilson.github.io/cfb">Homepage</a></li>
+                                    <li><a href="https://www.flickr.com/groups/cfbarker/">Flickr group</a></li>
+                                    <li><a href="https://github.com/samwilson/cfb">Source code</a></li>
+                                    <!--<li><a href="https://doi.org/10.6084/m9.figshare.c.3712669.v1">Figshare collection</a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"><h3 class="panel-title">H.M. Wilson Archives</h3></div>
+                            <div class="panel-body text-center">
+                                <a href="https://samwilson.github.io/hmw">
+                                    <img src="https://farm5.staticflickr.com/4309/36218185125_69cfc465c9_m.jpg" width="183" height="240"
+                                         alt="Hall family coat of arms" class="img-responsive" />
+                                </a>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://samwilson.github.io/hmw">Homepage</a></li>
+                                    <li><a href="https://www.flickr.com/groups/hmwarchives/">Flickr group</a></li>
+                                    <li><a href="https://github.com/samwilson/hmw">Source code</a></li>
+                                    <li>&nbsp;<!-- Placeholder for Figshare or whatnot. --></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- End first column. -->
+
+        <!-- Second column. -->
+        <div class="col-md-6">
+            <h2>Mapping</h2>
+            <p>
+                I've been <a href="http://hdyc.neis-one.org/?Sam%20Wilson">contributing</a>
+                to <a href="https://wiki.openstreetmap.org">OpenStreetMap</a> since 29 April 2008; my username is
+                <a rel="me" href="https://www.openstreetmap.org/user/Sam%20Wilson" title="Username: Sam Wilson">Sam Wilson</a>.
+                I occasionally add an entry to my <a href="https://www.openstreetmap.org/user/Sam%20Wilson/diary">mapping
+                    diary</a>.
+                <span class="hidden-xs">I'm currently living somewhere here:</span>
+            </p>
+            <iframe style="width:100%; height:20em; border:0" class="hidden-xs"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=115.72888612747192%2C-32.061518848030076%2C115.75785398483276%2C-32.04887945658629"></iframe>
+
+            <h2>Reading</h2>
+            <p>
+                I read mainly on my Kobo ereader,
+                <a href="https://en.wikisource.org/">Wikisource</a>
+                are my digital libraries of choice,
+                because I can fix problems when I find them and add new books as well.
+            </p>
+            <p>
+                I record much of what I read (and what's on my bookshelves) in
+                <a href="https://www.librarycat.org/lib/samwilson.id.au">my catalogue on LibraryThing</a>.
+            </p>
+
+            <h2>Code</h2>
+            <p>
+                All of my public code is on
+                <a rel="me" itemprop="sameAs" href="https://github.com/samwilson" title="Username: samwilson">GitHub</a>
+                (as well as <a rel="me" href="https://github.com/samwilson/website">this website itself</a>).
+                I try to add what I can to Stackoverflow, Wikibooks, and other collaborative learning/teaching websites.
+                Apart from that, I dip my toes into a bunch of different open source projects.
+            </p>
+            <p class="text-center">
+                <a href="https://stackexchange.com/users/35218/sam-wilson" itemprop="sameAs" title="My profile on Stack Exchange">
+                    <img src="https://stackexchange.com/users/flair/35218.png" width="208" height="58"
+                         alt="Stack Exchange profile image">
+                </a>
+            </p>
+            <h2>Data</h2>
+            <p>
+                I use
+                <a href="https://spideroak.com"><img src="https://spideroak.com/media/cms/cms/new-spideroak-header-logo.png"
+                                                     alt="SpiderOak logo with the word 'SpiderOak'." style="width:12ex" /></a>
+                as an online continuously-synced backup service for my non-public data.
+            </p>
+            <p>
+                Other data goes to Wikimedia sites, Flickr, or Figshare.
+                All is stored in open formats, and what can be is made public (under CC-BY-SA or similar).
+            </p>
+            <p>
+                I also use <a href="https://www.trello.com">Trello</a> for some ephemeral notes and things,
+                because it works well on mobile
+                (and I <a href="https://github.com/mattab/trello-backup">generate a JSON backup</a>).
+            </p>
+
+            <h2>Work</h2>
+            <p>
+                <img src="https://wikimediafoundation.org/static/images/project-logos/foundationwiki.png"
+                     class="pull-right" alt="Wikimedia Foundation logo" />
+                I work for the <a href="https://wikimediafoundation.org">Wikimedia Foundation</a>
+                as a Software Engineer on the Community Tech team.
+            </p>
+            <p>
+                I'm currently working on <a href="https://phabricator.wikimedia.org/maniphest/query/pvJRFzgCLXSF/">these things on Phabricator</a>
+                and <a href="https://github.com/search?q=assignee:samwilson+is:open">these things on Github</a>.
+            </p>
+        </div><!-- End second column. -->
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 photos" id="photos">
+            <h2>Photos</h2>
+            <p>
+                <a href="https://www.flickr.com/photos/freosam/" title="Go to my Flickr page" itemprop="sameAs">
+                    <img src="https://s.yimg.com/pw/images/goodies/white-im-on-flickr.png" width="102" height="26"
+                         alt="Flickr badge"/>
+                </a>
+                and I create annual hard-bound photo albums using
+                <a href="https://github.com/samwilson/flickr-latex">flickr-latex</a>.
+                I <a href="{{page.link('/tags/backup')}}.html">backup</a> (and bulk-upload) my photos with
+                <a href="https://github.com/TheFox/flickr-cli">TheFox/flickr-cli</a>.
+                Here are thirty random photos from my photostream:
+            </p>
+            <div id="flickr-random" style="height:500px"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        for (i=1; i<=30; i++) {
+            getPhotoHtml( i );
+        }
+        function getPhotoHtml( pageNum ) {
+            var totalPhotos = 4000;
+            var perPage = 1;
+            var page = Math.floor(Math.random() * (totalPhotos / perPage));
+            var samFlickrId = '41426824%40N06';
+            var url = 'https://api.flickr.com/services/rest/'
+                + '?method=flickr.people.getPublicPhotos'
+                + '&api_key=b4f62fa7b05e9973939e1594b63fe0ba'
+                + '&user_id=' + samFlickrId
+                + '&per_page=' + perPage
+                + '&page=' + page
+                + '&format=json'
+                + '&nojsoncallback=1';
+            $.getJSON(url,
+                function (data) {
+                    $(data.photos.photo).each(function (num, photo) {
+                        var imgUrl = "https://farm" + photo.farm + ".staticflickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_m.jpg",
+                            flickrUrl = "https://www.flickr.com/photos/freosam/" + photo.id;
+                        $("#flickr-random").append(
+                            "<a class='photo' href='"+flickrUrl+"'>" +
+                            "  <span class='photo-wrapper'>" +
+                            "    <img src='" + imgUrl + "' alt='" + photo.title + "' />" +
+                            "  </span>" +
+                            "  <span class='caption'>" + photo.title + "</span>" +
+                            "</a> "
+                        );
+                    });
+                }
+            );
+        }
+    });
+</script>
+</body>
+</html>

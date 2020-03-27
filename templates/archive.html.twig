@@ -1,0 +1,22 @@
+{% extends 'index.html.twig' %}
+
+{% block postbody %}
+
+    <ol>
+
+        {% for p in database.query('SELECT * FROM pages WHERE
+            date IS NOT NULL
+            AND date >= "'~page.metadata.year~'-01-01 00:00:00"
+            AND date < "'~page.metadata.year~'-12-31 24:00:00"
+            ORDER BY date ASC
+            ').fetchAll() %}
+
+            <li>
+                <a href="{{ page.link(p.id) }}.html">{{ p.title }}</a>
+            </li>
+
+        {% endfor %}
+
+    </ol>
+
+{% endblock %}

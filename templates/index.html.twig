@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if page.metadata.title is defined %}
+            {{ page.metadata.title }}
+        {% else %}
+            Untitled
+        {% endif %}
+        &larr; {{site.config.title}}</title>
+    <link rel="stylesheet" href="{{ page.link('/assets/style.css') }}" />
+</head>
+<body>
+<header>
+    <h1><a href="{{ page.link('/index') }}.html">{{site.config.title}}</a></h1>
+</header>
+<article itemscope itemtype="http://schema.org/Article">
+    <header>
+        <h2 itemprop="name">
+            {% if page.metadata.title is defined %}
+                {{ page.metadata.title }}
+            {% else %}
+                Untitled
+            {% endif %}
+        </h2>
+        {% if page.metadata.date is defined %}
+            {% if page.metadata.timezone is defined %}
+                {% set date = date_create( page.metadata.date, page.metadata.timezone ) %}
+            {% else %}
+                {% set date = date_create( page.metadata.date, 'Australia/Perth' ) %}
+            {% endif %}
+            <p>
+                <a href="{{ page.link( '/'~date.format('Y') ) }}.html">
+                    <time datetime="{{ date.format('c') }}">{{ date.format('Y F j l, g:iA') }}</time>
+                </a>
+            </p>
+        {% endif %}
+    </header>
+    <div class="body">
+        {{page.body|md2html|raw}}
+        {% block postbody %}{% endblock %}
+    </div>
+    <footer>
+        {% if page.metadata.tags is defined %}
+            <p>
+                Tags:
+                {% for t in page.metadata.tags %}
+                    {% set tag = database.query('SELECT * FROM pages WHERE id = "/tags/'~t~'"').fetch() %}
+                    {% if tag %}
+                        {% if tag.wikidata %}
+                        <span itemscope itemtype="http://schema.org/Thing">
+                            <meta itemprop="url" content="https://www.wikidata.org/wiki/{{ tag.wikidata }}">
+                            <a href="{{ page.link(tag.id) }}.html" rel="tag" itemprop="sameAs">{{ tag.title }}</a>
+                        </span>
+                        {% else %}
+                            <a href="{{ page.link(tag.id) }}.html" rel="tag">{{ tag.title }}</a>
+                        {% endif %}
+                    {% else %}
+                        {{ t }}
+                    {% endif %}
+                    &middot;
+                {% endfor %}
+            </p>
+        {% endif %}
+    </footer>
+</article>
+<footer>
+    <ul>
+        <li><a href="https://github.com/samwilson/website/edit/master/content{{ page.id }}{{ site.ext }}">Edit this page</a></li>
+        <li><a href="https://github.com/samwilson/website/issues/new?title=[Comment]&labels=comment&body={{ '
+Commenting about: ' ~ site.config.url ~ page.id ~ '.html
+
+[Please say whatever you want here. You can delete this line.]
+
+'|e('url') }}">Leave a comment</a></li>
+    </ul>
+</footer>
+</body>
+</html>
