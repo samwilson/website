@@ -5,3 +5,5 @@ twitter_name: samwilson
 embeds:
   flickr: "&^https://www\\.flickr\\.com/.*?(\\d+).*&"
   commons: "|^https://commons.wikimedia.org/wiki/File:(.*)|"
+output_exclude:
+  - "|/_redirects|"

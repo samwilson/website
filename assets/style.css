@@ -31,9 +31,8 @@ header.site {
 header.site { display:flex }
 header.site > p { flex:1 }
 header.site .right { flex:3; text-align:right }
-header.site .right img { min-width:100px }
 
-figure { margin:0; background-color:#efefef; text-align:center }
+figure { margin:1em 0; background-color:#efefef; text-align:center }
 figure img { max-width:100% }
 figure figcaption { padding:0.4em }
 figure figcaption .meta {
