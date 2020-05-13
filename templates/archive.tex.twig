@@ -1,6 +1,6 @@
 {% autoescape 'tex' %}
 \documentclass[a4paper]{book}
-\usepackage{url}
+\usepackage{url, listings, hyperref, graphicx}
 
 \title{ {{page.metadata.title}} }
 \author{ Sam Wilson }
@@ -15,20 +15,20 @@
         AND date < "'~page.metadata.year~'-12-31 24:00:00"
         ').fetchAll() %}
 
-        \section{ {{ p.title}} }
+{#        \section{ {{ p.title }} }#}
 
-        {% if p.tags is defined %}
-            Tags:
-            {% for t in p.tags %}
-                {% set tag = database.query('SELECT * FROM pages WHERE id = "/tags/'~t~'"').fetch() %}
-                -- {{ tag.title }}
-            {%  endfor %}
-            --
-        {% endif %}
+{#        {% if p.tags is defined %}#}
+{#            Tags:#}
+{#            {% for t in p.tags %}#}
+{#                {% set tag = database.query('SELECT * FROM pages WHERE id = "/tags/'~t~'"').fetch() %}#}
+{#                -- {{ tag.title }}#}
+{#            {%  endfor %}#}
+{#            --#}
+{#        {% endif %}#}
 
-    \url{ https://samwilson.id.au{{ p.id}}.html }
+{#        \url{ https://samwilson.id.au{{ p.id}}.html }#}
 
-         %}{ p.body|md2latex|raw }}
+        {{ p.body|md2latex|raw }}
 
     {% endfor %}
 

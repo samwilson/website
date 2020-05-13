@@ -8,7 +8,7 @@
 node_modules/
 /cache/
 /output/
-
+/config.local.yaml
 
 # Local Netlify folder
 .netlify

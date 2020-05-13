@@ -15,5 +15,4 @@ Suburban libraries are great.
 I wish I had more time to spend two hours commuting each way to get to all in the metro area,
 because there's something quiet and focused about these spaces.
 
-![Girrawheen Library front garden](https://live.staticflickr.com/65535/40735536043_2c08350867_c.jpg)
-[Flickr: 254EgEk](https://flic.kr/p/254EgEk)
+https://www.flickr.com/photos/freosam/40735536043

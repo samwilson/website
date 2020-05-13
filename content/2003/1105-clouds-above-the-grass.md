@@ -24,6 +24,6 @@ and in a manner wholely fascinating and indeed often congruent with my way of th
 
 — William Morris, *The Lesser Arts*, 1877.
 
-This &#8216;decoration&#8217;, could it not also include something that one could term &#8216;decoration of activity&#8217;? Those non-functional things that one does when working such as enjoying the sound of a sharp handsaw as it cuts, or being in an attractive workshop. Or am I just a bit too tired to be thinking more about this?
+This ‘decoration’, could it not also include something that one could term ‘decoration of activity’? Those non-functional things that one does when working such as enjoying the sound of a sharp handsaw as it cuts, or being in an attractive workshop. Or am I just a bit too tired to be thinking more about this?
 
-The jamb that I picked up earlier I docked in two and would&#8217;ve started planing but had tea instead.
+The jamb that I picked up earlier I docked in two and would’ve started planing but had tea instead.

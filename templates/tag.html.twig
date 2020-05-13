@@ -1,5 +1,10 @@
 {% extends 'index.html.twig' %}
 
+{% block headend %}
+    <link rel="alternate" href="{{ page.link('/index') }}.rss" type="application/rss+xml" title="RSS feed" />
+    <link rel="alternate" href="{{ page.link(page.id) }}.rss" type="application/rss+xml" title="RSS feed for {{ page.metadata.title|e('html_attr') }}" />
+{% endblock %}
+
 {% block postbody %}
 
     {% if page.metadata.wikidata is defined %}

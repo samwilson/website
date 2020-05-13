@@ -3,5 +3,5 @@ description: The personal website of a coder from Fremantle, Western Australia.
 url: https://samwilson.id.au
 twitter_name: samwilson
 embeds:
-  flickr: "&^https?://(|www\\.)flickr\\.com/.*(\\d+).*&"
+  flickr: "&^https://www\\.flickr\\.com/.*?(\\d+).*&"
   commons: "|^https://commons.wikimedia.org/wiki/File:(.*)|"

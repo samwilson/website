@@ -19,9 +19,9 @@ After the meeting, I headed off with my parter for a few days of holiday at Coss
 
 It's changed a bit since those days (1898):
 
-![Cossack in 1898](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Cossack_WA%2C_Ghost_town.jpg/400px-Cossack_WA%2C_Ghost_town.jpg)
+https://commons.wikimedia.org/wiki/File:Cossack_WA,_Ghost_town.jpg
 
-![Cossack in 2019](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/View_of_Cossack_from_the_top_of_Nannygoat_Hill.png/400px-View_of_Cossack_from_the_top_of_Nannygoat_Hill.png)
+https://commons.wikimedia.org/wiki/File:View_of_Cossack_from_the_top_of_Nannygoat_Hill.png
 
 This trip was the first time I'd ever flown ''within'' Western Australia, which is a bit odd these days with everyone seemingly flying everywhere all the time (carbon emmisions be damned). It wasn't a long flight, and made the two-day drive (or 24 hour bus trip) feel a bit cheated. The country around, as we flew in, was green and dark red and felt somehow foreign — and ''big''.
 

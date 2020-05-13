@@ -2,6 +2,13 @@
 
 {% block postbody %}
 
+    <p>
+        &middot;
+        {% for y in 2000..date('Y') %}
+            <a href="{{ page.link(y) }}.html">{{ y }}</a> &middot;
+        {% endfor %}
+    </p>
+
     <ol>
 
         {% for p in database.query('SELECT * FROM pages WHERE
@@ -12,7 +19,10 @@
             ').fetchAll() %}
 
             <li>
-                <a href="{{ page.link(p.id) }}.html">{{ p.title }}</a>
+                {{ date('Y-m-d', strtotime(p.date)) }}:
+                <a href="{{ page.link(p.id) }}.html">
+                    {{ p.title ?? 'Untitled' }}
+                </a>
             </li>
 
         {% endfor %}
