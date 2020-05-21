@@ -26,6 +26,6 @@ tags:
   </p>
 </blockquote>
 
-I’ve recently been twittering a bit, just to see what the Guardian’s on about in their four daily articles about how brilliant Twitter is, and I think I’ve firgured it out: _it’s actually complete rubbish_. It’s a cross between an IM system and a never-ending &#8220;quote of the day&#8221; competition, and the former of those is the one we need — and it’s perfectly well fulfilled by Jabber etc.
+I’ve recently been twittering a bit, just to see what the Guardian’s on about in their four daily articles about how brilliant Twitter is, and I think I’ve firgured it out: _it’s actually complete rubbish_. It’s a cross between an IM system and a never-ending “quote of the day” competition, and the former of those is the one we need — and it’s perfectly well fulfilled by Jabber etc.
 
 The big advantage, of course, of the big social media sites is that _everyone’s there_. But there is another funky-groovy technology that is massively widespread, easy to use, and _also_ permits you to own your own data: it’s called the **internet**.

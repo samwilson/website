@@ -15,4 +15,4 @@ tags:
   - Coming events
   - Investigation
 ---
-Professor Mike Dopita &#8220;traces the often violent life cycle of galaxies to answer the following questions: How are galaxies formed? How is the gas transformed into stars? How do the massive Black Holes that lurk at their centres grow? What happens when galaxies collide?&#8221;. A public lecture from the Australian Academy of Science. [Read more &raquo;](http://www.science.org.au/events/publiclectures/pf/index.htm)
+Professor Mike Dopita “traces the often violent life cycle of galaxies to answer the following questions: How are galaxies formed? How is the gas transformed into stars? How do the massive Black Holes that lurk at their centres grow? What happens when galaxies collide?”. A public lecture from the Australian Academy of Science. [Read more &raquo;](http://www.science.org.au/events/publiclectures/pf/index.htm)

@@ -19,6 +19,6 @@ Required modules: ldap\_feeds, ldap\_query, feeds, …
   1. Add desired fields to user accounts.
   2. Create an LDAP query that fetches the relevant attributes.
   3. Create a feeds importer: 
-      * Fetcher: &#8220;LDAP Query Fetcher&#8221;
-      * Parser: &#8220;LDAP Entry Parser for Feeds&#8221;
-      * Processor: &#8220;User processor&#8221;
+      * Fetcher: “LDAP Query Fetcher”
+      * Parser: “LDAP Entry Parser for Feeds”
+      * Processor: “User processor”

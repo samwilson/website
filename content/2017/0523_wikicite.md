@@ -19,7 +19,7 @@ tags:
   - Wikisource
   - wordpress
 ---
-(Firefox asked me to rate it this morning, with a little picture of a broken heart and five stars to select from. I gave it five (’cause it’s brilliant) and then it sent me to a survey on mozilla.com titled &#8220;Heavy User V2&#8221;, which sounds like the name of an confused interplanetary supply ship.)
+(Firefox asked me to rate it this morning, with a little picture of a broken heart and five stars to select from. I gave it five (’cause it’s brilliant) and then it sent me to a survey on mozilla.com titled “Heavy User V2”, which sounds like the name of an confused interplanetary supply ship.)
 
 Today [WikiCite17](https://meta.wikimedia.org/wiki/WikiCite_2017) begins. Three days of talking and hacking about the galaxy that comprises Wikipedia, Wikidata, Wikisource, citations, and all bibliographic data. There are lots of different ways into this topic, and I’m focusing not on Wikipedia citations (which is the main drive of the conference, I think), but on getting (English) Wikisource metadata a [tiny bit further along](https://en.wikisource.org/wiki/Module:Edition) (e.g. figure out how to display _work_ details on a Wikisource _edition_ page); and on a little side project of adding a Wikidata-backed citation system to WordPress.
 

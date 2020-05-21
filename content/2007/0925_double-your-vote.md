@@ -1,6 +1,6 @@
 ---
 id: 504
-title: 'You can’t &#8220;double your vote&#8221; in Australia'
+title: 'You can’t “double your vote” in Australia'
 date: 2007-09-25T07:43:52+00:00
 author: Sam Wilson
 layout: post

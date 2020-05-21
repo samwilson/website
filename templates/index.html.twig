@@ -39,9 +39,10 @@
                 {% set date = date_create( page.metadata.date, 'Australia/Perth' ) %}
             {% endif %}
             <p>
-                <a href="{{ page.link( '/'~date.format('Y') ) }}.html">
-                    <time datetime="{{ date.format('c') }}">{{ date.format('Y F j l, g:iA') }}</time>
-                </a>
+                <time datetime="{{ date.format('c') }}">
+                    <a href="{{ page.link( '/'~date.format('Y') ) }}.html" title="View the archive for {{ date.format('Y') }}">{{ date.format('Y') }}</a>:
+                    {{ date.format('F j l, g:iA') }}
+                </time>
             </p>
         {% endif %}
     </header>

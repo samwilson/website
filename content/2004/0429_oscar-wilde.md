@@ -17,11 +17,11 @@ An unexamined life may indeed not be worth living, but what of constant, total r
 
 So here I am.
 
-Don’t get me wrong, I wouldn’t really give up this volatility and uncertaintity. There may well be nothing worth doing, but I want to know why &#8211; and there it is! Anything’s worth doing so long as it gets me further down that track of understanding what it is that feels right. I wonder if I’m making any sense… Perhaps it all comes down to lack of confidence… oh dear….
+Don’t get me wrong, I wouldn’t really give up this volatility and uncertaintity. There may well be nothing worth doing, but I want to know why – and there it is! Anything’s worth doing so long as it gets me further down that track of understanding what it is that feels right. I wonder if I’m making any sense… Perhaps it all comes down to lack of confidence… oh dear….
 
 In response to the title of this post:
 
-&#8220;The Young Ones: Nasty&#8221;: 1984:
+“The Young Ones: Nasty”: 1984:
 
 > RICK: [sarcastically] Oh, touchè, Vyvyan. What devastating repartee. Talk about Oscar Wilde.
 > 

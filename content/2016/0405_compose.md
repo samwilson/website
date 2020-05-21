@@ -17,7 +17,7 @@ tags:
   - Windows Key
   - Writing
 ---
-It is very easy to type &#8220;special&#8221; characters on Linux (i.e. those that aren’t printed on the keyboard). It’s called the _[Compose](https://en.wikipedia.org/wiki/Compose_key)_ or _Multi_ Key, and it’s brilliant.
+It is very easy to type “special” characters on Linux (i.e. those that aren’t printed on the keyboard). It’s called the _[Compose](https://en.wikipedia.org/wiki/Compose_key)_ or _Multi_ Key, and it’s brilliant.
 
 First, enable it in ‘Keyboard settings > Advanced > Position of Compose Key’. I’ve got it set to `Left <a href="https://en.wikipedia.org/wiki/Windows_key">Win</a>` because I never use that for anything and it’s in a similar position to the key on Apple computers that serves a similar purpose (but whose name I cannot remember).
 

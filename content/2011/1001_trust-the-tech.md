@@ -34,7 +34,7 @@ Obviously, the premise of that second stance is that, indeed, the doubt must be 
 
 Forgive me, I’m not making much sense. Blame the beer (and I’ve heard some advise against writing publicly in this condition… bah!). All I’m getting at is the seemingly inexhaustable bloody _optimism_ of the tech industry…
 
-Everywhere I turn, in my job as a coder and in my general skiving around the web, there is a pervading sense that all this tech &#8212; all these screens, these images, this communication _ad adnauseam_ &#8212; is good. Of course that’s the prevailing mood, _within_ the tech; it has to be. No doubt that there’s tomes of discourse, paper tomes, swapped between those who disagree with the tech-is-good premise; but they’re not on the web, and I don’t see them.
+Everywhere I turn, in my job as a coder and in my general skiving around the web, there is a pervading sense that all this tech — all these screens, these images, this communication _ad adnauseam_ — is good. Of course that’s the prevailing mood, _within_ the tech; it has to be. No doubt that there’s tomes of discourse, paper tomes, swapped between those who disagree with the tech-is-good premise; but they’re not on the web, and I don’t see them.
 
 And I don’t really want to! I’m so very much on the verge of giving in to the doubt, that I really don’t need any encouragement! Where’d I be, if I _listened_ to the posibility that the very foundations of my daily work are not to be trusted?! A gibbering wreck of anxiety, or bean-hoeing luddite; one or the other. Maybe both.
 

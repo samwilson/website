@@ -3,7 +3,7 @@ Shed doors
 
 *2017 April 17, 5:30PM.*
 
-My new house didn’t have a shed, but just a carport with no fourth wall (it was brilliant in every other respect, really—even insulated in the ceiling). So, as part of the [WMF’s](https://wikimediafoundation.org/ "Wikimedia Foundation (where I work)") &#8220;Spark Project&#8221; (that aims to encourage employees to do more than just be wiki geeks), I decided to turn the carport into a shed by adding a set of wooden ledge-and-brace doors. There was a deadline of April 18 (i.e. tomorrow).
+My new house didn’t have a shed, but just a carport with no fourth wall (it was brilliant in every other respect, really—even insulated in the ceiling). So, as part of the [WMF’s](https://wikimediafoundation.org/ "Wikimedia Foundation (where I work)") “Spark Project” (that aims to encourage employees to do more than just be wiki geeks), I decided to turn the carport into a shed by adding a set of wooden ledge-and-brace doors. There was a deadline of April 18 (i.e. tomorrow).
 
 This post documents the process up to the point of being ready to hang the doors. Unfortunately, the hinges aren’t back from the galvanizer’s yet (or haven’t even been welded? Zoran the welder wasn’t communicating with me over the Easter break) so the project is incomplete; I’ll post more when the doors are up.
 
@@ -25,7 +25,7 @@ I wasn’t sure what to build the doors with, but heading to [Freo Timber Trader
 
 [<img src="https://farm3.staticflickr.com/2010/32033942784_4a2d5037eb_z.jpg" alt="Selecting the boards" width="640" height="480" />](https://www.flickr.com/photos/freosam/32033942784/in/album-72157676679531874/)
 
-The 60&#215;19 for the cladding came from a house in Wembley; the 110&#215;28 for the ledges and braces came from an old shoe factory in Maylands. The ex-factory floor was covered in machine oil, and full of holes from where the machines had been bolted down. None were in any awkward spots though, and as I was planning on oiling the finished product I wasn’t too worried about the oil.
+The 60×19 for the cladding came from a house in Wembley; the 110×28 for the ledges and braces came from an old shoe factory in Maylands. The ex-factory floor was covered in machine oil, and full of holes from where the machines had been bolted down. None were in any awkward spots though, and as I was planning on oiling the finished product I wasn’t too worried about the oil.
 
 ### Doors
 
@@ -67,7 +67,7 @@ The finished doors:
 
 ### Walls
 
-The two side walls are 2.1&nbsp;m high and about 400&nbsp;mm wide. They’re painted treated-pine stud frames clad with more 19&#215;60 Wandoo flooring.
+The two side walls are 2.1&nbsp;m high and about 400&nbsp;mm wide. They’re painted treated-pine stud frames clad with more 19×60 Wandoo flooring.
 
 They’re fixed to the slab below:
 

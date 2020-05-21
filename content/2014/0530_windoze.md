@@ -21,11 +21,11 @@ The chances are that this is a permissions problem.
 
 …
 
-Yes, it would seem that attempting to change permissions on a parent directory of the directory to which the command is trying to write gives &#8220;Error Applying Security&#8221;.
+Yes, it would seem that attempting to change permissions on a parent directory of the directory to which the command is trying to write gives “Error Applying Security”.
 
-[An answer](http://serverfault.com/a/192750) on Server Fault suggests taking ownership (and only in Windows-world does one see things like &#8220;This can happen if you really don’t have access to that directory.&#8221;! because one’s first thought is always that the error is just stupid and not telling you the whole story —— I’m an admin, and admins have write access, but do I have write access? No!).
+[An answer](http://serverfault.com/a/192750) on Server Fault suggests taking ownership (and only in Windows-world does one see things like “This can happen if you really don’t have access to that directory.”! because one’s first thought is always that the error is just stupid and not telling you the whole story —— I’m an admin, and admins have write access, but do I have write access? No!).
 
-So I changed the owner of the target directory, clicking &#8220;Replace owner on subcontainers and objects&#8221;.
+So I changed the owner of the target directory, clicking “Replace owner on subcontainers and objects”.
 
 …
 

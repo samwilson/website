@@ -18,7 +18,7 @@ tags:
   - Woodworking
   - Work
 ---
-All has gone well, since my last post, with my intra-office carlessness. My announcement (&#8220;I don’t go in cars; don’t ask me to.&#8221;) has been met with near universal acceptance (or silence), to my great relief. I had wondered whether the conversations in the tea-room about various cars’ power-ratings and other such motorcar trivia would mean some expression of distain towards one who rejects all that. But no, nothing has come of it. They’re nice chaps, and I needn’t have worried.
+All has gone well, since my last post, with my intra-office carlessness. My announcement (“I don’t go in cars; don’t ask me to.”) has been met with near universal acceptance (or silence), to my great relief. I had wondered whether the conversations in the tea-room about various cars’ power-ratings and other such motorcar trivia would mean some expression of distain towards one who rejects all that. But no, nothing has come of it. They’re nice chaps, and I needn’t have worried.
 
 So, with that bit of excitement out of the way, I’m left pondering the far-off hills and wishing that I could be in the workshop, at my bench, and writing in ink and not at a keyboard. The computer-reality is basically two-dimensional: we, the IT people, strive to make everything the same. Documents can never show age; photos must be as bright forever as they day they were taken; we care only for content, and never for context or media. A rotten state of affairs! I want my pages to yellow and my photos to fade! A world in which nothing is old gives us nothing at all — despite what Wikipedia would have us believe.
 

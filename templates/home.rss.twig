@@ -14,7 +14,7 @@
                 <guid isPermaLink="true">{{ site.config.url }}{{ p.id }}.html</guid>
                 <pubDate>{{ date('r', strtotime(p.date)) }}</pubDate>
                 <description>
-                    {{ p.body }}
+                    {{ p.body|md2html }}
                 </description>
             </item>
 

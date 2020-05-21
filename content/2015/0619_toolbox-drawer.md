@@ -28,7 +28,7 @@ But I have no drawer — so, I’m making one. I’ve got a few odd bits of pine
 
 <img src="http://photos.samwilson.id.au/_data/i/upload/2015/06/19/20150619011747-f2fd8289-sm.jpg" width="576" height="384" class="aligncenter" />
 
-The piece of 19&#215;42 was a bit fat, or at least I thought it might look a bit odd next to the skinny walls made from the other pieces, so I ripped it in half.
+The piece of 19×42 was a bit fat, or at least I thought it might look a bit odd next to the skinny walls made from the other pieces, so I ripped it in half.
 
 <img src="http://photos.samwilson.id.au/i/upload/2015/06/19/20150619032646-6e48c716-sm.jpg" width="576" height="384" class="aligncenter" />
 

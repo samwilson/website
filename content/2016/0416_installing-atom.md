@@ -29,6 +29,6 @@ Navigating to the installation now will redirect to the installation system, and
 
 (Good to go to the next step, that is.)
 
-Now install [Elasticsearch](https://www.elastic.co/products/elasticsearch). It’s easier than the AtoM docs admit: just do it the normal way with `sudo apt-get install elasticsearch`. (I’d submit a change to the AtoM docs to remove the &#8220;it’s not in the Ubuntu repositories&#8221; line, but I’m not quite sure how yet.)
+Now install [Elasticsearch](https://www.elastic.co/products/elasticsearch). It’s easier than the AtoM docs admit: just do it the normal way with `sudo apt-get install elasticsearch`. (I’d submit a change to the AtoM docs to remove the “it’s not in the Ubuntu repositories” line, but I’m not quite sure how yet.)
 
 Start Elasticsearch (in the background; the `-d` switch) with `sudox /usr/share/elasticsearch/bin/elasticsearch -d` and carry on with the installation procedure. The rest seems to be fairly straight forward.

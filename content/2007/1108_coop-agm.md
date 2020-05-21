@@ -18,4 +18,4 @@ tags:
   - social networking
 format: status
 ---
-[2007 AGM &#8211; ANU Food Co-op wiki](http://anu.foodco-op.com/wiki/2007_AGM)
+[2007 AGM – ANU Food Co-op wiki](http://anu.foodco-op.com/wiki/2007_AGM)

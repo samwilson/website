@@ -26,4 +26,4 @@ Because this isn’t about making a drawer, it would seem. (And oh! what other n
 
 It’s about standing at my bench, making sawdust, hearing the tools in the wood, _breathing_ with the strokes of the saw… feeling non-analytical for once! Just doing, very slowly, and not thinking anything of the future, or how all this is meant to work. It’s time to let the programmer’s brain sleep for a while…
 
-(Oh, and &#8220;non-analytical&#8221;?! Yes, quite; but I didn’t say &#8220;non-ironic&#8221; did I? Hmm…)
+(Oh, and “non-analytical”?! Yes, quite; but I didn’t say “non-ironic” did I? Hmm…)

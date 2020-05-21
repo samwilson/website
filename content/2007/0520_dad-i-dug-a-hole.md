@@ -1,6 +1,6 @@
 ---
 id: 130
-title: '&#8220;Dad, I dug a hole.&#8221;'
+title: '“Dad, I dug a hole.”'
 date: 2007-05-20T12:57:05+00:00
 author: Sam Wilson
 layout: post

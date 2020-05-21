@@ -1,6 +1,6 @@
 ---
 id: 1615
-title: '&#8220;Sirens in the night&#8221;'
+title: '“Sirens in the night”'
 date: 2010-12-09T14:02:30+00:00
 author: Sam Wilson
 layout: post
@@ -17,6 +17,6 @@ categories:
   </p>
   
   <p>
-    &#8212; Dave Winer, http://scripting.com/stories/2010/10/22/rule1OfLocalBlogs.html
+    — Dave Winer, http://scripting.com/stories/2010/10/22/rule1OfLocalBlogs.html
   </p>
 </blockquote>

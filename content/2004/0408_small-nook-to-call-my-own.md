@@ -15,11 +15,11 @@ categories:
 tags:
   - Miscellaneous
 ---
-The house/room/attic that I dream of making, inhabiting and remaking; &#8211; where is it? What will it seem like to strangers seeing it for the first time? Many articles I have read of poet-build abodes, and rarely have they captured any true _poetic_ image of the space. Descriptions of construction method, natural environment, recyled materials abound, and all very accurate in their own way &#8211; but hardly ever any clue as to the loving comfort and intamacy that one has with such a place. A comment such as &#8220;I feel very at home here, in this place that I have made.&#8221; tells us nothing of what it actually _is like_ for this maker to be at home.
+The house/room/attic that I dream of making, inhabiting and remaking; – where is it? What will it seem like to strangers seeing it for the first time? Many articles I have read of poet-build abodes, and rarely have they captured any true _poetic_ image of the space. Descriptions of construction method, natural environment, recyled materials abound, and all very accurate in their own way – but hardly ever any clue as to the loving comfort and intamacy that one has with such a place. A comment such as “I feel very at home here, in this place that I have made.” tells us nothing of what it actually _is like_ for this maker to be at home.
   
 <!--more-->
 
-> &#8220;Might I,&#8221; quavered Mary, &#8220;might I have a bit of earth?&#8221;
+> “Might I,” quavered Mary, “might I have a bit of earth?”
 > 
 > In her eagerness she did not realize how queer the words
   
@@ -27,29 +27,29 @@ The house/room/attic that I dream of making, inhabiting and remaking; &#8211; wh
   
 > to say. Mr. Craven looked quite startled.
 > 
-> &#8220;Earth!&#8221; he repeated. &#8220;What do you mean?&#8221;
+> “Earth!” he repeated. “What do you mean?”
 > 
-> &#8220;To plant seeds in&#8211;to make things grow&#8211;to see them
+> “To plant seeds in–to make things grow–to see them
   
-> come alive,&#8221; Mary faltered.
+> come alive,” Mary faltered.
 > 
 > He gazed at her a moment and then passed his hand quickly
   
 > over his eyes.
 > 
-> &#8220;Do you&#8211;care about gardens so much,&#8221; he said slowly.
+> “Do you–care about gardens so much,” he said slowly.
 > 
-> &#8220;I didn’t know about them in India,&#8221; said Mary. &#8220;I was
+> “I didn’t know about them in India,” said Mary. “I was
   
 > always ill and tired and it was too hot. I sometimes
   
 > made littlebeds in the sand and stuck flowers in them.
   
-> But here it is different.&#8221;
+> But here it is different.”
 > 
 > Mr. Craven got up and began to walk slowly across the room.
 > 
-> &#8220;A bit of earth,&#8221; he said to himself, and Mary thought
+> “A bit of earth,” he said to himself, and Mary thought
   
 > that somehow she must have reminded him of something.
   
@@ -57,22 +57,22 @@ The house/room/attic that I dream of making, inhabiting and remaking; &#8211; wh
   
 > soft and kind.
 > 
-> &#8220;You can have as much earth as you want,&#8221; he said.
+> “You can have as much earth as you want,” he said.
   
-> &#8220;You remind me of some one else who loved the earth and
+> “You remind me of some one else who loved the earth and
   
-> things that grow. When you see a bit of earth you want,&#8221;
+> things that grow. When you see a bit of earth you want,”
   
-> with something like a smile, &#8220;take it, child, and make it
+> with something like a smile, “take it, child, and make it
   
-> come alive.&#8221;
+> come alive.”
 > 
-> &#8220;May I take it from anywhere&#8211;if it’s not wanted?&#8221;
+> “May I take it from anywhere–if it’s not wanted?”
 > 
-> &#8220;Anywhere,&#8221; he answered. &#8220;There! You must go now,
+> “Anywhere,” he answered. “There! You must go now,
   
-> I am tired.&#8221; He touched the bell to call Mrs. Medlock.
+> I am tired.” He touched the bell to call Mrs. Medlock.
   
-> &#8220;Good-by. I shall be away all summer.&#8221; 
+> “Good-by. I shall be away all summer.” 
 
-&#8212; From _&#8220;The Secret Garden&#8221;_ by Frances Hodgson Burnett.
+— From _“The Secret Garden”_ by Frances Hodgson Burnett.

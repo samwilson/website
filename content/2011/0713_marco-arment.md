@@ -39,4 +39,4 @@ tags:
   </p>
 </blockquote>
 
-I am reminded of that old thing: **&#8220;if you do not pay for a service on the web then you are not a _customer_, but rather your content is a _product_ that is sold to advertisers&#8221;**.
+I am reminded of that old thing: **“if you do not pay for a service on the web then you are not a _customer_, but rather your content is a _product_ that is sold to advertisers”**.

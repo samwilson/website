@@ -5,10 +5,10 @@
         {% if page.metadata.description is defined and page.metadata.description %}
             <description>{{ page.metadata.description }}</description>
         {% endif %}
-        <link>{{ site.config.url }}{{ page.id }}</link>
+        <link>{{ site.config.url }}{{ page.id }}.html</link>
         <language>en-au</language>
 
-        {% for p in database.query('SELECT * FROM pages WHERE date IS NOT NULL ORDER BY date DESC LIMIT 10').fetchAll() %}
+        {% for p in database.query('SELECT p.* FROM pages p, json_each(p.tags) j WHERE "/tags/"||j.value LIKE "'~page.id~'" ORDER BY p.date DESC LIMIT 10') %}
 
             <item>
                 <title>{{ p.title }}</title>
@@ -16,7 +16,7 @@
                 <guid isPermaLink="true">{{ site.config.url }}{{ p.id }}.html</guid>
                 <pubDate>{{ date('r', strtotime(p.date)) }}</pubDate>
                 <description>
-                    {{ p.body }}
+                    {{ p.body|md2html }}
                 </description>
             </item>
 

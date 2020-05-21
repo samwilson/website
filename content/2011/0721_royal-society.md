@@ -30,7 +30,7 @@ An extract from the README:
 > 
 > These particular documents are the historic back archives of the
       
-> Philosophical Transactions of the Royal Society &#8212; a prestigious
+> Philosophical Transactions of the Royal Society — a prestigious
       
 > scientific journal with a history extending back to the 1600s.
 > 
@@ -44,7 +44,7 @@ An extract from the README:
       
 > and are rightfully in the public domain, but they are not available
       
-> freely. Instead the articles are available at $19 each&#8211;for one month’s
+> freely. Instead the articles are available at $19 each–for one month’s
       
 > viewing, by one person, on one computer. It’s a steal. From you.
 > 

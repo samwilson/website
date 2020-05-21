@@ -17,6 +17,6 @@ But public libraries are not silent.
 
 > Libraries, you see, are meant to be fun. In the morning, there are creches that consist not of storytelling but percussion-accompanied singalongs. Foreign language students chat loudly, the Germans picking up Spanish accents and the Italians learning about French kissing while supposedly swotting up English verbs. Mobiles ring and are answered not with a whispered: ‘I’m in the library’, but a loud: ‘Hiiiiii! How are you?’ In the advent of a freakish burst of quiet, you’ll hear the tinny background rattle of iTunes. The only thing you won’t hear is a ‘shush’.
 > 
-> From [Hephzibah Anderson: Please put a sock in it &#8211; this is a library | Comment is free | The Observer](http://www.guardian.co.uk/commentisfree/2008/aug/24/4).
+> From [Hephzibah Anderson: Please put a sock in it – this is a library | Comment is free | The Observer](http://www.guardian.co.uk/commentisfree/2008/aug/24/4).
 
 Thankfully (and, I must say, suprisingly), Murdoch have a **silent** library floor. A whole floor (the fourth) devoted to actually _reading_! Imagine that! In a library! And the signs don’t say ‘quiet’, they say ‘silent’ and ‘no talking’. Jolly good, I say.

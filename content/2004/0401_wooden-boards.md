@@ -9,7 +9,7 @@ twelfth/thirteenth century. These often have boards of around half an inch —
 
 "Early boards had square edges but after the 13th they often were beveled, acute or obtuse variously.
 Inside edges beveled also, especially in German bindings.
-The inside back edge would be beveled &#8220;so that it follows the swelling in the spine".
+The inside back edge would be beveled “so that it follows the swelling in the spine".
 
 Lacing in the *Stonyhurst Gospel*.[^2] [Four holes in each of boards and signatures, designated A through to D from top to bottom.]
 

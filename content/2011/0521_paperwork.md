@@ -1,6 +1,6 @@
 ---
 id: 766
-title: 'West 86th &#8211; Paperwork Explosion'
+title: 'West 86th – Paperwork Explosion'
 date: 2011-05-21T12:50:09+00:00
 author: Sam Wilson
 layout: post
@@ -23,4 +23,4 @@ tags:
 > 
 > Ben Kafka
 > 
-> via [West 86th &#8211; Paperwork Explosion](http://www.west86th.bgc.bard.edu/articles/paperwork-explosion.html#).
+> via [West 86th – Paperwork Explosion](http://www.west86th.bgc.bard.edu/articles/paperwork-explosion.html#).

@@ -1,8 +1,9 @@
 ---
 title: Shed lock-up
-date: 2017-07-02T13:40:16+08:00
+date: 2017-07-02 13:40:16 +08:00
+timezone: Australia/Perth
 tags:
-  - Woodworking
+  - woodworking
   - shed doors
 format: status
 ---

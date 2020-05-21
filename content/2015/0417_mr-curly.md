@@ -30,7 +30,7 @@ The curly-vs-straight argument is an odd one. We only have straight ones thanks 
 
 Because that’s what it’s about, ultimately: making the text beautiful! For how many hundreds of years have people been taking terrific care over making books look nice?! Let’s not give up on that.
 
-I’m not really sure why I’m writing this, today. (Probably due to the glass of White Rabbit I’ve just here.) It’s that I’m firing with the zeal of the converted! I am, you see. I used to not care about quotes, and think they should be left straight &#8212; now, I stand on speakers’ corner and holler to confused passersby!
+I’m not really sure why I’m writing this, today. (Probably due to the glass of White Rabbit I’ve just here.) It’s that I’m firing with the zeal of the converted! I am, you see. I used to not care about quotes, and think they should be left straight — now, I stand on speakers’ corner and holler to confused passersby!
 
 So, would that ye enjoy yr ebooks?! Then set them with loveliness!
 

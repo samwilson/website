@@ -14,7 +14,7 @@ I have been reading about the
 [Inaccessibility of Visually-Oriented Anti-Robot Tests](http://www.w3.org/TR/2003/WD-turingtest-20031105/).
 Fascinating.
 
-I love the physicality of woodworking, the way that it engages my whole body and soul &#8212;
+I love the physicality of woodworking, the way that it engages my whole body and soul —
 but not, alas, my mind. What I mean is that I don’t turn to wood to be challenged in a cerebral way;
 rather, I find with wood a calming and a satisfaction that is on a wholely other level,
 more in my hands than my head. The problem solving inherent in woodworking _is_ entertaining,

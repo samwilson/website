@@ -33,7 +33,7 @@ Then you can rename the offending files (replace unwanted characters with unders
 
 <small>(I <a href="http://piwigo.org/forum/viewtopic.php?id=9789">previously used</a> a more complicated for-loop for this, that didn’t handle directories.)</small>
 
-Once this command is showing what you expect, remove the `-n` (&#8220;no action&#8221;) switch and run it for real. Note also that the second regex includes the forward slash, to not replace directory separators. And don’t worry about it overwriting files whose normalized names match; rename will complain if that happens (unless you pass the `--force` option).
+Once this command is showing what you expect, remove the `-n` (“no action”) switch and run it for real. Note also that the second regex includes the forward slash, to not replace directory separators. And don’t worry about it overwriting files whose normalized names match; rename will complain if that happens (unless you pass the `--force` option).
 
 Once all the names are normalized, use the [built-in synchronization feature](http://piwigo.org/doc/doku.php?id=user_documentation:learn:add_picture#by_ftp) to update Piwigo’s database.
 

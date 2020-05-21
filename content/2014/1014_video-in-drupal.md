@@ -27,9 +27,9 @@ So I install it: `drush -y en video`
 
 Then set up a transcoder by installing [FFmpeg](http://ffmpeg.org/) and telling Drupal where to find it. Also a _Preset_, which groups together output details like file extension, codec, sizes, and a bunch of other details—most of which I left as given.
 
-Probably silly, as when I try to upload an MP4 ([one of these](http://support.apple.com/kb/ht1425)) I get: &#8220;The video conversion process has failed. You might want to submit a simpler video format like _mpeg_ or _divx avi_.&#8221; So why can’t I just upload a simple mpeg and have it displayed without being re-encoded?
+Probably silly, as when I try to upload an MP4 ([one of these](http://support.apple.com/kb/ht1425)) I get: “The video conversion process has failed. You might want to submit a simpler video format like _mpeg_ or _divx avi_.” So why can’t I just upload a simple mpeg and have it displayed without being re-encoded?
 
-The video field settings have an option, &#8220;Enable auto video conversion&#8221;, which I turn off. This works: I can upload the MP4 and it’s thumbnail is displayed at a nice size and things sort of start to look like a video player… but sadly emblazoned with &#8220;No video with supported format and MIME type found.&#8221; Oh well, maybe a different player is needed (I was relying on the standard HTML5 player).
+The video field settings have an option, “Enable auto video conversion”, which I turn off. This works: I can upload the MP4 and it’s thumbnail is displayed at a nice size and things sort of start to look like a video player… but sadly emblazoned with “No video with supported format and MIME type found.” Oh well, maybe a different player is needed (I was relying on the standard HTML5 player).
 
 Installing the [Flowplayer module](https://www.drupal.org/project/flowplayer) helps a bit: now there’s a video player with controls and a spinning loader—but the same MIME type error as before. Switching the MP4 player to ‘FLV Flash Players’ (from ‘HTML5 Player’) is a bit great: now there is a player, and it plays the file… audio only though, no video.
 

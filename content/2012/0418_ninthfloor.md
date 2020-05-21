@@ -16,4 +16,4 @@ tags:
   - Linux
   - ninthfloor.org
 ---
-This looks great. A community Linux host for email accounts, shell access, and a pile of other uses. They stand for &#8220;free access to computers; always yield to the hands-on imperative; freedom of information; decentralization; mistrust of bogus judgement criteria, such as degrees, age, race or position; world improvement&#8221;. They seem to be keeping things personal, and human. Hoorah for [ninthfloor.org](http://ninthfloor.org).
+This looks great. A community Linux host for email accounts, shell access, and a pile of other uses. They stand for “free access to computers; always yield to the hands-on imperative; freedom of information; decentralization; mistrust of bogus judgement criteria, such as degrees, age, race or position; world improvement”. They seem to be keeping things personal, and human. Hoorah for [ninthfloor.org](http://ninthfloor.org).

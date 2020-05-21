@@ -20,6 +20,6 @@ Roll in to work, settle in for half an hour or so, and then head to the tearoom 
   1. A nice cosy cafe, without overly-loud music, tables a good height and not rocking, and nothing at all to do for a good few hours. Espresso.
   2. The office coffee machine, or ‘coffee printer’ — as it really does behave more like a noisy dot-matrix printer.
   3. Mocca-pot, or (secondly) frech press, at home with just-ground beans and a clean kitchen in which to make it. The choice of cup is far more satisfying here.
-  4. A &#8221;coffee bag&#8221; can be surprisingly good if all else fails.
+  4. A ”coffee bag” can be surprisingly good if all else fails.
 
 Note that the muck they call _instant coffee_ does not appear in this list.

@@ -1,5 +1,18 @@
 {% autoescape 'tex' %}
+{% set flickr = flickr(embed.matches.1) %}
 \begin{figure}
-  \caption{(via Flickr: \url{ {{ embed.url }} })}
-\end{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{{ '{' }}{{ tex_url( flickr.urls.medium_image )|raw }}{{ '}' }}
+    \caption{{ '{' }}{#
+      #}{{ flickr.title }}{#
+      #}{% if flickr.dates.taken %}{#
+        #}{% set date = date_create(flickr.dates.taken) %}{#
+        #} ({{ date.format('F~j') }}){#
+      #}{% endif %}{#
+      #}\hfill {\tiny \url{ {{ flickr.urls.short }} } }{#
+    #}{{ '}' }}
+    \label{ flickr-{{ flickr.id }} }
+  \end{center}
+  \end{figure}
+(\emph{Figure~\ref{flickr-{{ flickr.id }}{{ '}}' }})
 {% endautoescape %}

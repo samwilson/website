@@ -23,7 +23,7 @@ I have a new name for my hobby…
 
 <blockquote cite="http://www.theguardian.com/books/2013/sep/20/urban-exploration-robert-macfarlane-bradley-garrett">
   <p>
-    Then there are the self-styled &#8220;guerilla preservationists&#8221;, deep into heritage theory, and genuinely committed to creating a coherent photographic and textual record of buildings that would otherwise crumble unnoticed until a developer arrived to raze all trace of them.
+    Then there are the self-styled “guerilla preservationists”, deep into heritage theory, and genuinely committed to creating a coherent photographic and textual record of buildings that would otherwise crumble unnoticed until a developer arrived to raze all trace of them.
   </p>
   
   <p>

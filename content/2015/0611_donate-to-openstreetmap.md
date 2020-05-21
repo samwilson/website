@@ -16,7 +16,7 @@ tags:
   - donating
   - OpenStreetMap
 ---
-OSM needs new machines to &#8220;serve the planet&#8221;.
+OSM needs new machines to “serve the planet”.
 
 > OpenStreetMap is run and supported by volunteers like you. With more and more people helping to make great maps, we need bigger and faster servers to keep up with the demand. If you enjoy using or contributing to OpenStreetMap, please consider making a donation.
 

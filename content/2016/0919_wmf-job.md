@@ -14,7 +14,7 @@ tags:
   - wikimedia
   - Wikimedia Foundation
 ---
-So I’ve started a new job: I’m now working for the Wikimedia Foundation in the [Community Tech team](https://meta.wikimedia.org/wiki/Community_Tech). It’s really quite amazing, actually: I go to &#8220;work&#8221; and do things that I really quite like doing and would be attempting to find time to do anyway if I were employed elsewhere. Not that I’m really into the swing of things yet—only two weeks in—but so far it’s pretty great.
+So I’ve started a new job: I’m now working for the Wikimedia Foundation in the [Community Tech team](https://meta.wikimedia.org/wiki/Community_Tech). It’s really quite amazing, actually: I go to “work” and do things that I really quite like doing and would be attempting to find time to do anyway if I were employed elsewhere. Not that I’m really into the swing of things yet—only two weeks in—but so far it’s pretty great.
 
 I’m really excited about being part of an organisation that actually _means_ something.
 

@@ -22,7 +22,7 @@ Copy the following files:
   
 `/local/config/config.inc.php`
 
-The following directories must be writable by the web server: `/_data` and `/upload` (including `/upload/buffer`; I was getting an &#8220;error during buffer directory creation&#8221; [error](https://github.com/Piwigo/Piwigo/issues/279)).
+The following directories must be writable by the web server: `/_data` and `/upload` (including `/upload/buffer`; I was getting an “error during buffer directory creation” [error](https://github.com/Piwigo/Piwigo/issues/279)).
 
 Then browse to `/upgrade.php` to run any required database changes.
 

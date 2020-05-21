@@ -1,6 +1,6 @@
 ---
 id: 2328
-title: 'The Computer Backup Rule of Three &#8211; Scott Hanselman'
+title: 'The Computer Backup Rule of Three – Scott Hanselman'
 date: 2015-06-14T17:09:50+00:00
 author: Sam Wilson
 layout: post
@@ -17,4 +17,4 @@ tags:
 ---
 > Backing up to a hard drive that is 6 inches away from your computer is #notabackup
 
-_[The Computer Backup Rule of Three &#8211; Scott Hanselman](http://www.hanselman.com/blog/TheComputerBackupRuleOfThree.aspx)_
+_[The Computer Backup Rule of Three – Scott Hanselman](http://www.hanselman.com/blog/TheComputerBackupRuleOfThree.aspx)_

@@ -1,6 +1,19 @@
 {% autoescape 'tex' %}
-\documentclass[a4paper]{book}
-\usepackage{url, listings, hyperref, graphicx}
+\documentclass[a4paper]{article}
+\usepackage{url, listings, graphicx}
+
+\usepackage{fontspec}
+{#\setsansfont{CMU Sans Serif}%{Arial}#}
+{#\setmainfont{CMU Serif}%{Times New Roman}#}
+{#\setmonofont{CMU Typewriter Text}%{Consolas}#}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,  % Colours links instead of ugly boxes
+    urlcolor   = black,  % Colour for external hyperlinks
+    linkcolor  = black, % Colour of internal links
+    citecolor  = black  % Colour of citations
+}
 
 \title{ {{page.metadata.title}} }
 \author{ Sam Wilson }
@@ -8,6 +21,8 @@
 
 \begin{document}
     \maketitle
+    \tableofcontents
+    \listoffigures
 
     {% for p in database.query('SELECT * FROM pages WHERE
         date IS NOT NULL
@@ -15,7 +30,9 @@
         AND date < "'~page.metadata.year~'-12-31 24:00:00"
         ').fetchAll() %}
 
-{#        \section{ {{ p.title }} }#}
+        \section{ {{ p.title }} }
+        \begin{center}
+            \url{https://samwilson.id.au{{ p.id}}.html}
 
 {#        {% if p.tags is defined %}#}
 {#            Tags:#}
@@ -26,7 +43,14 @@
 {#            --#}
 {#        {% endif %}#}
 
-{#        \url{ https://samwilson.id.au{{ p.id}}.html }#}
+            {% if p.timezone is defined and p.timezone %}
+            {% set tz = p.timezone %}
+            {% else %}
+            {% set tz = 'Z' %}
+            {% endif %}
+            {{ date_create( p.date, tz ).format('F~j') }}
+
+        \end{center}
 
         {{ p.body|md2latex|raw }}
 

@@ -8,7 +8,7 @@ Over the Brink
 > hone that edge to razor sharpness.
 
 How strange things are! Yesterday I was on the verge of dropping out, the meaninglessness of it 
-all swelled up so &#8211; but fret not! an evening of friends and tea, followed by a good
+all swelled up so – but fret not! an evening of friends and tea, followed by a good
 night’s sleep, turned it all around. Now the same wrenching division between the high-tech
 and the low, the wish to go one way or the other, that was causing me such pain, has become the
 self-same inspiration for continuing and loving it! How can that be? Yesterday I couldn’t 
@@ -19,7 +19,7 @@ what it really means.
 I rode my slow bike to school today as a way of reminding me of the importance of the small and 
 the simple; the low-tech and the old; anything that points me to an intimacy with my personal 
 environment… This bike (that I would have a few good shots of if these blasted computers 
-were operating as they should) doesn’t work very well &#8211; slow, clunky, hard to start (and stop!) &#8211; but as an aid to reflection upon what is important in transport (and indeed all of life, but I don’t want to make this too big a picture) it is supurb. It is okay, and even desirable, to slow down and do things in a (slightly) uncomfortable way, and in doing so I am **forced** to ponder why people do not like to do things so. We don’t need to get anywhere! 
+were operating as they should) doesn’t work very well – slow, clunky, hard to start (and stop!) – but as an aid to reflection upon what is important in transport (and indeed all of life, but I don’t want to make this too big a picture) it is supurb. It is okay, and even desirable, to slow down and do things in a (slightly) uncomfortable way, and in doing so I am **forced** to ponder why people do not like to do things so. We don’t need to get anywhere! 
 
 Hmmm, I seem to be faltering in this stream of appreciation of the overlooked; I shall turn to the overlooked to seek appreciation of these thoughts.
 
@@ -36,7 +36,7 @@ act of worship of nature! Shall every thing we do be an act of love for our envi
 and self? But why not?
 
 What makes work unpleasant? Surely endless repetition,
-mindless drudgery with no hope for escape &#8211;
+mindless drudgery with no hope for escape –
 things brought about through greed and the exploitation of others.
 Think, though, about the materials that one uses and how they make or mar pleasant work; if I strive towards an intimacy with my media, and that same intimacy is going to give me cancer, what then shall I do? Why on Earth would I cover my walls with a substance that I know I find toxic (as evidenced by my emotive wish not to ingest said substance), if I also know that one day those walls should be pulled down and that substance be spread about the land?!
 
@@ -44,4 +44,4 @@ I’m hungry now, and tiring of this:
 I wanted to write about bookbinding as one point at which the intangible and the tangible meet;
 I love to hold a book, and I love too to read it.
 For the former I might easily take a stick up from the ground;
-for the latter, the ubiquitious A4 photocopied page would sufice &#8211; where we can unite the two, there lies my inquiry.
+for the latter, the ubiquitious A4 photocopied page would sufice – where we can unite the two, there lies my inquiry.
