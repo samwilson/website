@@ -9,7 +9,7 @@ tags:
   - self-hosting
   - Wikimedia Commons
   - Internet Archive
-  - Flickr
+  - flickr
 ---
 I have lately been attempting to move some of the stuff that I host on my VPS to a more long-term, cheaper, and 'archival' platform.
 For this, I figure a static HTML website combined with hosting images on Wikimedia Commons, the Internet Archive, and Flickr, is the way to go.

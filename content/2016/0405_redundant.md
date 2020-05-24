@@ -4,7 +4,7 @@ date: 2016-04-05 10:32:37 +08:00
 tags:
   - AtoM
   - code
-  - Flickr
+  - flickr
   - Geogeeks
   - priorities
   - programming

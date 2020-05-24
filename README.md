@@ -5,11 +5,13 @@ My website
 
 Built with [Basildon](https://basildon.netlify.com).
 
+Post template:
+
 ```
 ---
 title: 
 date: 
-timezone: 
+timezone: Australia/Perth
 tags:
   - 
 ---
