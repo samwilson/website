@@ -1,0 +1,9 @@
+#
+# Netlify redirects
+#
+# Redirects from what the browser requests to what is served.
+
+/home                            /
+/blog                            /
+/Talk_about_Oscar_Wilde!         /2004/0429_oscar-wilde.html
+/2019/10/25/piwigo-on-android/   /2019/1025-piwigo-android.md

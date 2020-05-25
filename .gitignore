@@ -7,7 +7,7 @@
 !404.html
 node_modules/
 /cache/
-/output/
+/output/*
 !/output/_redirects
 /config.local.yaml
 
