@@ -9,6 +9,7 @@
 /feed/*                          /index.rss
 /feeds/*                         /index.rss
 /news.xml                        /index.rss
+/news.rss                        /index.rss
 /blog/feed/*                     /index.rss
 /tag/:tag/feed                   /tags/:tag.rss
 /category/:tag/feed              /tags/:tag.rss
@@ -16,3 +17,4 @@
 
 /Talk_about_Oscar_Wilde!         /2004/0429_oscar-wilde.html
 /2019/10/25/piwigo-on-android/   /2019/1025-piwigo-android.html
+/blog/addressbook-plugin         /tags/addressbook-plugin.html

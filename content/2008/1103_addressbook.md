@@ -1,17 +1,11 @@
 ---
-id: 249
 title: Addressbook Update
-date: 2008-11-03T10:22:41+00:00
-author: Sam Wilson
-layout: post
-guid: http://samwilson.id.au/blog/?p=249
+date: 2008-11-03 10:22:41 +11:00
+timezone: Australia/Canberra
 permalink: /2008/11/03/addressbook/
-views:
-  - "199"
-categories:
-  - Programming
 tags:
-  - Addressbook plugin
+  - Programming
+  - addressbook-plugin
 ---
 Right. There we go. What was I saying? Yes, Addressbook Plugin…
 

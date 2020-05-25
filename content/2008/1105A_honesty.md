@@ -1,17 +1,11 @@
 ---
-id: 256
 title: Coding; Quakerism; and a Boring Title
-date: 2008-11-05T14:52:08+00:00
-author: Sam Wilson
-layout: post
-guid: http://samwilson.id.au/blog/?p=256
+date: 2008-11-05 14:52:08 +11:00
+timezone: Australia/Canberra
 permalink: /2008/11/05/honesty/
-views:
-  - "295"
-categories:
-  - Programming
 tags:
-  - Addressbook plugin
+  - Programming
+  - addressbook-plugin
   - coding
   - God
   - honesty

@@ -1,17 +1,11 @@
 ---
-id: 181
 title: Addressbook v.0.7 and other plugins
-date: 2007-10-06T09:01:12+00:00
-author: Sam Wilson
-layout: post
-guid: http://samwilson.id.au/blog/2007/10/06/addressbook-v07-and-other-plugins/
+date: 2007-10-06 09:01:00 +10:00
+timezone: Australia/Canberra
 permalink: /2007/10/06/addressbook-v07-and-other-plugins/
-views:
-  - "443"
-categories:
-  - Programming
 tags:
-  - Addressbook plugin
+  - Programming
+  - addressbook-plugin
   - Bookkeeping plugin
   - Image Flicker plugin
 ---

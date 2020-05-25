@@ -1,9 +1,10 @@
 ---
 title: Addressbook Version One! (was v.0.9)
-date: 2008-02-14T11:15:48+00:00
+date: 2008-02-14 11:15:48 +11:00
+timezone: Australia/Canberra
 tags:
   - address book
-  - Addressbook plugin
+  - addressbook-plugin
   - gravatars
   - hcard
   - microformats

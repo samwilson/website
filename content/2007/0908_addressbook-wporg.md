@@ -1,15 +1,11 @@
 ---
 id: 171
 title: Addressbook plugin now on wordpress.org
-date: 2007-09-08T13:35:07+00:00
-author: Sam Wilson
-layout: post
-guid: http://samwilson.id.au/blog/2007/09/08/addressbook-plugin-now-on-wordpressorg/
+date: 2007-09-08 13:35:00 +10:00
 permalink: /2007/09/08/addressbook-plugin-now-on-wordpressorg/
-views:
-  - "8696"
 tags:
-  - Addressbook plugin
+  - WordPress
+  - addressbook-plugin
 ---
 I have finally got around to registering the Addressbook plugin on wordpress.org. From now on, I will use the Subversion repository there for managing the plugin, and not this site; I will still post update announcements here, though.
 
