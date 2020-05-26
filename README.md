@@ -1,7 +1,8 @@
 My website
 ==========
 
-[https://www.samwilson.id.au/](https://www.samwilson.id.au/)
+[https://samwilson.id.au/](https://samwilson.id.au/)
+and [https://freosam.netlify.app/](https://freosam.netlify.app/)
 
 Built with [Basildon](https://basildon.netlify.com).
 
@@ -11,7 +12,8 @@ Post template:
 ---
 title: 
 date: 
-timezone: Australia/Perth
+timezone: 
+location: 
 tags:
   - 
 ---
