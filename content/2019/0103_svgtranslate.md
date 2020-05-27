@@ -1,7 +1,7 @@
 ---
 date: 2019-01-03 18:53 +0000
-location: = San Francisco
-timezone: = -8
+timezone: America/Los_Angeles
+location: San Francisco
 tags:
   - SVG Translate
   - programming
@@ -9,7 +9,7 @@ tags:
   - CSS
   - Symfony
   - Encore
-}}
+---
 I'm getting this error when compiling [SVG Translate's](https://github.com/wikimedia/svgtranslate) assets with Webpack:
 
 ```
@@ -42,35 +42,39 @@ console.log(module.exports.module.rules[1].use);
 ]
 ```
 
-It seems that `minimize` and <code>sourceMap</code> are not [https://github.com/webpack-contrib/css-loader#options valid options]; the first [https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md#100-2018-07-06 was removed] in version 1.0.0 (which I guess SVG Translate wasn't using), and I'm not sure about the second. I'm not sure where they're coming from, I guess some Encore config somewhere; certainly it's not in SVG Translate's config.
+It seems that `minimize` and <code>sourceMap</code> are not [valid options](https://github.com/webpack-contrib/css-loader#options);
+the first [was removed](https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md#100-2018-07-06)
+in version 1.0.0 (which I guess SVG Translate wasn't using), and I'm not sure about the second.
+I'm not sure where they're coming from, I guess some Encore config somewhere; certainly it's not in SVG Translate's config.
 
 What if I just delete them?
 
-<source lang="javascript">
-	delete module.exports.module.rules[1].use[1].options.minimize;
-	delete module.exports.module.rules[1].use[1].options.sourceMap;
-</source>
+```
+delete module.exports.module.rules[1].use[1].options.minimize;
+delete module.exports.module.rules[1].use[1].options.sourceMap;
+```
 
-Nope, no good; same error. Oh, of course: because that's being done ''after'' the loader is being used. What if the css-loader is configured manually, earlier?
+Nope, no good; same error. Oh, of course: because that's being done *after* the loader is being used.
+What if the css-loader is configured manually, earlier?
 
-<source lang="javascript">
-		.configureCssLoader(function ( options ) {
-			delete options.minimize;
-			delete options.sourceMap;
-			return options;
-		} )
-</source>
+```
+.configureCssLoader(function ( options ) {
+    delete options.minimize;
+    delete options.sourceMap;
+    return options;
+} )
+```
 
 Yup! That works. Does it work when all the other asset files are uncommented? No:
 
-<source>
+```
 error  in ./node_modules/oojs-ui/dist/oojs-ui-wikimediaui.css
 
 Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
 ModuleParseError: Module parse failed: Maximum call stack size exceeded
 You may need an appropriate loader to handle this file type.
 RangeError: Maximum call stack size exceeded
-</source>
+```
 
 If we switch to an already minified version of <code>node_modules/oojs-ui/dist/oojs-ui-wikimediaui.css</code>? Yes!!
 

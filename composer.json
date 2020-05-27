@@ -1,0 +1,13 @@
+{
+    "require": {
+        "samwilson/basildon": "^0.2"
+    },
+    "scripts": {
+        "build": "basildon .",
+        "deploy": [
+            "@build",
+            "netlify deploy --prod -d output"
+        ],
+        "new": "php src/new.php"
+    }
+}
