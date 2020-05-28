@@ -14,7 +14,9 @@
 /tag/:tag/feed                   /tags/:tag.rss
 /category/:tag/feed              /tags/:tag.rss
 
+/blog/addressbook-plugin         /tags/addressbook-plugin.html
+
 /Talk_about_Oscar_Wilde!         /2004/0429_oscar-wilde.html
+/Switching_an_SVN_directory_to_and_from_an_%E2%80%98externals%E2%80%99_definition    /2011/1228_svn.html
 /Options_should_NOT_have_additional_properties    /2019/0103_svgtranslate.html
 /2019/10/25/piwigo-on-android/   /2019/1025-piwigo-android.html
-/blog/addressbook-plugin         /tags/addressbook-plugin.html
