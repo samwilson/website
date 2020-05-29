@@ -1,8 +1,8 @@
-Preventing duplicate rows in a tabular HTML form
-================================================
-
-*2011 July 12, 3:41PM.*
-
+---
+title: Preventing duplicate rows in a tabular HTML form
+date: 2011-07-12 15:41:00 +0800
+timezone: Australia/Perth
+---
 I am working on a bespoke issue-tracking system at the moment
 (*not* for code issue-tracking, in case anyone thinks we're cloning
 [Redmine](http://www.redmine.org/); although there certainly are overlaps...)

@@ -21,7 +21,7 @@ I am trying to get my head around all of the various places that Fremantle featu
 
 So I started from the outside, yesterday, and moved inwards…
 
-1. ![Graph](../assets/2010/graph.png)
+1. ![Graph](/2010/1101_graph.png)
    Wikipedia, a first port of call for general info about anywhere, gives a reasonable overview to Freo from an outsider’s perspective.
    The [Fremantle category](http://en.wikipedia.org/wiki/Category:Fremantle) has the subcategories show in the graph at right (which comes from the [catgraph tool](http://toolserver.org/~dapete/catgraph/) by [User:Dapete](http://en.wikipedia.org/wiki/User:Dapete)). Obviously, this categorisation isn’t complete, and needs to be improved to reflect what’s actually important in Freo. _(More on this later…)_
 2. Next, there’s the Council’s website, [fremantle.wa.gov.au](http://www.fremantle.wa.gov.au), which has recently undergone a redesign, and is looking… umm… well, there’s lots of great information for residents and whatnot! There is a news feed, and a calendar of upcoming events (which I’d link to, but it’s a JS overlay thing that doesn’t seem to have it’s own URL). There are plans for new web-based methods of communication with constituents: firstly via a **CRM** for interacting with Council (for the general public? or just precinct committees?); and secondly (and I think this is going to be separate from the CRM) a network of community-group/precinct websites, called **FREOSPACE**. This is akin, perhaps, to the [Cockburn Community Portal](http://cockburncommunity.asn.au/).

@@ -15,7 +15,7 @@ The last few weeks have seen a great number of my friends turn to Facebook (and,
 
 Don’t misunderstand me here, I’m all in favour of using Facebook — I just don’t think it should be used for _everything_. It’s great as a procrastination tool, for example, or for stumbling across long-lost friends, or being sent lovely pictures like this:
 
-![Picture: Sam got tapes for 35c.](2007/sam-got-tapes.png)
+![Picture: Sam got tapes for 35c.](/2007/0822_sam-got-tapes.png)
 
 But Facebook is, despite their oh-so-wonderful API, a closed system. We’re all piling our (desperately interesting, I’m sure) personal information into it, and giving no thought to what will happen to that information in the future. I don’t neccessarilly mean the usual conspiracy theories of governmental data-harvesting or derranged stalkers (they probably apply to wherever one is one the web), but what about ideas of cultural artifact preservation? (I know, I know, no one cares…)
 
