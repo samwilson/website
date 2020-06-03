@@ -7,3 +7,6 @@ embeds:
   commons: "|^https://commons.wikimedia.org/wiki/File:(.*)|"
 output_exclude:
   - "|/_redirects|"
+  - "|/favicon.ico|"
+  - "|/favicon-16x16.png|"
+  - "|/favicon-32x32.png|"

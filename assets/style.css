@@ -25,8 +25,8 @@ blockquote { line-height:1.2em }
 }
 
 header.site {
-    border-color: darkslategray;
-    border-width: thin 0;
+    border-color: #060;
+    border-width: thick 0;
     border-style: solid;
     margin-bottom: 2em;
 }
