@@ -4,12 +4,12 @@ require_once dirname(__DIR__).'/vendor/autoload.php';
 
 $metadata = [
     'title' => '',
-    'date' => date('Y-m-d H:i:s'),
+    'date' => date('Y-m-d H:i:s O'),
     'timezone' => 'Australia/Perth',
-    'location' => '',
+    'location' => 'Fremantle',
     'tags' => [ '' ],
 ];
-$yaml = \Symfony\Component\Yaml\Yaml::dump($metadata, 3);
+$yaml = \Symfony\Component\Yaml\Yaml::dump($metadata, 3, 2);
 $out = "---\n$yaml---\n";
 
 $filename = dirname(__DIR__).'/content/'.date('Y/md').'.md';

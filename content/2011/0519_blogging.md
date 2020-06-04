@@ -1,18 +1,10 @@
 ---
-id: 752
 title: What my blog is
-date: 2011-05-19T17:54:47+00:00
-author: Sam Wilson
-layout: post
-guid: http://samwilson.id.au/?p=752
+date: 2011-05-19 17:54:47 +00:00
+timezone: Australia/Canberra
 permalink: /2011/05/19/blogging/
-views:
-  - "5829"
-dsq_thread_id:
-  - "3860273310"
-categories:
-  - Programming
 tags:
+  - Programming
   - Blogging
   - Facebook
   - feeds
@@ -24,7 +16,9 @@ tags:
   - Writing
   - Writing in public view
 ---
-**I want my blog to be the hub of my online life.** I’ve come back to using <dfn title="The blogging software that runs this site.">WordPress</dfn> because I want to be able to show other people how easy it is to avoid the walled-gardens of Facebook, Twitter, et al. So I need to explain what I want my blog to be.
+*I want my blog to be the hub of my online life.*
+I’ve come back to using WordPress because I want to be able to show other people how easy it is
+to avoid the walled-gardens of Facebook, Twitter, et al. So I need to explain what I want my blog to be.
 
   1. A place to post reports, thoughts, photos, observations, etc. about what’s been going on in my life (i.e. what a blog usually is);
   2. A means of providing a <dfn title="i.e. the posts, in a syndicatable (as if that's a word) format.">feed</dfn> of the posts;
