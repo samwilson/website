@@ -14,6 +14,19 @@
     <link rel="alternate" href="{{ page.link('/index') }}.rss" type="application/rss+xml" title="RSS feed" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{ page.link('/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ page.link('/favicon-16x16.png') }}">
+    <link rel="canonical" href="{{ site.config.url }}{{ page.id }}.html" />
+    <link rel="webmention" href="https://webmention.io/samwilson.id.au/webmention" />
+    <link rel="pingback" href="https://webmention.io/samwilson.id.au/xmlrpc" />
+    <meta property="og:url" content="{{ site.config.url }}{{ page.id }}.html" />
+    <meta property="og:title" content="{{ page.metadata.title|e('html_attr') }}" />
+    <meta property="twitter:title" content="{{ page.metadata.title|e('html_attr') }}" />
+    {% if page.metadata.description is defined and page.metadata.description %}
+        <meta name="description" content="{{ page.metadata.description|e('html_attr') }}">
+        <meta property="og:description" content="{{ page.metadata.description|e('html_attr') }}" />
+        <meta name="twitter:description" content="{{ page.metadata.description|e('html_attr') }}">
+    {% endif %}
+    <meta name="twitter:site" content="@samwilson" />
+    <meta name="twitter:creator" content="@samwilson" />
     {% block headend %}{% endblock %}
 </head>
 <body>
@@ -26,7 +39,7 @@
     </p>
 </header>
 <article itemscope itemtype="http://schema.org/Article">
-    <header>
+    <header class="page">
         <h1 itemprop="name">
             {% if page.metadata.title is defined %}
                 {{ page.metadata.title }}
@@ -34,19 +47,24 @@
                 Untitled
             {% endif %}
         </h1>
-        {% if page.metadata.date is defined %}
-            {% if page.metadata.timezone is defined %}
-                {% set date = date_create( page.metadata.date, page.metadata.timezone ) %}
-            {% else %}
-                {% set date = date_create( page.metadata.date, 'Australia/Perth' ) %}
+        <p>
+            {% if page.metadata.location is defined and page.metadata.location %}
+                <span itemprop="location">{{ page.metadata.location }}</span>
             {% endif %}
-            <p>
-                <time datetime="{{ date.format('c') }}">
-                    <a href="{{ page.link( '/'~date.format('Y') ) }}.html" title="View the archive for {{ date.format('Y') }}">{{ date.format('Y') }}</a>:
-                    {{ date.format('F j l, g:iA') }}
+            {% if page.metadata.location is defined and page.metadata.location and page.metadata.date is defined and page.metadata.date %}
+                <br />
+            {% endif %}
+            {% if page.metadata.date is defined and page.metadata.date %}
+                {% if page.metadata.timezone is defined %}
+                    {% set date = date_create( page.metadata.date, page.metadata.timezone ) %}
+                {% else %}
+                    {% set date = date_create( page.metadata.date, 'Australia/Perth' ) %}
+                {% endif %}
+                <time datetime="{{ date.format('c') }}" itemprop="datePublished">
+                    <a href="{{ page.link( '/'~date.format('Y') ) }}.html" title="View the archive for {{ date.format('Y') }}">{{ date.format('Y') }}</a>{{ date.format('-m-d') }}
                 </time>
-            </p>
-        {% endif %}
+            {% endif %}
+        </p>
     </header>
     <div class="body">
         {{page.body|md2html|raw}}

@@ -15,6 +15,7 @@ tags:
   - LibraryThing
   - Reading
 ---
-I [use LibraryThing](http://www.librarything.com/profile/samwilson.id.au "View my profile on librarything.com") to keep track my book collection and reading. It’s great!
+I [use LibraryThing](http://www.librarything.com/profile/samwilson.id.au "View my profile on librarything.com")
+to keep track my book collection and reading. It’s great!
 
 <span style="font-size:smaller; color:#999; background-color:white">(Hullo LT Matt! This post is to confirm that I am me.)</span>

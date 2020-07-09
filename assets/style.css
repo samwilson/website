@@ -17,7 +17,14 @@ code, pre {
     padding: 0 3px;
 }
 
-blockquote { line-height:1.2em }
+blockquote {
+    line-height:1.2em;
+    margin: 0;
+    padding-left: 0.8em;
+    border-style: solid;
+    border-width: 0 0 0 8px;
+    border-color: rgba(0, 102, 0, 0.25);
+}
 
 @media print {
     body { max-width:none }
@@ -34,14 +41,12 @@ header.site { display:flex }
 header.site > p { flex:1 }
 header.site .right { flex:3; text-align:right }
 
-figure { margin:1em 0; background-color:#efefef; text-align:center }
-figure img { max-width:100% }
+header.page p { text-align:right; margin:0; padding:0 }
+
+figure { margin:1em 0; background-color:#efefef; text-align:center; font-size:smaller }
+figure img { max-width:100%; height:auto }
 figure figcaption { padding:0.4em }
-figure figcaption .meta {
-    text-align: right;
-    font-size: smaller;
-    display: block;
-}
+figure figcaption .meta { text-align:right; display:block }
 
 footer {
     margin-top: 2em;
