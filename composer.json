@@ -3,10 +3,12 @@
         "samwilson/basildon": "^6"
     },
     "scripts": {
+        "clean": "rm -r ./cache",
         "build": "basildon build .",
         "deploy": [
+            "@clean",
             "@build",
-            "netlify deploy --prod -d output"
+            "./node_modules/.bin/netlify deploy --prod -d output"
         ],
         "new": "php src/new.php"
     }

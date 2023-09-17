@@ -13,14 +13,10 @@
     <link rel="pingback" href="https://webmention.io/samwilson.id.au/xmlrpc" />
     <meta property="og:url" content="{{ site.config.url }}{{ page.id }}.html" />
     <meta property="og:title" content="{{ page.metadata.title|e('html_attr') }}" />
-    <meta property="twitter:title" content="{{ page.metadata.title|e('html_attr') }}" />
     {% if page.metadata.description is defined and page.metadata.description %}
         <meta name="description" content="{{ page.metadata.description|e('html_attr') }}">
         <meta property="og:description" content="{{ page.metadata.description|e('html_attr') }}" />
-        <meta name="twitter:description" content="{{ page.metadata.description|e('html_attr') }}">
     {% endif %}
-    <meta name="twitter:site" content="@samwilson" />
-    <meta name="twitter:creator" content="@samwilson" />
     {% block headend %}{% endblock %}
 </head>
 <body>
@@ -28,12 +24,9 @@
     <p class="left"><a href="{{ page.link('/index') }}.html" rel="start" title="Go to homepage">{{site.config.title}}</a></p>
     <p class="right noprint">
         <a href="https://meta.wikimedia.org/wiki/User:Samwilson" rel="me" title="Go to my Wikimedia user page on Meta Wiki"><img alt="Wikimedia user link badge" src="https://img.shields.io/static/v1?label=Wikimedia&message=User:Samwilson&labelColor=%2336c&style=social&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAACv0lEQVQ4jYWRW0iTYRjHf9/8BrPaNJpr1HBSmpqjRdQ6McOCVLrpogNlgQcihKLLCCq6KoIiSjK8MNAyCKIkIrDyUBidIW1WywxnU6d5+KabGX76dCETK8L/1cP7/n/v83+fB/6SiFhE5NBYKNTccvFitOXChchYb2+jiBSIiOlv/2xQEZGjIqKNDw1JjdMpFSAVILdSUuSXpomI9IjIvtmcIQYPjI5X9WhjVwBLZ20tkUBgxjTa2UnnvXsA9h5t7FZoJHo2dqcCTExNHd1XWX/wc0jjxfGdSpzp36RxJhPB4aiy8XwtWUsWntB1ea2qSq1BRBJrXrWfe/KpmzRbAuZ4BXPeVmwezwxsW7+eBbk5mOMVllkt1LUFqXrprxARVQX2XK73zYs3qlQX5XC6qZL2wW6uPbiL8qZlej4eN0UPL7FikYObJYWknbxN+dM2W/Hm9O0GX8/Q7vffB8nNcqBN9PO8y0d/dJjSR2WoXg+q10NpXRn90WGauz4wqg+Qm+XgXWCA1u7BvWrHj5HlAKk2C619HTOx+6PDtPZ9m6ljeh/qYMXiBAA+94YzDSIy+d/dziGBKUNqUqIfoL1vhNX21Dmh1fbl+ENhADLsFp/BtXTh7TXJVh59DGJWrWxOdv0XznauYr5h2rsuJQm3w3rDANw5kuMK/5zQOVDZyJnsErKd7n/gLSluTnmLOHC9gV/6JIe8GV3AMwVA1+XgjqsPq+vagnjT7Nws3kpkcgBtPAJAosnMgrhFFFQ20Pw1RL4rWe6X5m0zGpVGJdYhqEXOllQ9PVHXFsRkjGP7Sgdptulpf+kL8/hTkPGJSfJdyXJ1/6Zjy6wJZQDK7Ji6LruqX/nLy5s+Jr0N/PjjC2udSRzOzgwUbsgoNhqVhtj5Hw8AiIgK5LYEB/f6Q+F0AcmwW3xuh7UGaFIURWb7fwMlLzl/PVZvPwAAAABJRU5ErkJggg==" /></a>
-        <a href="https://twitter.com/samwilson" rel="me" title="Follow me on Twitter"><!--
-            --><img alt="Twitter user link badge" src="https://img.shields.io/twitter/follow/samwilson?label=%40samwilson&style=social"><!--
+        <a href="https://wikis.world/samwilson" rel="me" title="Follow me on Mastodon"><!--
+            --><img alt="Mastodon user link badge" src="https://img.shields.io/mastodon/follow/109164634854860767?domain=https%3A%2F%2Fwikis.world"><!--
         --></a>
-
-        <img alt="Mastodon Follow" src="https://img.shields.io/mastodon/follow/108202279205978483?domain=https%3A%2F%2Fausglam.space&style=social">
-
         <a href="https://github.com/samwilson" rel="me" title="See what I've been up to on GitHub"><img alt="GitHub user link badge" src="https://img.shields.io/github/followers/samwilson?label=Github&style=social"></a>
     </p>
 </header>

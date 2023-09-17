@@ -27,7 +27,6 @@
         }
         #search-form { text-align:center }
     </style>
-    <link rel="stylesheet" href="assets/mastodon.widget/mastodon.widget.css" />
 </head>
 <body>
 
@@ -94,14 +93,10 @@
                 They're a good, open, honest (and even Australian) company.
             </p>
 
-            <div class="hidden-xs">
-                <a class="twitter-timeline" data-height="500" data-dnt="true" href="https://twitter.com/samwilson" style="display:block;height:500px">
-                    @samwilson
-                </a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
+            <p>I'm also on Mastodon:</p>
+            <div id="mastodon-timeline" class="mastodon-timeline mastodon-timeline-light hidden-xs"></div>
             <p class="visible-xs-block">
-                I'm also on Twitter as <a href="https://twitter.com/samwilson" itemprop="sameAs" rel="me">@samwilson</a>.
+                <a href="https://wikis.world/@samwilson" itemprop="sameAs" rel="me">@samwilson@wikis.world</a>
             </p>
             <p class="text-right">
                 <small><a rel="me" itemprop="sameAs" href="https://orcid.org/0000-0003-4308-3443">ORCID 0000-0003-4308-3443</a></small>
@@ -282,24 +277,20 @@
         }
     });
 </script>
-<script type="text/javascript" src="assets/mastodon.widget/mastodon.widget.js"></script>
+<link rel="stylesheet" href="assets/mastodon.widget.css" />
+<script type="text/javascript" src="assets/mastodon.widget.js"></script>
 <script>
-    $(document).ready(function() {
-        var mapi = new MastodonApi({
-            target_selector  : '#myTimeline'
-            ,instance_uri    : 'https://ausglam.space'
-            ,access_token    : '00bkhgUHGDkuPNrKQO2j1aeMzfAflRkCRBlKTp-knbc'
-            ,account_id      : '108202279205978483'
-            // optional parameters
-            // ===================
-            // - status max
-            ,toots_limit     : 10
-            // - if you are using font-awesome:
-            //,pic_icon        : '<i class="fa fa-picture-o"></i>'
-            // or a picture
-            //,pic_icon        : '<img src="mypicicon.gif" />'
-        });
-    });
+$(document).ready(function() {
+  var mapi = new MastodonApi({
+    target_selector: '#mastodon-timeline',
+    instance_uri: 'https://wikis.world',
+    access_token: 'r0SSm8kjM4PP9FtpJR3t7WLvQVIQmhgKpZTrZf111Hk',
+    account_id: '109164634854860767',
+    toots_limit: 8,
+    boosts_count_icon: 'Boosted',
+    favourites_count_icon: 'Liked'
+  });
+});
 </script>
 </body>
 </html>
