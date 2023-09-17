@@ -1,6 +1,6 @@
 ---
 title: Just Plane/Flat
-date: 2003-11-12T12:06:46+00:00
+date: 2003-11-12T12:06:46+11:00
 tags:
   - woodworking
   - flattening

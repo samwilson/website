@@ -10,7 +10,7 @@ tags:
   - Linux
   - The Guardian
   - ThinkPad
-  - Ubuntu
+  - ubuntu
 ---
 [My new Ubuntu-flavoured ThinkPad is computing heaven](https://www.theguardian.com/technology/2011/may/17/computing-opensource), Cory Doctorow, The Guardian
 ([archive]](https://web.archive.org/web/20200327101455/https://www.theguardian.com/technology/2011/may/17/computing-opensource)).

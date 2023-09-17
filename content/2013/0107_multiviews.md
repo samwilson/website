@@ -22,8 +22,9 @@ I have now had this problem about every year for the last three or four years, a
 
 So, here, for my own future reference, is how to stop a stupid Apache from serving `/index` as `/index.php` (at, of course, any depth of the path):
 
-<pre lang="shell">Options -MultiViews
-</pre>
+```
+Options -MultiViews
+```
 
 So easy. The [documentation](https://httpd.apache.org/docs/2.2/content-negotiation.html#multiviews) explains it all.
 

@@ -27,6 +27,7 @@
         }
         #search-form { text-align:center }
     </style>
+    <link rel="stylesheet" href="assets/mastodon.widget/mastodon.widget.css" />
 </head>
 <body>
 
@@ -211,7 +212,7 @@
 
             <h2>Work</h2>
             <p>
-                <img src="https://wikimediafoundation.org/static/images/project-logos/foundationwiki.png"
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Wikimedia-logo_black.svg/100px-Wikimedia-logo_black.svg.png"
                      class="pull-right" alt="Wikimedia Foundation logo" />
                 I work for the <a href="https://wikimediafoundation.org">Wikimedia Foundation</a>
                 as a Software Engineer on the Community Tech team.
@@ -279,6 +280,25 @@
                 }
             );
         }
+    });
+</script>
+<script type="text/javascript" src="assets/mastodon.widget/mastodon.widget.js"></script>
+<script>
+    $(document).ready(function() {
+        var mapi = new MastodonApi({
+            target_selector  : '#myTimeline'
+            ,instance_uri    : 'https://ausglam.space'
+            ,access_token    : '00bkhgUHGDkuPNrKQO2j1aeMzfAflRkCRBlKTp-knbc'
+            ,account_id      : '108202279205978483'
+            // optional parameters
+            // ===================
+            // - status max
+            ,toots_limit     : 10
+            // - if you are using font-awesome:
+            //,pic_icon        : '<i class="fa fa-picture-o"></i>'
+            // or a picture
+            //,pic_icon        : '<img src="mypicicon.gif" />'
+        });
     });
 </script>
 </body>

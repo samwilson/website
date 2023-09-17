@@ -1,20 +1,9 @@
-To Coledale
-===========
-
-*2006 June 30, 6:30PM.*
-
-date: 2006-06-30T12:00:19+00:00
-author: Sam Wilson
-layout: post
-guid: http://samwilson.id.au/2006/06/30/to-coledale/
-permalink: /2006/06/30/to-coledale/
-views:
-  - "522"
-dsq_thread_id:
-  - "3858805962"
-categories:
-  - Exploring
+---
+title: To Coledale
+date: 2006-06-3018:30:00 +1000
+timezone: Australia/Sydney
 tags:
+  - Exploring
   - Coledale
   - exploration
   - photography
@@ -31,7 +20,7 @@ I had to buy some things — whiskey specifically, but I’d thought to think of
 
 I’ve this digital camera of A.’s with me, and it’s giving me some things to think about as I potter around: I want to take photos for my blog (or whatever this website is), and for Wikipedia, and (as usual) for my archiving habit — keeping a record and all that. So I might just go and take a photo of the railway station.
 
-Well gosh, I’ve actually overcome my usual public photography reticence, and wandered about taking photos. Of the station enterance, the platform the train, and a couple for me of the shunting yards and building to the \___(east?) of here. Now boarding the 12:05 Xplorer service to Sydney.
+Well gosh, I’ve actually overcome my usual public photography reticence, and wandered about taking photos. Of the station enterance, the platform the train, and a couple for me of the shunting yards and building to the (east?) of here. Now boarding the 12:05 Xplorer service to Sydney.
 
 **On board.** As everyone files on board, dragging suitcases and feeling self conscious (or is that just me, with my notebook?), and they settle down for the beginning — not settling in for the journey, just the period of waiting which precedes it — they crackle chip packets, crack the seals on drink bottles, and flick through the information leaflet from their seat pocket. The smokers dump their gear and quickly, without first visiting their seats or meeting their neighbour, jump back onto the platform for a last puff, an occasional whiff coming back through the doors to where I’m sitting near the rear of the car. The clouds are coming over outside, it’s forecast to rain, but that means nothing to us, enclosed and protected in this air conditioned space, with our minds stretching out already, along the track to the places we’re yet to be, leaving Here and seeing Now as just an interim before Then, which is when we’ll get There.
 

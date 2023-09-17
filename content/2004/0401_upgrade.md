@@ -1,8 +1,8 @@
-Nothin' like a good upgrade to start the day
-============================================
-
-*2004, April 1, 9:31AM.*
-
+---
+title: Nothin' like a good upgrade to start the day
+date: 2004-04-01 09:31:00 +1000
+timezone: Australia/Sydney
+---
 I got up early this morning to grab the phone line before the others awake
 — there's eight here today and I guess someone will come hassling before long.
 I have returned to using [WordPress](http://wordpress.org/)

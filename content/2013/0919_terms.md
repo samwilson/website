@@ -38,22 +38,22 @@ A term can be referenced from anywhere in the wiki with `{{defined term inline|t
   8. Category:Defined terms (no content actually required, but probably should at least be categorized)
   9. _Data pages_
 
-<!--more-->
-
 ### Defined terms
 
-<pre lang="text">Define a term: {{#forminput: form=Defined term }}
+```
+Define a term: {{#forminput: form=Defined term }}
 
 {{#ask: [[Category:Defined terms]] [[Definition::+]] |?Definition |format=table |mainlabel=Term }}
 
 [[Category:Defined terms]]
-</pre>
+```
 
 ### Form:Defined term
 
-<pre lang="text">&lt;noinclude>
+```
+<noinclude>
 Define a term: {{#forminput:form=Defined term}}
-&lt;/noinclude>&lt;includeonly>
+</noinclude><includeonly>
 
 {{{for template|Defined term}}}
 {| class="wikitable"
@@ -66,13 +66,14 @@ Define a term: {{#forminput:form=Defined term}}
 |}
 {{{end template}}}
 
-&lt;/includeonly>
+</includeonly>
 [[Category:Defined terms]]
-</pre>
+```
 
 ### Template:Defined term
 
-<pre lang="text">{| class="wikitable"
+```
+{| class="wikitable"
 !Definition:
 |{{{Definition}}}
 |}
@@ -82,37 +83,43 @@ Define a term: {{#forminput:form=Defined term}}
 [[Defined terms|View all defined terms]]
 
 [[Category:Defined terms]]
-</pre>
+```
 
 ### Template:Defined term inline
 
-<pre lang="text">&lt;includeonly><span class="defined-term" title="{{#show: {{{1|Defined_term}}} |?Definition }}">{{#if: {{{2|}}} | [[{{{1}}}|{{{2}}}]] | [[{{{1}}}]] }}</span>&lt;/includeonly>&lt;noinclude>
+```
+<includeonly><span class="defined-term" title="{{#show: {{{1|Defined_term}}} |?Definition }}">{{#if: {{{2|}}} | [[{{{1}}}|{{{2}}}]] | [[{{{1}}}]] }}</span></includeonly><noinclude>
+```
 
 == Usage ==
 
-<code>&lt;nowiki>{{defined term inline|term}}&lt;/nowiki></code>
+<code><nowiki>{{defined term inline|term}}</nowiki></code>
 
-<code>&lt;nowiki>{{defined term inline|term|displayed text}}&lt;/nowiki></code>
-&lt;/noinclude>
+<code><nowiki>{{defined term inline|term|displayed text}}</nowiki></code>
+</noinclude>
 [[Category:Defined terms]]
-</pre>
+```
 
 ### Property:Definition
 
-<pre lang="text">A definition is a [[Has type::text]]ual explanation of the meaning of something.
-</pre>
+```
+A definition is a [[Has type::text]]ual explanation of the meaning of something.
+```
 
 ### MediaWiki:Common.js
 
-<pre lang="text">// The enclosing span has a title, and the anchor's one overrides it.
+```
+// The enclosing span has a title, and the anchor's one overrides it.
 $("span.defined-term a").removeAttr("title");
-</pre>
+```
+
 
 ### MediaWiki:Common.css
 
-<pre lang="text">.defined-term a { cursor:help; color:#060 }
+```
+.defined-term a { cursor:help; color:#060 }
 .defined-term a.new { color:red }
-</pre>
+```
 
 ### Data pages
 
@@ -120,15 +127,18 @@ _These will be created by the form above, and need never be edited directly._
 
 Dog:
 
-<pre lang="text">{{Defined term|Definition=Not a cat.}}
-</pre>
+```
+{{Defined term|Definition=Not a cat.}}
+```
 
 Defined term:
 
-<pre lang="text">{{Defined term|Definition=A word or phrase that has a specific and agreed-upon meaning.}}
-</pre>
+```
+{{Defined term|Definition=A word or phrase that has a specific and agreed-upon meaning.}}
+```
 
 Cat:
 
-<pre lang="text">{{Defined term|Definition=Not a dog.}}
-</pre>
+```
+{{Defined term|Definition=Not a dog.}}
+```

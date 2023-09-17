@@ -1,8 +1,8 @@
-Three Things
-============
-
-*2004 April 5, 11:24AM.*
-
+---
+title: Three Things
+date: 2004-04-05 11:24:00 +1000
+timezone: Australia/Sydney
+---
 1. A morning of getting ready for the short, cold days ahead;
    as the nights grow colder and darker earlier,
    I find myself in need of more warmth and (some – I have none now) light:

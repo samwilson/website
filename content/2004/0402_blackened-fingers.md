@@ -1,7 +1,8 @@
-Blackened Fingers
-=================
-
-*2004 April 2, 1:44PM.*
+---
+title: Blackened Fingers
+date: 2004-01-02 13:44:00 +1000
+timezone: Australia/Sydney
+---
 
 I began the morning in good spirits, lying watching the grapevine outside my bedroom window, and the small bright blue patches of sky between the leaves. It didn’t seem to matter if I got out of bed or not…
 

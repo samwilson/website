@@ -16,36 +16,24 @@ For the purposes of this explanation, we're working only in HTML and Javascript 
 The UI looks something like the screenshot below
 (there is also a means of adding new rows to the table
 — that doesn't change how this validation works,
-but it is why we're using [`.live()`](http://api.jquery.com/live) here):
+but it is why we're using [.live()](http://api.jquery.com/live) here):
 
-<img src="http://samwilson.id.au/wp-content/uploads/2011/06/select_boxes.png" 
-alt="" title="select_boxes" width="162" height="148" class="alignright size-full
- wp-image-820" srcset="https://samwilson.id.au/wp-content/uploads/2011/06/select_boxes.png 
- 162w, https://samwilson.id.au/wp-content/uploads/2011/06/select_boxes-150x137.png 150w" 
- sizes="(max-width: 162px) 100vw, 162px" />
+![Select boxes.](/2011/0712_tabular-forms_select_boxes.png)
 
 ## The Problem
 
 In an HTML table full of form elements,
-  
 where new rows can be added (dynamically),
-  
 we want to prevent duplicate rows being selected.
 
 ## The Plan
 
 After changing a value in any row,
-  
 get a list of the values in that row
-  
 and then go through all of the rows
-  
 and see if those values are there.
-  
 If we find more than one instance of them,
-  
 tell the user
-  
 and return the changed value to what it was before.
 
 ## The Solution

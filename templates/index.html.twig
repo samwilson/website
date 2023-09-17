@@ -3,13 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% if page.metadata.title is defined %}
-            {{ page.metadata.title }}
-        {% else %}
-            Untitled
-        {% endif %}
-        &larr; {{site.config.title}}</title>
+    <title>{{ page.metadata.title }} &larr; {{site.config.title}}</title>
     <link rel="stylesheet" href="{{ page.link('/assets/style.css') }}" />
     <link rel="alternate" href="{{ page.link('/index') }}.rss" type="application/rss+xml" title="RSS feed" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{ page.link('/favicon-32x32.png') }}">
@@ -34,7 +28,12 @@
     <p class="left"><a href="{{ page.link('/index') }}.html" rel="start" title="Go to homepage">{{site.config.title}}</a></p>
     <p class="right noprint">
         <a href="https://meta.wikimedia.org/wiki/User:Samwilson" rel="me" title="Go to my Wikimedia user page on Meta Wiki"><img alt="Wikimedia user link badge" src="https://img.shields.io/static/v1?label=Wikimedia&message=User:Samwilson&labelColor=%2336c&style=social&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAACv0lEQVQ4jYWRW0iTYRjHf9/8BrPaNJpr1HBSmpqjRdQ6McOCVLrpogNlgQcihKLLCCq6KoIiSjK8MNAyCKIkIrDyUBidIW1WywxnU6d5+KabGX76dCETK8L/1cP7/n/v83+fB/6SiFhE5NBYKNTccvFitOXChchYb2+jiBSIiOlv/2xQEZGjIqKNDw1JjdMpFSAVILdSUuSXpomI9IjIvtmcIQYPjI5X9WhjVwBLZ20tkUBgxjTa2UnnvXsA9h5t7FZoJHo2dqcCTExNHd1XWX/wc0jjxfGdSpzp36RxJhPB4aiy8XwtWUsWntB1ea2qSq1BRBJrXrWfe/KpmzRbAuZ4BXPeVmwezwxsW7+eBbk5mOMVllkt1LUFqXrprxARVQX2XK73zYs3qlQX5XC6qZL2wW6uPbiL8qZlej4eN0UPL7FikYObJYWknbxN+dM2W/Hm9O0GX8/Q7vffB8nNcqBN9PO8y0d/dJjSR2WoXg+q10NpXRn90WGauz4wqg+Qm+XgXWCA1u7BvWrHj5HlAKk2C619HTOx+6PDtPZ9m6ljeh/qYMXiBAA+94YzDSIy+d/dziGBKUNqUqIfoL1vhNX21Dmh1fbl+ENhADLsFp/BtXTh7TXJVh59DGJWrWxOdv0XznauYr5h2rsuJQm3w3rDANw5kuMK/5zQOVDZyJnsErKd7n/gLSluTnmLOHC9gV/6JIe8GV3AMwVA1+XgjqsPq+vagnjT7Nws3kpkcgBtPAJAosnMgrhFFFQ20Pw1RL4rWe6X5m0zGpVGJdYhqEXOllQ9PVHXFsRkjGP7Sgdptulpf+kL8/hTkPGJSfJdyXJ1/6Zjy6wJZQDK7Ji6LruqX/nLy5s+Jr0N/PjjC2udSRzOzgwUbsgoNhqVhtj5Hw8AiIgK5LYEB/f6Q+F0AcmwW3xuh7UGaFIURWb7fwMlLzl/PVZvPwAAAABJRU5ErkJggg==" /></a>
-        <a href="https://twitter.com/samwilson" rel="me" title="Follow me on Twitter"><img alt="Twitter user link badge" src="https://img.shields.io/twitter/follow/samwilson?label=%40samwilson&style=social"></a>
+        <a href="https://twitter.com/samwilson" rel="me" title="Follow me on Twitter"><!--
+            --><img alt="Twitter user link badge" src="https://img.shields.io/twitter/follow/samwilson?label=%40samwilson&style=social"><!--
+        --></a>
+
+        <img alt="Mastodon Follow" src="https://img.shields.io/mastodon/follow/108202279205978483?domain=https%3A%2F%2Fausglam.space&style=social">
+
         <a href="https://github.com/samwilson" rel="me" title="See what I've been up to on GitHub"><img alt="GitHub user link badge" src="https://img.shields.io/github/followers/samwilson?label=Github&style=social"></a>
     </p>
 </header>
@@ -92,6 +91,21 @@
                 {% endfor %}
             </p>
         {% endif %}
+        {% if page.metadata.comments is defined %}
+            <div id="comments">
+                <h2>Comments:</h2>
+                <dl>
+                    {% for comment in page.metadata.comments %}
+                        <dt>@{{comment.author}} {{comment.date.format('Y-m-d')}}:</dt>
+                        <dd>{{comment.text|md2html|raw}}</dd>
+                    {% endfor %}
+                </dl>
+            </div>
+        {% endif %}
+        <p class="comment-instructions">
+            Leave a comment either via the form below,
+            or by <a href="mailto:sam@samwilson.id.au?subject=Comment on {{site.config.url}}{{page.id}}.html">emailing me</a>.
+        </p>
         <script src="https://utteranc.es/client.js"
                 repo="samwilson/website"
                 issue-term="pathname"

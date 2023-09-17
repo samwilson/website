@@ -24,6 +24,6 @@ tags:
   
 [This week’s Gazette](http://www.communitydigital.com.au/olive/ode/FremantleGazette/ "Unfortunately they seem to now require a login, but at least it's free") has an announcement about [Freopedia](http://en.wikipedia.org/wiki/Wikipedia:GLAM/Freopedia) and the editing sessions we’re holding at the Fremantle Library.
 
-(That QR code, by the way, goes to [http://www.fremantle.wa.gov.au/home/List\_of\_News\_and\_Media/November\_2012/Help\_promote\_your\_city](http://www.fremantle.wa.gov.au/home/List_of_News_and_Media/November_2012/Help_promote_your_city); the code illustrating _that_ article is for ‘Nastco stock photos’.)
+(That QR code, by the way, goes to [www.fremantle.wa.gov.au/home/List_of_News_and_Media/November_2012/Help_promote_your_city](http://www.fremantle.wa.gov.au/home/List_of_News_and_Media/November_2012/Help_promote_your_city); the code illustrating _that_ article is for ‘Nastco stock photos’.)
 
 Relatedly, [here’s](http://blog.library.si.edu/2012/10/editing-wikipedia-better-with-friends-and-best-with-librarians/) an interesting article from the Smithsonian Institute about why it’s nice to edit Wikipedia with friends, and in libraries.

@@ -12,7 +12,13 @@ There’s a [new version](http://piwigo.org/forum/viewtopic.php?id=27065) of [Pi
 
 I decided to switch to using Git to update the files, to make future upgrades much easier and without having to make anything writable by the server (even for some short amount of time).
 
-First lock the site, via _Tools > Maintenance -> Lock gallery_, then get the new [code](https://github.com/Piwigo/Piwigo):<pre lang=bash> $ git clone https://github.com/Piwigo/Piwigo.git photos.samwilson.id.au $ cd photos.samwilson.id.au $ git checkout 2.8.3 </pre> 
+First lock the site, via _Tools > Maintenance -> Lock gallery_, then get the new [code](https://github.com/Piwigo/Piwigo):
+
+```
+$ git clone https://github.com/Piwigo/Piwigo.git photos.samwilson.id.au
+$ cd photos.samwilson.id.au
+$ git checkout 2.8.3
+```
 
 Copy the following files:
 
@@ -28,10 +34,11 @@ Then browse to `/upgrade.php` to run any required database changes.
 
 I’ve installed these plugins using Git as well: [Piwigo-BatchDownloader](https://github.com/mistic100/Piwigo-BatchDownloader), [Flickr2Piwigo](https://github.com/mistic100/Flickr2Piwigo), and [piwigo-openstreetmap](https://github.com/xbgmsharp/piwigo-openstreetmap). The OSM plugin also requires `/osmmap.php` to be created with the following (the plugin would have created it if it was allowed):
 
-<pre lang="php">&lt;?php
+```
+<?php
 define( 'PHPWG_ROOT_PATH', './' );
 include_once( PHPWG_ROOT_PATH . 'plugins/piwigo-openstreetmap/osmmap.php' );
 ?>
-</pre>
+```
 
 That’s about. Maybe these notes will help me remember next time.

@@ -2,14 +2,9 @@
 id: 2838
 title: WikiCite 2017
 date: 2017-05-23T13:49:49+00:00
-author: Sam Wilson
-layout: post
-guid: https://samwilson.id.au/?p=2838
-permalink: /2017/05/23/wikicite/
-categories:
+tags:
   - Open content
   - Programming
-tags:
   - Bibliodata
   - books
   - Vienna
@@ -29,4 +24,4 @@ The latter is rolling on quite well, and I’ve got it searching and displaying 
 
 And here is a scary chicken I saw yesterday at the Naturhistorisches Museum:
 
-[<img src="https://farm5.staticflickr.com/4159/33979670504_b30ee3b049_c.jpg" alt="Scary chicken (Deinonychus antirrhopus)" width="450" height="800" />](https://www.flickr.com/photos/freosam/33979670504)
+{{{flickr|id=33979670504}}}

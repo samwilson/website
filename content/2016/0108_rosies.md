@@ -13,4 +13,7 @@ tags:
   - pubs
   - "Rosie O'Gradys"
 ---
-[<img src="http://photos.samwilson.id.au/_data/i/upload/2016/01/08/20160108025111-70a9c64a-xs.jpg" width="216" height="324" class="alignright" />](http://photos.samwilson.id.au/picture/3873/category/255)So Rosie O’Grady’s, the fake Irish pub in Fremantle, is closing in two or three weeks. I know it’s ridiculous, but I like it there! I’ve had many beers, and generally enjoyed the almost-always-empty vibe. Sure it’s a manufactured, falsely-traditional interior design, but I don’t care. I’ll be sad to see it turn into another trendy place with $12 beers.
+
+{{{flickr|id=32715957805}}}
+
+So Rosie O’Grady’s, the fake Irish pub in Fremantle, is closing in two or three weeks. I know it’s ridiculous, but I like it there! I’ve had many beers, and generally enjoyed the almost-always-empty vibe. Sure it’s a manufactured, falsely-traditional interior design, but I don’t care. I’ll be sad to see it turn into another trendy place with $12 beers.

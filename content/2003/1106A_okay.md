@@ -1,8 +1,9 @@
-It's okay (I Guess)
-===================
-
-*2003 November 6, 12:08PM.*
-
+---
+title: It's okay (I Guess)
+date: 2003-11-06 12:08:00 +1100
+timezone: Australia/Canberra
+location: Canberra
+---
 I have begun dressing the ash, but am quite disheartened today; I don’t want to be doing it.
 I feel like my work is not ‘good enough’, too rough, or ugly…
 why this society, myself included, is so hung up on the smooth, square, fair, straight, even,

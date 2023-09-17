@@ -1,10 +1,10 @@
-Stylin'
-=======
-
-*2004 April 30, 11:45AM.*
-
+---
+title: Stylin'
+date: 2004-04-30 11:45:00 +1000
+timezone: Australia/Sydney
+---
 This morning I have been playing around with this site's [CSS](http://www.w3.org/TR/CSS2/).
-I know it doesn't look too great just now, but I'll fix it soon... maybe.
+I know it doesn't look too great just now, but I'll fix it soon… maybe.
 I want to get back to working on my main PHP project,
 but it's such a drag working on it without the lovely syntax high-lighting of a *useful* editor.
 

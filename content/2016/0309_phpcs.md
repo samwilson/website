@@ -18,24 +18,28 @@ The [docs](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standa
 
 Clone the two required repositories to directories next to each other:
 
-<pre lang="bash">cd ~/public_html/wordpress/
+```
+cd ~/public_html/wordpress/
 git clone https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git
 git clone https://github.com/squizlabs/PHP_CodeSniffer.git
-</pre>
+```
 
 Mostly you’ll be working from the PHP_CodeSniffer side of things. Change into that directory and set up its dependencies:
 
-<pre lang="bash">cd PHP_CodeSniffer
+```
+cd PHP_CodeSniffer
 composer install
-</pre>
+```
 
 Set up `phpcs` so that it can find its tests and the WordPress coding standards:
 
-<pre lang="bash">cp phpunit.xml.dist phpunit.xml
+```
+cp phpunit.xml.dist phpunit.xml
 ./scripts/phpcs --config-set installed_paths ../WordPress-Coding-Standards/
-</pre>
+```
 
 And now you’re ready to run the tests (still from the PHP_CodeSniffer directory):
 
-<pre lang="bash">./vendor/bin/phpunit --filter WordPress
-</pre>
+```
+./vendor/bin/phpunit --filter WordPress
+```

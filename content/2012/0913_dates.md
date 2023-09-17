@@ -30,7 +30,8 @@ Something as simple as naming files becomes a hideous contortion of detecting fo
 
 Firstly, compile the following Java class.
 
-<pre lang="java" line="1">import java.text.SimpleDateFormat;
+```
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class date {
@@ -41,20 +42,22 @@ public class date {
         System.out.println(out);
     }
 }
-</pre>
+```
 
-<pre lang="bash">$ javac thedate.java
-</pre>
+```
+$ javac thedate.java
+```
 
 Then, call it from a batch file with something like this:
 
-<pre lang="dos" line="1">echo off
+```
+echo off
 setlocal
 java date > thedate.txt
 set /p THEDATE= &lt; thedate.txt
 del thedate.txt
 echo The date is %THEDATE%
 endlocal
-</pre>
+```
 
 This is ridiculous, yes, but it does at least work.

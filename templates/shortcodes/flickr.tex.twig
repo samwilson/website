@@ -1,5 +1,5 @@
 {% autoescape 'tex' %}
-{% set flickr = flickr(embed.matches.1) %}
+{% set flickr = flickr(shortcode.attr('id')) %}
 \begin{figure}
   \begin{center}
     \includegraphics[width=\textwidth]{{ '{' }}{{ tex_url( flickr.urls.medium_image )|raw }}{{ '}' }}

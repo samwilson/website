@@ -1,8 +1,9 @@
-Just WALK!
-==========
-
-*2003 November 17 11:02AM.*
-
+---
+title: Just WALK!
+date: 2003-11-17 11:02:00 +1100
+timezone: Australia/Canberra
+location: Canberra
+---
 Satish Kumar, from *Resurgence*, issue 197:
 
 > In industrialized countries we live as if we have no legs.

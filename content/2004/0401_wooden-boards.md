@@ -1,8 +1,10 @@
-Attaching wooden boards to bindings
-===================================
-
-*2004 April 1, 4:56PM.*
-
+---
+title: Attaching wooden boards to bindings
+date: 2004-04-01 16:56:00 +1000
+timezone: Australia/Sydney
+tags:
+  - bookbinding
+---
 The earliest period from which many bindings with wooden boards are extant is the 
 twelfth/thirteenth century. These often have boards of around half an inch —
 "in some cases the book is thinner than the combined thickness of the two boards."[^1]
@@ -11,7 +13,8 @@ twelfth/thirteenth century. These often have boards of around half an inch —
 Inside edges beveled also, especially in German bindings.
 The inside back edge would be beveled “so that it follows the swelling in the spine".
 
-Lacing in the *Stonyhurst Gospel*.[^2] [Four holes in each of boards and signatures, designated A through to D from top to bottom.]
+Lacing in the *Stonyhurst Gospel*.[^2]
+(Four holes in each of boards and signatures, designated A through to D from top to bottom.)
 
 > At the start, the threads were twice laced through holes A and C near the back edges of the boards,
 > which were then threaded into the first section, out again at the next holes (B and D)
@@ -25,21 +28,15 @@ Lacing in the *Stonyhurst Gospel*.[^2] [Four holes in each of boards and signatu
 
 All this reading at dinnertime in the library is to decide me on a binding style to begin experimenting
 with tomorrow. Here it is: I shall sew the signatures on to leather thongs with linen
-(after the modern style that I learnt at Pritchards[^3]).
+(after the modern style that I learnt at Pritchards[^2]).
 Then I shall lace the leather to the ~½in. thich boards using either the 'tunnel' method
 or the 'over the outside edge' method (sketches of these to be added when I get near a scanner).
 That sound okay?
 
 (Later:) Here is the sketch:
   
-![Lacing-in of a book's boards](https://farm6.staticflickr.com/5829/30965392411_1ca92c56b7_k.jpg)
+{{{flickr|id=30965392411}}}
 
-[Flickr: `PbiJm4`](https://flic.kr/p/PbiJm4)
-
-[^1]: All quotes in this post from Bernard C. Middleton classic work
-      *A History of English Craft Bookbinding Technique*, The Holland Press,
-      1988, ISBN 0 946 323 135.
- 
+[^1]: All quotes in this post from Bernard C. Middleton's classic work *A History of English Craft Bookbinding Technique*, The Holland Press, 1988, ISBN 0 946 323 135.
 [^2]: Ibid, p.10.
-
 [^3]: Which, by the way, seems to no longer exist.

@@ -29,4 +29,4 @@ So hopefully, all of these scans are now going to be safely housed on Wikimedia 
 and I'll be able to do things like improve
 [the WAAAF category](https://commons.wikimedia.org/wiki/Category:Women%27s_Auxiliary_Australian_Air_Force).
 
-https://commons.wikimedia.org/wiki/File:Joan_Hall,_passing_out_parade,_January_1943_(cropped).png
+{{{commons|Joan_Hall,_passing_out_parade,_January_1943_(cropped).png}}}

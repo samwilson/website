@@ -28,13 +28,12 @@ So far, I’ve sorted out decoding the coordinate values, and can shuffle points
 
 But I don’t know where I’m going next; I’ll leave it till the morning.
 
-<p style="text-align:center">
-  * * *
-</p>
+***
 
 My test code for this has been in PHP, and I needed something to convert big numbers between bases; hadn’t realised that the BC math library didn’t include `base_convert()`, so I found the one below.
 
-<pre lang="php">/**
+```
+/**
  * Convert an arbitrary-length number between arbitrary bases.
  * Copied, and very slightly translated, from
  * http://www.technischedaten.de/pmwiki2/pmwiki.php?n=Php.BaseConvert
@@ -90,4 +89,4 @@ function bc_base_convert($value, $from_base, $to_base)
 	$result = empty($result) ? '0' : $result;
 	return $sign . $result;
 }
-</pre>
+```

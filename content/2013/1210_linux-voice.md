@@ -17,4 +17,7 @@ tags:
   - Open Source
   - Reading
 ---
-[<img src="http://samwilson.id.au/wp-content/uploads/2013/12/2013-11-12_finalcover.png" alt="Linux Voice cover" class="alignleft" />](http://samwilson.id.au/wp-content/uploads/2013/12/2013-11-12_finalcover.png)Linux Voice has reached their target, and so shall be published! Hooray!
+
+![](/2013/1210_linux-voice_cover.png}
+
+Linux Voice has reached their target, and so shall be published! Hooray!

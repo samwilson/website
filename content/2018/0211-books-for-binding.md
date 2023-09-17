@@ -1,8 +1,12 @@
-Bookbinding and Wikisource
---------------------------
-
-*2018 February 11 Sunday 12:10PM.*
-
+---
+title: Bookbinding and Wikisource
+date: 2018-02-11 12:10:00 +0800
+timezone: Australia/Perth
+tags:
+  - Wikisource
+  - Wikimedia
+  - bookbinding
+---
 I have been experimenting with turning Wikisource works into LaTeX-formatted bindable PDFs.
 My initial idea was to produce quatro or octavo layout sheets
 (i.e. 8 or 16 book pages to a sheet of paper that's printed on both sides

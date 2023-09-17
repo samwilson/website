@@ -21,15 +21,16 @@ tags:
 ---
 I’m getting and annoying error when running reverting a Feature (`drush fr featurename`):
 
-<pre lang="bash">/var/www/stage.example.org$ drush fr featurename
+```
+/var/www/stage.example.org$ drush fr featurename
 
 Fatal error: __clone method called on non-object in /var/www/stage.example.org/sites/all/modules/workflow/workflow.features.inc on line 55
 Drush command terminated abnormally due to an unrecoverable error.
 
 Error: __clone method called on non-object in /var/www/stage.example.org/sites/all/modules/workflow/workflow.features.inc, line 55
-</pre>
+```
 
-It looks like this bug was fixed [2 September 2014](https://www.drupal.org/node/2317877#comment-9111791 "Fatal error: __clone method called on non-object in workflow.features.inc") and is tagged as being fixed in 7.x-2.4 … but that version was released on 15 July.
+It looks like this bug was fixed {link|2 September 2014|https://www.drupal.org/node/2317877#comment-9111791|Fatal error: __clone method called on non-object in workflow.features.inc} and is tagged as being fixed in 7.x-2.4 … but that version was released on 15 July.
 
 **[Update:]** Ah. A coffee later, and I realise my stupidity this morning — the bug is tagged as being _in_ 7.x-2.4, not fixed in that version. Gosh, one shouldn’t post before coffee!
 

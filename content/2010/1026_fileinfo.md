@@ -26,14 +26,15 @@ Last week I ended up installing PHP 5.2 rather than 5.3, all because I read that
 
 Anyway, I tried to install Fileinfo from PECL (with the same result with both the `pecl` and `pear` commands):
 
-<pre lang="shell">D:>pear install pecl/fileinfo
+```
+D:>pear install pecl/fileinfo
 WARNING: "pear/Fileinfo" is deprecated in favor of "channel://php-src/ext/fileinfo/in php sources"
 downloading Fileinfo-1.0.4.tgz ...
 Starting to download Fileinfo-1.0.4.tgz (5,835 bytes)
 .....done: 5,835 bytes
 3 source files, building
 ERROR: The DSP Fileinfo.dsp does not exist.
-</pre>
+```
 
 PECL [bug #12603](http://pecl.php.net/bugs/bug.php?id=12603) is about this problem, but is still open and was no help.
 

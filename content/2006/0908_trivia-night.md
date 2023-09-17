@@ -10,5 +10,10 @@ views:
   - "254"
 tags:
   - photography
+  - Canberra
 ---
-This is the floor: [<img id="image108" src="http://samwilson.id.au/wp-content/uploads/2006/09/yellow_tiles_at_bowls.thumbnail.jpg" alt="Yellow Blury Tiles" />](http://samwilson.id.au/wp-content/uploads/2006/09/yellow_tiles_at_bowls.jpg "Yellow Blury Tiles"){.imagelink}
+This is the floor:
+
+{{{flickr|id=29016121775}}}
+
+"Yellow Blury Tiles"

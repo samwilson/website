@@ -1,9 +1,9 @@
 {
-    "require": {
-        "samwilson/basildon": "^0.2"
+    "require-dev": {
+        "samwilson/basildon": "^6"
     },
     "scripts": {
-        "build": "basildon .",
+        "build": "basildon build .",
         "deploy": [
             "@build",
             "netlify deploy --prod -d output"

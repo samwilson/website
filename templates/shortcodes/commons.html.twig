@@ -1,4 +1,4 @@
-{% set commons = commons(embed.matches.1) %}
+{% set commons = commons(shortcode.attrs.1) %}
 
 <figure itemscope itemtype="http://schema.org/ImageObject">
     <a href="{{ commons.imageinfo.0.descriptionurl }}">
@@ -15,6 +15,6 @@
         {% if commons.labels is defined %}
             {{ commons.labels.en.value }}
         {% endif %}
-        <span class="meta">via <a href="{{ embed.url }}">Wikimedia Commons</a></span>
+        <span class="meta">via <a href="{{ commons.imageinfo.0.descriptionurl }}">Wikimedia Commons</a></span>
     </figcaption>
 </figure>

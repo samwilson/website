@@ -1,5 +1,4 @@
 ---
-id: 2749
 title: Editing MediaWiki pages in an external editor
 date: 2017-02-21T14:43:33+00:00
 author: Sam Wilson

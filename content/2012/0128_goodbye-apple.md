@@ -18,7 +18,7 @@ tags:
   - Mac OS
   - Open Source
   - Programming
-  - Ubuntu
+  - ubuntu
   - X220
 ---
 I first used a Mac in about 1993 — a Quadra I think it might’ve been, or a Performa.

@@ -14,7 +14,7 @@ tags:
   - Drupal
   - lab notebook
 ---
-Required modules: ldap\_feeds, ldap\_query, feeds, …
+Required modules: `ldap_feeds`, `ldap_query`, `feeds`, …
 
   1. Add desired fields to user accounts.
   2. Create an LDAP query that fetches the relevant attributes.

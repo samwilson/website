@@ -60,3 +60,6 @@ footer ul li {
     display: inline-block;
     margin-left: 1em;
 }
+#comments { text-align: left; }
+#comments ol { list-style-type: none; }
+.comment-instructions { font-style: italic; text-align: center; }

@@ -1,8 +1,10 @@
-Over the Brink
-==============
-
-*2004 March 31 12:18PM.*
-
+---
+title: Over the Brink
+date: 2004-03-31 12:18:00 +10:00
+timezone: Australia/Sydney
+tags:
+  - woodworking
+---
 > The two forms of blind acceptance of how things are — one unable to question, the other not
 > wanting to; the old and the new — and me, balancing a knife-edge in the middle and seeking to
 > hone that edge to razor sharpness.

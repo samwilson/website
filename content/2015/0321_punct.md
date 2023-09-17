@@ -17,7 +17,7 @@ tags:
   - Parlapa
   - punctuation
 ---
-<figure style="width: 432px" class="wp-caption alignright">[<img class="" src="http://photos.samwilson.id.au/i/upload/2015/03/20/20150320213911-0c94c225-xs.jpg" alt="" width="432" height="288" />](http://photos.samwilson.id.au/picture/2075/category/44)<figcaption class="wp-caption-text">Not enough photos are taken of the undersides of shop awnings.</figcaption></figure> 
+{{{flickr|id=35966751401|caption=Not enough photos are taken of the undersides of shop awnings.}}}
 
 This morning I’m at _Parlapa_, the lovely little caffe opposite the town hall. It’s a good place to be sat, with a slight hangover, with some nice small WordPress code to be working on, and of course with a coffee. The only down side is the fact that the City wifi _almost_ reaches here, so I’ve got the most tantalising of faint signals and so keep trying to connect; I should give that up, and read a book.
 

@@ -23,7 +23,8 @@ Penguin lists their books at [penguin.com.au/browse/by-imprint/penguin-classics]
 
 The following Wikidata Query Service [query](http://tinyurl.com/zcrgxxk) lists all editions published by Penguin, their date of original publication, and whether there’s an Index page on Wikisource for the work or edition.
 
-<pre lang="sparql">SELECT ?edition ?editionLabel ?work ?workLabel ?originalPublicationDate ?wikisourceIndexForWork ?wikisourceIndexForEdition
+```
+SELECT ?edition ?editionLabel ?work ?workLabel ?originalPublicationDate ?wikisourceIndexForWork ?wikisourceIndexForEdition
 WHERE
 {
   ?edition wdt:P31 wd:Q3331189 .
@@ -39,6 +40,6 @@ WHERE
   OPTIONAL{ ?edition wdt:P1957 ?wikisourceIndexForEdition } .
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
 }
-</pre>
+```
 
 I’m not sure how often the WDS data is updated, but so far it’s not being very useful for on-the-fly checking of recent updates. I’m sure there’s a better way of doing that though.

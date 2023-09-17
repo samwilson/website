@@ -329,12 +329,10 @@ The red ranges are the ones that should be included in the result; the orange on
       
       <br /> </TABLE>
     </p>
-    
-    <p>
-      Which corresponds to the following SQL:
-    </p>
-    
-    <pre lang="sql">
+
+Which corresponds to the following SQL:
+
+```
 SELECT * FROM events
 WHERE NOT (
   (start_date IS NOT NULL AND start_date &lt; :A AND end_date IS NOT NULL AND end_date &lt; :A)
@@ -342,4 +340,4 @@ WHERE NOT (
   OR (start_date IS NULL AND end_date IS NOT NULL AND end_date &lt; :A)
   OR (start_date IS NOT NULL AND start_date > :B and end_date IS NULL)
 )
-</pre>
+```

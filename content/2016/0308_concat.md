@@ -16,11 +16,15 @@ tags:
 ---
 One of the first odd things that one finds when starting to work with WordPress code is the excessive use of spaces. Something like:
 
-<pre lang="php">do_something('Words of '.$widget->noun($attrs['ish']));</pre>
+```
+do_something('Words of '.$widget->noun($attrs['ish']));
+```
 
 becomes the the stretched out:
 
-<pre lang="php">do_something( 'Words of ' . $widget->noun( $attrs['ish'] ) );</pre>
+```
+do_something( 'Words of ' . $widget->noun( $attrs['ish'] ) );
+```
 
 Which is fine, and actually now I’ve been using it for a decade I’m pretty comfortable reading it. But it’s uncommon in the PHP world. (And note the singular place in which spaces aren’t used: the array key, iff it’s a string.)
 

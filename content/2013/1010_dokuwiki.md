@@ -1,5 +1,5 @@
 ---
-id: 1878
+title: Dokuwiki
 date: 2013-10-10T09:48:22+00:00
 author: Sam Wilson
 layout: post

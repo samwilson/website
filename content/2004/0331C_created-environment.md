@@ -1,8 +1,8 @@
-A Created Environment
-=====================
-
-*2004, March 31, 5:23PM.*
-
+---
+title: A Created Environment
+date: 2004-03-31 17:23:00 +1000
+timezone: Australia/Sydney
+---
 Ben Lee delivered an intriguing, in depth (an hour and a half!) talk
 on his work as Artistic Director for a computer game company.
 What particularly fascinated me about this topic was the attention to detail

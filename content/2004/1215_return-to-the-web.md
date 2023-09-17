@@ -1,8 +1,8 @@
-A Return to the Web
-===================
-
-*2004 December 15, 6:57PM.*
-
+---
+title: A Return to the Web
+date: 2004-12-15 18:57:00 +1000
+timezone: Australia/Sydney
+---
 Returning to this blog after so long? What *do* I think I'm doing?!
 As if *this* is what it's all about!
 I don't want to return to this God-awful dive of diurnal dialog with myself;

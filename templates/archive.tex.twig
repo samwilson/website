@@ -1,11 +1,18 @@
 {% autoescape 'tex' %}
 \documentclass[a4paper]{article}
-\usepackage{url, listings, graphicx}
+\usepackage{url, listings, graphicx, fancyvrb}
 
 \usepackage{fontspec}
 {#\setsansfont{CMU Sans Serif}%{Arial}#}
 {#\setmainfont{CMU Serif}%{Times New Roman}#}
 {#\setmonofont{CMU Typewriter Text}%{Consolas}#}
+
+\usepackage[shortlabels]{enumitem}
+\setlist[enumerate]{noitemsep}
+\setlist[itemize]{noitemsep}
+
+\renewcommand{\thesection}{\arabic{section}}
+\setcounter{secnumdepth}{0}
 
 \usepackage{hyperref}
 \hypersetup{

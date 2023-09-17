@@ -1,8 +1,12 @@
-The Poetics of Space by Gaston Bachelard
-========================================
-
-*2004 March 31, 4:41PM.*
-
+---
+title: The Poetics of Space by Gaston Bachelard
+date: 2004-03-31 16:41:00 +1000
+timezone: Australia/Sydney
+tags:
+  - woodworking
+  - Poetics of Space
+  - reading
+---
 * “Imagination augments the values of reality.” — p.3
 * “…they describe [the humble abode] as it actually it, without really experiencing its primitiveness, a primitiveness which belongs to all, rich and poor alike, if they are willing to dream.” — p.4
 * “…the recollection of moments of confined, simple, shut-in space are experiences of heartwarming space, of a space that does not seek to become extended, but would like above all to be possessed.” — p.10
@@ -27,7 +31,7 @@ The Poetics of Space by Gaston Bachelard
     > Or of some Hermit’s cave, where by his fire
     > The Hermit sits alone.”
 
-* <quote>“…in the silence, we are seized with the sensation of something vast and deep and boundless.”</quote> — Henri Bosco in ‘Malicroix’, quoted on p.43 of TPOS.
+* > “…in the silence, we are seized with the sensation of something vast and deep and boundless.”</quote> — Henri Bosco in ‘Malicroix’, quoted on p.43 of TPOS.
 * Phenomenology of the imagination demands that poetic image of inhabited space be lived directly, and not reduced to metaphor or simple emotion (p.47).
 * Bachelard seldom comes near describing actual place, forcing me to provide my own imagery – and this is entirely the point! No book ever gives me all I need to furnish a room; I must provide the extras, and these extras are all the more meaningful for my having provided them. The rooms of my own past come swarming in to fill the gaps left by an author, and make me feel more fully the intended image of this space.
 * > The soft wax entered into the polished substance under the pressure of hands and the effective warmth of a woolen cloth. Slowly the tray took on a dull lustre. It was as though the radiance induced by magnetic rubbing emanated from the hundred-year-old sapwood, from the very heart of the dead tree, and spread gradually, in the form of light, over the tray. The old fingers possesed of every virtue, the broad palm, drew from the solid block with its inanimate fibers, the latent powers of life itself. This was creation of an object, a real act of faith, taking place before my enchanted eyes.” –Henri Bosco in _Le jardin d’Hyacinthe_ p.192, quoted on p.67
@@ -36,5 +40,5 @@ The Poetics of Space by Gaston Bachelard
 * Vincent van Gogh to Theo, his brother: we should “retain something of the orginal character of Robinson Crusoe” in all our house. Make and re-make everything oneself.
 * We should never allow the image to be complete. “The imagination can never say: was that all, for there is always more than meets the eye.”p.86 Prehaps this is the story equivalent of technology ‘doing all’ for us. It is neccessary always to leave something for the human.
 * > “Beautiful objects created by skillful hands are quite naturally ‘carried 
-on’ by a poet’s daydream.” p.86. Was the beauty in the first place created by that self-same daydream?” 
+  > on’ by a poet’s daydream.” p.86. Was the beauty in the first place created by that self-same daydream?” 
 * > “The enterprise and skill with which amimals make their nests is so efficant that it is not possible to do better, so entirely do they pass all masons, capenters and builders; for there is not a man who would be able to make a house better suited to himself and his children that these little animals build for themselves.” Ambroise Pare, quoted on p.92.

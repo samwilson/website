@@ -1,0 +1,6 @@
+{% autoescape 'tex' %}
+\textsc{{'{'}}{{shortcode.attrs.1}}{{'}'}}\footnote{{'{'}}{#
+  #}{% if shorcode.attrs.3 is defined and shortcode.attrs.3 %}{{shortcode.attrs.3}}{% endif %}{#
+  #} \url{{'{'}}{{shortcode.attrs.2}}{{'}'}}{#
+#}{{'}'}}
+{% endautoescape %}

@@ -1,8 +1,9 @@
-A Moment of Doubt
-=================
-
-*2003 November 5, 2:51PM.*
-
+---
+title: A Moment of Doubt
+date: 2003-11-05 14:51:00 +1100
+timezone: Australia/Canberra
+location: Canberra
+---
 > "In which I wonder for a while if my work is crap, and then decide that it's not."
 
 I have nailed six of the eight corners of the box: through the first tail and into the next pin,
@@ -16,9 +17,7 @@ Anyway, I couldn't think how to progress; I couldn't even decide on what I wante
 so I jumped on my bike and rode over to F&S to see what I could scrounge from their skip,
 and returned triumphant with an ash door jamb.
 
-![Door jamb.](https://farm5.staticflickr.com/4292/35260758984_d0aef94366_c.jpg)
-
-[Flickr: `VHSBbq`](https://flic.kr/p/VHSBbq) 
+https://www.flickr.com/photos/freosam/35260758984/ Door jamb
 
 I will now make a small box, possibly to go inside the large one, and I'll glue it.
 

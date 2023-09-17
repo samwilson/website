@@ -15,9 +15,10 @@ tags:
 ---
 There’s a problem with uninstalling Tabulate.
 
-<pre lang="text">Fatal error: Class 'WordPress\Tabulate\DB\Grants' not found
+```
+Fatal error: Class 'WordPress\Tabulate\DB\Grants' not found
 in C:\work\public_html\wp\stage\wp-content\plugins\tabulate\uninstall.php on line 8
-</pre>
+```
 
 The `uninstall.php` file shouldn’t know anything about the actual plugin. It shouldn’t use any classes or functions from the plugin itself.
 
@@ -25,9 +26,10 @@ This problem should have been caught before now, though, because the tests all r
 
 Perhaps it’s a matter of removing the autoloader? In the `tearDown()` function:
 
-<pre lang="php">$autoloader = require __DIR__.'/../vendor/autoload.php';
+```
+$autoloader = require __DIR__.'/../vendor/autoload.php';
 $autoloader->unregister();
-</pre>
+```
 
 But no, then the autoloader isn’t loaded for the next test. So can we re-enable it in `setUp()`? Yes, but that still doesn’t make it fail on the classes used in `uninstall.php`… I’m not sure why not.
 

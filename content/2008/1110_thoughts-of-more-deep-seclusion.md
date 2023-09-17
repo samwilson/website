@@ -27,36 +27,22 @@ That’s the fragility I see in I.T., and it scares me I guess, or at least prom
 
 And that’s the answer I find: that, actually, however a chap like me lives (short of subsistence farming) is inextricably tied up with, forever dependent upon, how everyone else lives. (Oh, sorry about the cliché, I didn’t mean to arrive at such a twee conclusion!)
 
-<p style="text-align:center">
-  * * *
-</p>
+***
 
 After which contemplation of where the electrons flow, I shall go now to where the wind flows through the heath, on a stroll that I’ve meaning to take since getting back to W.A. nearly six months ago:
 
 > Five years have past; five summers with the length
-  
 > Of five long winters! and again I hear
-  
 > These waters, rolling from their mountain-springs
-  
 > With a soft inland murmur.—Once again
-  
 > Do I behold these steep and lofty cliffs,
-  
 > That on a wild secluded scene impress
-  
 > Thoughts of more deep seclusion; and connect
-  
 > The landscape with the quiet of the sky.
-  
 > The day is come when I again repose
-  
 > Here, under this dark sycamore, and view
-  
 > These plots of cottage-ground, these orchard tufts,
-  
 > …
 > 
-> <p style="text-align:right">
->   —Mr. Wordsworth’s <a href="http://en.wikisource.org/wiki/Lines_composed_a_few_miles_above_Tintern_Abbey">Lines composed a few miles above Tintern Abbey</a>
-> </p>
+> 
+> —Mr. Wordsworth’s [Lines composed a few miles above Tintern Abbey](http://en.wikisource.org/wiki/Lines_composed_a_few_miles_above_Tintern_Abbey)

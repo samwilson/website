@@ -22,12 +22,10 @@ I have arrived at long last! I’ve been in WA for two weeks already, and I have
 
 There are now a myriad projects that need my attention, and I just need to sort out in what order I’ll tackle them: I need _shelves_, that’s pretty high on the list; before I get get going on them, however, I need (well, maybe don’t _need_, but it’d be nice) somewhere to sharpen my tools, a bench that can get wet; I’d get going with that, then, but I’d like first to have just a couple of simple saw horses to have nearby to dock longer lengths of timber and whatnot. So that’s where I’m going to start:
 
-[<img src="http://samwilson.id.au/wp-content/uploads/2008/07/sawstool_notes-500x332.jpg" alt="" title="Sawstool Notes" width="500" height="332" class="aligncenter size-medium wp-image-229" srcset="https://samwilson.id.au/wp-content/uploads/2008/07/sawstool_notes-500x332.jpg 500w, https://samwilson.id.au/wp-content/uploads/2008/07/sawstool_notes-150x99.jpg 150w" sizes="(max-width: 500px) 100vw, 500px" />](http://samwilson.id.au/wp-content/uploads/2008/07/sawstool_notes.jpg)
+{{{flickr|id=28402904073}}}
 
 And yes, to figure out the angles I had to resort to PHP — I really aught to get myself a calculator that can do trig stuff…
 
-<p style="text-align:center">
-  * * *
-</p>
+***
 
 On the IT front: I am as intent as ever to get working on some sort of wiki-like collaborative archiving software; I’m just not sure what it’s about yet. So I’m focusing on the email archiving thing I’ve got going: it’s aim is to produce printable (nicely-typeset, i.e. LaTeX) archives of email correspondence. The difference between this and just printing emails is that it stores the _structure_ of the email — date, body (without old replies; they’re stored as other emails in the system), and relational IDs for sender and receiver — rather than just flat text, and so the printed output can be much more readable and use less paper. If that makes any sense; I’m working on a better explanation….

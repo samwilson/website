@@ -1,5 +1,6 @@
 ---
-date: 2019-01-03 18:53 +0000
+title: SVG Translate
+date: 2019-01-03 18:53:00 +0000
 timezone: America/Los_Angeles
 location: San Francisco
 tags:

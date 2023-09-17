@@ -1,18 +1,8 @@
-Assesment
-=========
-
+---
+title: Assesment
 date: 2003-11-10T13:18:17+00:00
-author: Sam Wilson
-layout: post
-guid: /?p=14
-permalink: /2003/11/10/assesment/
-aktt_tweeted:
-  - "1"
-views:
-  - "413"
-categories:
-  - Woodworking
 tags:
+  - Woodworking
   - art school
   - assessment
   - dovevtails

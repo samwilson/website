@@ -1,19 +1,13 @@
 ---
-id: 54
 title: Talk about Oscar Wilde!
-date: 2004-04-29T13:23:45+00:00
-author: Sam Wilson
-layout: post
-guid: /?p=54
-permalink: /2004/04/29/talk-about-oscar-wilde/
-views:
-  - "311"
-categories:
-  - Miscellaneous
+date: 2004-04-29 13:23:45 +10:00
+timezone: Australia/Canberra
+location: Canberra
 tags:
-  - Miscellaneous
+  - woodworking
 ---
-An unexamined life may indeed not be worth living, but what of constant, total re-evaluation of everything?! Is that a state to be envied? It seems utterly unavoidable, quite outside of my control, this daily, hourly, questioning of _is it worth it, is there any point?_ At one moment I’m rolling along happily, smiling at the world, getting on with my work and wanting to as well — and at the next I stop what I’m doing (just to see what’s going on), turn around and — bang! — there it is, the abyss. All it takes is a split second of introspection and I wonder if it’s all worth it, a couple more minutes and I’m sure I don’t want to/can’t be bothered and I might as well go to the computer lab…
+An unexamined life may indeed not be worth living, but what of constant, total re-evaluation of everything?!
+Is that a state to be envied? It seems utterly unavoidable, quite outside of my control, this daily, hourly, questioning of _is it worth it, is there any point?_ At one moment I’m rolling along happily, smiling at the world, getting on with my work and wanting to as well — and at the next I stop what I’m doing (just to see what’s going on), turn around and — bang! — there it is, the abyss. All it takes is a split second of introspection and I wonder if it’s all worth it, a couple more minutes and I’m sure I don’t want to/can’t be bothered and I might as well go to the computer lab…
 
 So here I am.
 

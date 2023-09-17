@@ -12,7 +12,7 @@ tags:
   - MediaWiki
   - software
   - system administration
-  - Ubuntu
+  - ubuntu
 ---
 And rain, I mustn’t forget the rain. I’m worrying about the roof, although far less than I used to (it’s a different roof). The jazz is the radio; it’s on.
 
@@ -20,15 +20,21 @@ But the main point this morning is exploring the [mediawiki-lts](https://launchp
 
 So, in simple steps, I first added the PPA:
 
-<pre>sudo add-apt-repository ppa:legoktm/mediawiki-lts</pre>
+```
+sudo add-apt-repository ppa:legoktm/mediawiki-lts
+```
 
 This created `/etc/apt/sources.list.d/legoktm-ubuntu-mediawiki-lts-xenial.list`. Then I updated the package info:
 
-<pre>sudo apt-get update</pre>
+```
+sudo apt-get update
+```
 
 And installed the package:
 
-<pre>sudo apt install mediawiki</pre>
+```
+sudo apt install mediawiki
+```
 
 At this point, the installation prompt for MediaWiki 1.27.3 was available at http://localhost/mediawiki/ (which luckily doesn’t conflict with anything I already had locally) and I stepped through the installer, creating a new database and DB user via phpMyAdmin as I went, and answering all the questions appropriately. (It’s actually been a while since I last saw the installer properly.) The only tricky thing I found was that it asks for the “Directory for deleted files” but not for the actual directory for _all_ files — because I want the files to be stored in a particular place and not in `/usr/share/mediawiki/images/`, especially as I want there to be two different wikis that don’t share files.
 
@@ -36,10 +42,11 @@ I made a typo in my database username in the installation form, and got a “Acc
 
 At the end of the installer, it prompted me to download LocalSettings.php and put it at `/etc/mediawiki/LocalSettings.php` which I did:
 
-<pre>sudo mv ~/LocalSettings.php /etc/mediawiki/.
- sudo chown root:root /etc/mediawiki/LocalSettings.php
- sudo chmod 644 /etc/mediawiki/LocalSettings.php
-</pre>
+```
+sudo mv ~/LocalSettings.php /etc/mediawiki/.
+sudo chown root:root /etc/mediawiki/LocalSettings.php
+sudo chmod 644 /etc/mediawiki/LocalSettings.php
+```
 
 And then I had a working wiki at `http://localhost/mediawiki/index.php`!
 
@@ -47,10 +54,14 @@ And then I had a working wiki at `http://localhost/mediawiki/index.php`!
 
 I wanted a different URL, so edited `/etc/apache2/sites-available/000-default.conf` (in order to not modify the package-provided `/etc/mediawiki/mediawiki.conf`) to add:
 
-<pre>Alias /mywiki /var/lib/mediawiki</pre>
+```
+Alias /mywiki /var/lib/mediawiki
+```
 
 And changed the following in `LocalSettings.php`:
 
-<pre>$wgScriptPath = "/mywiki";</pre>
+```
+$wgScriptPath = "/mywiki";
+```
 
 The multiple wikis will have to wait until later, as will the backup regime.

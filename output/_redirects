@@ -7,6 +7,8 @@
 /blog                            /
 /Blog                            /
 /Welcome                         /
+/Photos                          https://www.flickr.com/photos/freosam/
+/photos                          https://www.flickr.com/photos/freosam/
 
 /feed/*                          /index.rss
 /feeds/*                         /index.rss
@@ -17,10 +19,14 @@
 /category/:tag/feed              /tags/:tag.rss
 
 /blog/addressbook-plugin         /tags/addressbook-plugin.html
+/Category:Ubuntu                 /tags/ubuntu.html
+/plugins/embed-piwigo/           /tags/embed-piwigo.html
 
+# Moved.
 /Talk_about_Oscar_Wilde!                                                            /2004/0429_oscar-wilde.html
 /Shimano_SG-X_Chainrings                                                            /2006/0908_chainrings.html
 /2006/09/08/shimano-sg-x-chainrings                                                 /2006/0908_chainrings.html
+/2008/06/05/catching-up/2008-05-28_manning_clark_building_ibm_tuggeranong/          /2008/0605_catching-up.html
 /PHP%E2%80%99s_Fileinfo_extension_under_PHP_5.2_on_Windows                          /2010/1026_fileinfo.html
 /2011/05/19/blogging/                                                               /2011/0519_blogging.html
 /Preventing_duplicate_rows_in_a_tabular_HTML_form                                   /2011/0712_tabular-forms.html
@@ -29,8 +35,21 @@
 /Loading_spatial_data_into_MySQL_with_LOAD_DATA_INFILE                              /2015/0723_wkt.html
 /Importing_to_Piwigo                                                                /2017/0418_piwigo-import.html
 /Options_should_NOT_have_additional_properties                                      /2019/0103_svgtranslate.html
+/2017/met                                                                           /2017/0807_met
+/2017/met.html                                                                      /2017/0807_met.html
 /2019/10/25/piwigo-on-android                                                       /2019/1025-piwigo-android.html
 /2020/05/30/indieweb                                                                /2020/0530_breaking.html
 
 # /Creating_a_TODO_list_in_MediaWiki_with_Cargo
 
+# Gone (source and destination are the same)
+/2011/0222_iconocom       /2011/0222_iconocom        410
+/2011/0222_iconocom.html  /2011/0222_iconocom.html   410
+/2018/05                  /2018/05                   410
+/2018/05.html             /2018/05.html              410
+/2018/0604-orm            /2018/0604-orm             410
+/2018/0604-orm.html       /2018/0604-orm.html        410
+/2015/0602_weeding        /2015/0602_weeding         410
+/2015/0602_weeding.html   /2015/0602_weeding.html    410
+/2017/wikimania           /2017/wikimania            410
+/2017/wikimania.html      /2017/wikimania.html       410

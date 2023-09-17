@@ -30,16 +30,18 @@ So I started by making a final backup — all files, WP core included, and the d
 
 Then, I inserted all of the WP posts into my new system’s database::
 
-<pre lang="sql">INSERT INTO journal_entries (id, title, date_and_time, entry_text)
+```
+INSERT INTO journal_entries (id, title, date_and_time, entry_text)
   SELECT id+1000, post_title, post_date, post_content
     FROM wp_posts
     WHERE post_type = 'post' AND post_status = 'publish'
     ORDER BY post_date ASC
-</pre>
+```
 
 The +1000 on the ID was to ensure that I could refer to the new IDs of the imported posts in the next section, the redirections (there were fewer than 1000 records already in the `journal_entries` table)::
 
-<pre lang="sql">SELECT CONCAT(
+```
+SELECT CONCAT(
     'Redirect permanent /',
     YEAR(post_date),'/',
     LPAD(MONTH(post_date),2,'0'),'/',
@@ -51,6 +53,6 @@ The +1000 on the ID was to ensure that I could refer to the new IDs of the impor
   FROM wp_posts
     WHERE post_type = 'post' AND post_status = 'publish'
     ORDER BY post_date ASC
-</pre>
+```
 
 And I dumped all that into `.htaccess`.

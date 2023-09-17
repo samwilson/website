@@ -28,7 +28,8 @@ The last part of my backup is to include all the files, both `mbox` and `mab`, i
 
 The script that does all this for me is simple:
 
-<pre lang="bash">#!/bin/bash
+```
+#!/bin/bash
 
 TB_PROFILE=/home/sam/.thunderbird/po2p7m5o.default/
 
@@ -42,6 +43,6 @@ echo "Copying mail files to $MBOXEN..."
 rsync -rv --exclude=*.msf "$TB_PROFILE/Mail/Local Folders/Archives.sbd/" $MBOXEN
 
 # ...Followed by a svn commit
-</pre>
+```
 
-[mbox](http://en.wikipedia.org/wiki/Mbox "Why do I bother linking to Wikipedia? You weren't going to look elsewhere if you didn't know what mbox meant") is a pretty ridiculous format, really. It’s based on the idea that it can determine the beginning of each email by the fact that the word ‘From’ starts a line and is followed by a space. That’s it! Daft. Thunderbird supposedly has some greater means of delimiting messages, but still I’ve on a number of occasions had email corrupted due to this silliness. Not hard to recover from, usually.
+{link|mbox|http://en.wikipedia.org/wiki/Mbox|Why do I bother linking to Wikipedia? You weren't going to look elsewhere if you didn't know what mbox meant.} is a pretty ridiculous format, really. It’s based on the idea that it can determine the beginning of each email by the fact that the word ‘From’ starts a line and is followed by a space. That’s it! Daft. Thunderbird supposedly has some greater means of delimiting messages, but still I’ve on a number of occasions had email corrupted due to this silliness. Not hard to recover from, usually.

@@ -17,10 +17,11 @@ tags:
 
 In the old, Zend-based, WebDB, column sort order was passed as a `$_GET` parameter and then stored in per-table variables in `$_SESSION`. In the index controller, both were checked when a table was loaded:
 
-<pre lang="php">/* application/controllers/IndexController.php */
+```
+/* application/controllers/IndexController.php */
 $orderby = ($this->_hasParam('orderby')) ? $this->_getParam('orderby') : $_SESSION['ordering'][$this->tableName]['orderby'];
 $orderdir = ($this->_hasParam('orderdir')) ? $this->_getParam('orderdir') : $_SESSION['ordering'][$this->tableName]['orderdir'];
-</pre>
+```
 
 The advantage, of course, being that a user could sort by a column, go off somewhere else (into a record to edit it, say), and come back to the table view and have the previous sort order be remembered. Good. But annoying, too, because a table could be sorted _without a sort directive being present in the URI_. Not good, because the URI doesn’t reflect exactly the resource that one is looking at; one can’t bookmark that page, for instance.
 
@@ -31,11 +32,12 @@ We need the best of both:
 
 The obvious answer seems to be to store sort directives in the session, and _redirect_ requests to a proper, complete, URI if the current one doesn’t already contain those directives. Sounds good.
 
-However, before jumping in and coding that: the same ideas apply to the filter variables, which are currently passed as `$_GET` parameters. So could we generalize this idea of **storing parameters in $\_SESSION but only ever using them from $\_GET**? (Oh, and I should point out that the validation of these parameters happens after this, and we’re not worried about that right now.) Can this be done in a way so that the rest of the application doesn’t need to know anything about the session stuff, and can just use `$_GET['foo']` and `href="?foo=bar"` in whatever way it wants?
+However, before jumping in and coding that: the same ideas apply to the filter variables, which are currently passed as `$_GET` parameters. So could we generalize this idea of "storing parameters in `$_SESSION` but only ever using them from `$_GET`"? (Oh, and I should point out that the validation of these parameters happens after this, and we’re not worried about that right now.) Can this be done in a way so that the rest of the application doesn’t need to know anything about the session stuff, and can just use `$_GET['foo']` and `href="?foo=bar"` in whatever way it wants?
 
 A first draft:
 
-<pre lang="php">// To be called from Controller_WeBDB::before()
+```
+// To be called from Controller_WeBDB::before()
 if (count($_GET)>0)
 {
 	$_SESSION['qs'] = $_GET;
@@ -47,13 +49,14 @@ elseif (isset($_SESSION['qs']) && count($_SESSION['qs'])>0)
 	$uri = URL::base(FALSE, TRUE).$this->request->uri.$query;
 	$this->request->redirect($uri);
 }
-</pre>
+```
 
 Which sort of works, except that it’s not possible to specify only _some_ of the parameters (i.e. either load them all from `$_GET` or all from `$_SESSION`, which isn’t what we want).
 
 A final draft (a new method in [`Controller_WebDB`](http://samwilson.id.au/kohana/guide/api/Controller_WebDB#_query_string_session "View the current API documentation, which may be different to how it was when this post was written."), called from `Controller_WebDB::before()`):
 
-<pre lang="php">/**
+```
+/**
  * Save and load query string (i.e. `$_GET`) variables from the `$_SESSION`.
  * The idea is to carry query string variables between requests, even
  * when those variables have been omitted in the URI.
@@ -96,7 +99,7 @@ private function _query_string_session()
 		}
 	}
 }
-</pre>
+```
 
 To clear a parameter, it obviously has to actually be _set_, and not just omitted from the URI. Is this going to be a problem?
 

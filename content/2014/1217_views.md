@@ -22,7 +22,8 @@ Views are included in modules by implementing `hook_views_api()` and `hook_views
 
 The easiest way to construct the view object is to create the desired view via the UI and then export it, saving each exported view into its own function in `sites/all/modules/custom/modulename/<dfn title="Replace with the correct module name">modulename</dfn>.views_default.inc` and then returning them all in `<em>modulename</em>_views_default_views()` in the same file (named e.g. `_<em>modulename</em>_views_<em>view_name</em>()`). For example:
 
-<pre lang="php">/**
+```
+/**
  * Implements hook_views_default_views().
  */
 function worksmanagement_views_default_views() {
@@ -31,7 +32,7 @@ function worksmanagement_views_default_views() {
     'job_reports' => _worksmanagement_views_job_reports(),
   );
 }
-</pre>
+```
 
 All of which is good, and works well. (Why not use [Features](https://www.drupal.org/project/features) for this, which more or less does exactly the same thing? Not sure; probably stubbornness. That doesn’t matter for now though.) The confusion comes with updating the exported views.
 

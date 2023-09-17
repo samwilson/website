@@ -10,8 +10,8 @@ tags:
 ---
 The renovations at Rosies have started:
 
-https://commons.wikimedia.org/wiki/File:Rosies_being_renovated.JPG
+{{{commons|Rosies_being_renovated.JPG}}}
 
-https://commons.wikimedia.org/wiki/File:Front_room_at_Rosies_being_painted.JPG
+{{{commons|Front_room_at_Rosies_being_painted.JPG}}}
 
 (Click the above images for more info about each.)

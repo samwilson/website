@@ -21,8 +21,17 @@ Someone here at work wanted to know how to add a three-page PDF to a Word docume
 
 I suggested [ImageMagick’s `convert`](http://www.imagemagick.org/script/convert.php) and [`pdftk`](http://www.accesspdf.com/pdftk/).
 
-  1. Combine all the images into one PDF: <pre lang=“bash”> $ convert *.jpg photos.pdf </pre> 
-  2. Put the two PDFs together: <pre lang=“bash”> $ pdftk report.pdf photos.pdf cat output report\_with\_photos.pdf </pre> 
+1. Combine all the images into one PDF:
+
+```
+$ convert *.jpg photos.pdf
+```
+
+2. Put the two PDFs together:
+
+```
+$ pdftk report.pdf photos.pdf cat output report\_with\_photos.pdf
+```
 
 And that’s it.
 

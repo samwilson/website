@@ -12,7 +12,13 @@ $metadata = [
 $yaml = \Symfony\Component\Yaml\Yaml::dump($metadata, 3, 2);
 $out = "---\n$yaml---\n";
 
-$filename = dirname(__DIR__).'/content/'.date('Y/md').'.md';
+$yearDir = dirname(__DIR__).'/content/'.date('Y');
+if (!is_dir($yearDir)) {
+    echo "Creating directory: $yearDir\n";
+    mkdir($yearDir);
+}
+
+$filename = $yearDir.'/'.date('md').'.md';
 if (file_exists($filename)) {
     echo "File exists: $filename\n";
     exit(1);

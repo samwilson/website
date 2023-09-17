@@ -5,6 +5,23 @@ timezone: Australia/Perth
 location: Fremantle
 tags:
     - wikimedia
+    - tradition
+    - wikis
+comments:
+  - author: prtksxna
+    date: 2020-05-29
+    text: |
+      Community spirit and treating everyone equally are core values of anarchism.
+      I don't know enough about Prussian civil servant though. Any suggested reading?
+  - author: samwilson
+    date: 2020-06-01
+    text: |
+      No, I don't know what to read, but would like to find something related.
+      [Here's](https://en.wikipedia.org/wiki/Love_on_a_Branch_Line_(novel)) a
+      light-hearted British take on some of the same themes.
+  - author: prtksxna
+    date: 2020-06-04
+    text: Thanks for the recommendation 🙏🏽 Not available on Wikisource or Amazon India though 😞
 ---
 There's a discussion happening [on wikimedia-l](https://lists.wikimedia.org/pipermail/wikimedia-l/2020-May/094932.html);
 I had no idea of the "highest ideal of the Prussian civil servant", but it sounds sensible.

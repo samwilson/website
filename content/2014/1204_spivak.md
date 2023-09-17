@@ -17,10 +17,10 @@ tags:
   - Spivak pronouns
   - words
 ---
-[Spivak pronouns](http://en.wikipedia.org/wiki/Spivak_pronoun "Read all about em on Wikipedia"):
+[Spivak pronouns](http://en.wikipedia.org/wiki/Spivak_pronoun) (read all about 'em on Wikipedia).
 
-  * Subject: _**ey** laughs_
-  * Object: _I hugged **em**_
-  * Possessive Adjective: _**eir** heart warmed_
-  * Possessive Pronoun: _that is **eirs**_
-  * Reflexive: _**ey** loves emself_
+* Subject: _**ey** laughs_
+* Object: _I hugged **em**_
+* Possessive Adjective: _**eir** heart warmed_
+* Possessive Pronoun: _that is **eirs**_
+* Reflexive: _**ey** loves emself_

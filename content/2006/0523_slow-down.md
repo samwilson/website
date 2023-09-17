@@ -20,4 +20,4 @@ The following from [Japan for Sustainability](http://www.japanfs.org):
 > 
 > How did they solve the problem? A “slow elevator” was their solution. They agreed to install an elevator that moves slowly. Young people don’t want to wait for the elevator, while elderly people can use it if they want to, since they are usually not in a rush. As expected, once installed, the slow elevator is now used only by the elderly, and it consumes much less energy than a conventional elevator.
 > 
-> —_<http://www.japanfs.org/en/newsletter/200510.html#1>_
+> — http://www.japanfs.org/en/newsletter/200510.html

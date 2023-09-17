@@ -1,18 +1,8 @@
-A slow day
-==========
-
-date: 2003-11-11T13:06:20+00:00
-author: Sam Wilson
-layout: post
-guid: /?p=15
-permalink: /2003/11/11/a-slow-day/
-aktt_tweeted:
-  - "1"
-views:
-  - "612"
-categories:
-  - Woodworking
+---
+title: A slow day
+date: 2003-11-11T13:06:20+11:00
 tags:
+  - Woodworking
   - bookplate
   - boring posts
   - prototyping

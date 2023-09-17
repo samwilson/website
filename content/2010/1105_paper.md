@@ -18,7 +18,7 @@ tags:
 I am posting my entry today from paper, from a corner table in the window of Gino’s.
 I’ve a coffee, and a proper custart tart, and all the time in the world. Until I have to be at Kulcha… but yes, all the time in the world! It’s a laborious process, you see, posting to WordPress from paper and ink. One has a wide gap to bridge, between here and the internet.
 
-On the internet, there is no time. That’s not true! Well, no, but it _is_ easy to feel an odd sense of hurry on the net, of having — or just being able — to do things \*right away\*. On paper there is no such thing. Especially on paper in a café, with ink and a custart tart.
+On the internet, there is no time. That’s not true! Well, no, but it _is_ easy to feel an odd sense of hurry on the net, of having — or just being able — to do things *right away*. On paper there is no such thing. Especially on paper in a café, with ink and a custart tart.
 
 I love it here! In Freo, I mean. And Gino’s seems to just keep on going, far more depandably than anywhere else. And the tables are the right height — that matters. Hush, down the road, never thought about that.
 
