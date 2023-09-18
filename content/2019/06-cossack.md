@@ -1,8 +1,8 @@
-----
+---
 title: Port Hedland and Cossack
-date: 2019-06-11
+date: 2019-06-11 21:00:00 +0800
 description: A trip to the nor-west, 6–11 June 2019.
-----
+---
 
 On 7 June I gave a presentation about wikis at the annual Pibara regional libraries meeting
 in [Port Hedland](https://en.wikipedia.org/wiki/Port_Hedland).
