@@ -1,0 +1,13 @@
+{% autoescape 'tex' %}
+{% set commons = commons(shortcode.attrs.1) %}
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{{ '{' }}{{ tex_url( commons.imageinfo.0.thumburl )|raw }}{{ '}' }}
+    \caption{{ '{' }}{#
+      #}{% if commons.labels is defined %}{{ commons.labels.en.value }}{% endif %}{#
+    #}{{ '}' }}
+    \label{ commons-{{ commons.pageid }} }
+  \end{center}
+\end{figure}
+\small{(Figure~\ref{ commons-{{ commons.pageid }}{{'}'}}: Wikimedia Commons, \url{ {{ commons.title|replace({' ':'_'})|slice(5)}}{{'}'}})}
+{% endautoescape %}
