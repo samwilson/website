@@ -6,7 +6,7 @@ location: Canberra
 ---
 An afternoon of a book, a café, a friend, much good talking and only a little work done.
 
-https://www.flickr.com/photos/freosam/25454099284/ Docked door jamb
+{{{flickr|id=25454099284}}}
 
 William Morris' lectures on *Art and Socialism* from the last quarter of the 19th
 century kept me company in a juice bar in town this afternoon,

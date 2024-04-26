@@ -17,7 +17,7 @@ Anyway, I couldn't think how to progress; I couldn't even decide on what I wante
 so I jumped on my bike and rode over to F&S to see what I could scrounge from their skip,
 and returned triumphant with an ash door jamb.
 
-https://www.flickr.com/photos/freosam/35260758984/ Door jamb
+{{{flickr|id=35260758984}}}
 
 I will now make a small box, possibly to go inside the large one, and I'll glue it.
 

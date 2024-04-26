@@ -7,10 +7,12 @@ tags:
   - chickens
   - eggs
 ---
-https://www.flickr.com/photos/freosam/35709982790/ Little one in a cage
+Little one in a cage:
+
+{{{flickr|id=35709982790}}}
 
 We’ve been trying to stop our bantam from being broody for the last week or so, to no avail.
-Someone said that putting a clutch of _ice cubes_ under her would do the trick,
+Someone said that putting a clutch of *ice cubes* under her would do the trick,
 but it just seemed too painful—she sat there, looking poor and hungry and desperately trying to warm these frozen eggs;
 it was awful to see. So I pulled her off (much to her annoyance, as usual) and put her in the cage
 (the Funny Cage that came in the mail a few days ago, addressed to ‘Raymo’…).

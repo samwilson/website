@@ -15,4 +15,4 @@ Suburban libraries are great.
 I wish I had more time to spend two hours commuting each way to get to all in the metro area,
 because there's something quiet and focused about these spaces.
 
-https://www.flickr.com/photos/freosam/40735536043
+{{{flickr|id=40735536043}}}

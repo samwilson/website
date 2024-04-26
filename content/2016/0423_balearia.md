@@ -6,7 +6,8 @@ tags:
   - ferries
   - Menorca
 ---
-https://www.flickr.com/photos/freosam/26519226102/
+
+{{{flickr|id=26519226102}}}
 
 Absolutely flat crossing this morning.
 Looking out the window the railing is precisely parallel with the horizon,

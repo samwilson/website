@@ -12,7 +12,7 @@ more dressing of the ash door jamb for this little box. I made a lot of shavings
 and then some dust when I cut and shot each part to length
 (4 @ 377 mm, 2 @ 77 mm, and a little bit left over that I will use tomorrow to patch up the holes in the wood).
 
-https://www.flickr.com/photos/freosam/25786014090/
+{{{flickr|id=25786014090}}}
 
 All that dulled my iron a bit so I went downstairs to sharpen it — little did I know what I was in for!
 For nearly and hour and a half I toiled over those stones trying various ways of holding the blade,
@@ -26,10 +26,10 @@ to apply more pressure to one side than the other.
 So I re-ground it square and since then I just have not been able to get it quite as sharp as usual (until today).
 I filmed myself as I was sharpening so that I could see how well I kept to the angle.
 
-https://www.flickr.com/photos/freosam/25786012170/
+{{{flickr|id=25786012170}}}
 
 All of this fiddling around with my plane blade got me right back in the vibe of doing good work, for which I was thankful. So I went back to my bench and worked for the rest of the afternoon. I planed grooves in the box sides to take the bottom and (sliding) top using my No.50 plow plane. It was lovely to be back enjoying wood, and what a marvelous tool that is!
 
-https://www.flickr.com/photos/freosam/26032933566/
+{{{flickr|id=26032933566}}}
 
 All in all a far better afternoon than the morning; seems to happen that way…

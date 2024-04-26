@@ -4,9 +4,9 @@ date: 2003-11-04 09:17:00 +1100
 timezone: Australia/Canberra
 location: Canberra
 ---
-_In which I bring my desk back to school to finish finishing it and then get it assessed._
+*In which I bring my desk back to school to finish finishing it and then get it assessed.*
 
-https://www.flickr.com/photos/freosam/25992406031/
+{{{flickr|id=25992406031}}}
 
 What a marvellous morning!
 I brought my desk back to school this morning to get it assessed next Monday;

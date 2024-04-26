@@ -7,4 +7,5 @@ I'm not quite sure of the date, but it was probably Febrary 2005 that I built my
 in the grounds of the botanic gardens in Canberra.
 
 Detail of an old chair:
-https://www.flickr.com/photos/freosam/29630360173/
+
+{{{flickr|id=29630360173}}}

@@ -8,8 +8,8 @@ tags:
 ---
 We’re getting half a dozen chicks next week, and their house isn’t at all ready yet…
 
-https://www.flickr.com/photos/freosam/26080214675/
+{{{flickr|id=26080214675}}}
 
-https://www.flickr.com/photos/freosam/25987687872/
+{{{flickr|id=25987687872}}}
 
 Those concrete slabs near the star pickets are all it is so far!

@@ -14,4 +14,4 @@ and now it's looking to be a bit drizzly.
 Actually, I'm quite happy;
 it's much nicer walking in this sort of weather.
 
-https://www.flickr.com/photos/freosam/26028646493
+{{{flickr|id=26028646493}}}
